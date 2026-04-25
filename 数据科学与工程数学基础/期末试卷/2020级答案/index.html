@@ -1911,231 +1911,231 @@
 <hr />
 <p><strong>一、（14分）</strong></p>
 <p>已知矩阵</p>
-<p>$$\boldsymbol{M} = \begin{pmatrix} 1 &amp; 0 \ -2 &amp; 3 \ 0 &amp; 1 \end{pmatrix}$$</p>
-<p>(1) 计算矩阵 $\boldsymbol{M}$ 的 $1$ 范数；</p>
-<p>(2) 计算矩阵 $\boldsymbol{M}$ 的 $2$ 范数；</p>
-<p>(3) 证明：对任意 $\boldsymbol{A}\in\mathbb{R}^{m\times n}$，由</p>
-<p>$$|\boldsymbol{A}|<em>{m</em>\infty} := \max_{1\leq i\leq m,1\leq j\leq n}|a_{ij}|$$</p>
-<p>定义的 $|\cdot|<em>{m</em>\infty}$ 是 $\mathbb{R}^{m\times n}$ 上的（广义）矩阵范数。</p>
+<div class="arithmatex">\[\boldsymbol{M} = \begin{pmatrix} 1 &amp; 0 \\ -2 &amp; 3 \\ 0 &amp; 1 \end{pmatrix}\]</div>
+<p>(1) 计算矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的 <span class="arithmatex">\(1\)</span> 范数；</p>
+<p>(2) 计算矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的 <span class="arithmatex">\(2\)</span> 范数；</p>
+<p>(3) 证明：对任意 <span class="arithmatex">\(\boldsymbol{A}\in\mathbb{R}^{m\times n}\)</span>，由</p>
+<div class="arithmatex">\[\|\boldsymbol{A}\|_{m_\infty} := \max_{1\leq i\leq m,1\leq j\leq n}|a_{ij}|\]</div>
+<p>定义的 <span class="arithmatex">\(\|\cdot\|_{m_\infty}\)</span> 是 <span class="arithmatex">\(\mathbb{R}^{m\times n}\)</span> 上的（广义）矩阵范数。</p>
 <h3 id="_1">答案<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>（1）</p>
-<p>$|\boldsymbol{M}|_1=\max{1+|-2|,3+1}=4$ <strong>（3分）</strong></p>
-<p>（2）$\boldsymbol{M}^\top \boldsymbol{M}=\begin{pmatrix}2&amp;2\2&amp;4\end{pmatrix}$</p>
-<p>$\lambda_{max}(\boldsymbol{M}^\top \boldsymbol{M})=14$</p>
-<p>$|\boldsymbol{M}|_2=\sqrt{14}$ <strong>（4分）</strong></p>
+<p><span class="arithmatex">\(\|\boldsymbol{M}\|_1=\max\{1+|-2|,3+1\}=4\)</span> <strong>（3分）</strong></p>
+<p>（2）<span class="arithmatex">\(\boldsymbol{M}^\top \boldsymbol{M}=\begin{pmatrix}2&amp;2\\2&amp;4\end{pmatrix}\)</span></p>
+<p><span class="arithmatex">\(\lambda_{max}(\boldsymbol{M}^\top \boldsymbol{M})=14\)</span></p>
+<p><span class="arithmatex">\(\|\boldsymbol{M}\|_2=\sqrt{14}\)</span> <strong>（4分）</strong></p>
 <p>（3）非负性：显然</p>
-<p>$$|\boldsymbol{A}|<em>{m</em>\infty} := \max_{1\leq i\leq m,1\leq j\leq n}|a_{ij}| \geq 0$$</p>
-<p>而且仅当 $\boldsymbol{A}=0$ 时，$|\boldsymbol{A}|<em>{m</em>\infty}=0$。 <strong>（2分）</strong></p>
+<div class="arithmatex">\[\|\boldsymbol{A}\|_{m_\infty} := \max_{1\leq i\leq m,1\leq j\leq n}|a_{ij}| \geq 0\]</div>
+<p>而且仅当 <span class="arithmatex">\(\boldsymbol{A}=0\)</span> 时，<span class="arithmatex">\(\|\boldsymbol{A}\|_{m_\infty}=0\)</span>。 <strong>（2分）</strong></p>
 <p>齐次性：</p>
-<p>$$|c \cdot \boldsymbol{A}|<em>{m</em>\infty} := \max_{1\leq i\leq m,1\leq j\leq n}|c \cdot a_{ij}| = c \max_{1\leq i\leq m,1\leq j\leq n}|a_{ij}| = c|\boldsymbol{A}|<em>{m</em>\infty}$$</p>
+<div class="arithmatex">\[\|c \cdot \boldsymbol{A}\|_{m_\infty} := \max_{1\leq i\leq m,1\leq j\leq n}|c \cdot a_{ij}| = c \max_{1\leq i\leq m,1\leq j\leq n}|a_{ij}| = c\|\boldsymbol{A}\|_{m_\infty}\]</div>
 <p><strong>（2分）</strong></p>
-<p>三角不等式：考虑 $|\boldsymbol{A} + \boldsymbol{B}|<em>{m</em>\infty}$，因为</p>
-<p>$$|a_{ij} + b_{ij}| \leq |a_{ij}| + |b_{ij}| \leq \max_{1\leq i\leq m,1\leq j\leq n}|a_{ij}| + \max_{1\leq i\leq m,1\leq j\leq n}|b_{ij}|$$</p>
+<p>三角不等式：考虑 <span class="arithmatex">\(\|\boldsymbol{A} + \boldsymbol{B}\|_{m_\infty}\)</span>，因为</p>
+<div class="arithmatex">\[|a_{ij} + b_{ij}| \leq |a_{ij}| + |b_{ij}| \leq \max_{1\leq i\leq m,1\leq j\leq n}|a_{ij}| + \max_{1\leq i\leq m,1\leq j\leq n}|b_{ij}|\]</div>
 <p>所以</p>
-<p>$$\max_{1\leq i\leq m,1\leq j\leq n} |a_{ij} + b_{ij}| \leq \max_{1\leq i\leq m,1\leq j\leq n}|a_{ij}| + \max_{1\leq i\leq m,1\leq j\leq n}|b_{ij}|$$</p>
-<p>即 $|\boldsymbol{A} + \boldsymbol{B}|<em>{m</em>\infty} \leq |\boldsymbol{A}|<em>{m</em>\infty} + |\boldsymbol{B}|<em>{m</em>\infty}$ <strong>（3分）</strong></p>
+<div class="arithmatex">\[\max_{1\leq i\leq m,1\leq j\leq n} |a_{ij} + b_{ij}| \leq \max_{1\leq i\leq m,1\leq j\leq n}|a_{ij}| + \max_{1\leq i\leq m,1\leq j\leq n}|b_{ij}|\]</div>
+<p>即 <span class="arithmatex">\(\|\boldsymbol{A} + \boldsymbol{B}\|_{m_\infty} \leq \|\boldsymbol{A}\|_{m_\infty} + \|\boldsymbol{B}\|_{m_\infty}\)</span> <strong>（3分）</strong></p>
 <hr />
 <p><strong>二、（12分）</strong></p>
 <p>已知矩阵</p>
-<p>$$\boldsymbol{M} = \begin{pmatrix} 1 &amp; -1 &amp; 0 \ 2 &amp; 4 &amp; 1 \ 4 &amp; 2 &amp; 1 \end{pmatrix}$$</p>
-<p>(1) 求矩阵 $\boldsymbol{M}$ 的零空间；</p>
-<p>(2) 求向量 $\boldsymbol{x}=(1,1,1)^{\top}$ 在矩阵 $\boldsymbol{M}$ 的列空间上的正交投影；</p>
-<p>(3) 利用Householder变换，将非零向量 $\boldsymbol{x}=(1,1,1)^{\top}$ 变为标准向量 $\boldsymbol{e}_1=(0,1,0)^{\top}$ 的 $\sqrt{3}$ 倍，请写出这个Householder变换矩阵。</p>
+<div class="arithmatex">\[\boldsymbol{M} = \begin{pmatrix} 1 &amp; -1 &amp; 0 \\ 2 &amp; 4 &amp; 1 \\ 4 &amp; 2 &amp; 1 \end{pmatrix}\]</div>
+<p>(1) 求矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的零空间；</p>
+<p>(2) 求向量 <span class="arithmatex">\(\boldsymbol{x}=(1,1,1)^{\top}\)</span> 在矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的列空间上的正交投影；</p>
+<p>(3) 利用Householder变换，将非零向量 <span class="arithmatex">\(\boldsymbol{x}=(1,1,1)^{\top}\)</span> 变为标准向量 <span class="arithmatex">\(\boldsymbol{e}_1=(0,1,0)^{\top}\)</span> 的 <span class="arithmatex">\(\sqrt{3}\)</span> 倍，请写出这个Householder变换矩阵。</p>
 <h3 id="_2">答案<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<p>（1）零空间为 $span{(1,1,-6)^T}$ <strong>（3分）</strong></p>
-<p>（2）列空间为 $span{(1,2,4)^T,(-1,4,2)^T}$，若记</p>
-<p>$$\boldsymbol{A} = \begin{pmatrix} 1 &amp; -1 \ 2 &amp; 4 \ 4 &amp; 2 \end{pmatrix}$$</p>
-<p>故正交投影为 $\boldsymbol{A}(\boldsymbol{A}^\top \boldsymbol{A})^{-1} \boldsymbol{A}^\top \boldsymbol{x} = (1/3,2/3,4/3)^\top$ <strong>（4分）</strong></p>
+<p>（1）零空间为 <span class="arithmatex">\(span\{(1,1,-6)^T\}\)</span> <strong>（3分）</strong></p>
+<p>（2）列空间为 <span class="arithmatex">\(span\{(1,2,4)^T,(-1,4,2)^T\}\)</span>，若记</p>
+<div class="arithmatex">\[\boldsymbol{A} = \begin{pmatrix} 1 &amp; -1 \\ 2 &amp; 4 \\ 4 &amp; 2 \end{pmatrix}\]</div>
+<p>故正交投影为 <span class="arithmatex">\(\boldsymbol{A}(\boldsymbol{A}^\top \boldsymbol{A})^{-1} \boldsymbol{A}^\top \boldsymbol{x} = (1/3,2/3,4/3)^\top\)</span> <strong>（4分）</strong></p>
 <p>（3）</p>
-<p>$$w=\frac{x-\alpha e_{1}}{|x-\alpha e_{1}|_{2}}$$</p>
-<p>则，由 $H = (I-2ww^{\top})$ 可得：</p>
-<p>$$\boldsymbol{H} = \begin{pmatrix} \frac{2-\sqrt{3}}{3-\sqrt{3}} &amp; \frac{1}{\sqrt{3}} &amp; -\frac{1}{3-\sqrt{3}} \ \frac{1}{\sqrt{3}} &amp; \frac{1}{\sqrt{3}} &amp; \frac{1}{\sqrt{3}} \ -\frac{1}{3-\sqrt{3}} &amp; \frac{1}{\sqrt{3}} &amp; \frac{2-\sqrt{3}}{3-\sqrt{3}} \end{pmatrix}$$</p>
+<div class="arithmatex">\[w=\frac{x-\alpha e_{1}}{\|x-\alpha e_{1}\|_{2}}\]</div>
+<p>则，由 <span class="arithmatex">\(H = (I-2ww^{\top})\)</span> 可得：</p>
+<div class="arithmatex">\[\boldsymbol{H} = \begin{pmatrix} \frac{2-\sqrt{3}}{3-\sqrt{3}} &amp; \frac{1}{\sqrt{3}} &amp; -\frac{1}{3-\sqrt{3}} \\ \frac{1}{\sqrt{3}} &amp; \frac{1}{\sqrt{3}} &amp; \frac{1}{\sqrt{3}} \\ -\frac{1}{3-\sqrt{3}} &amp; \frac{1}{\sqrt{3}} &amp; \frac{2-\sqrt{3}}{3-\sqrt{3}} \end{pmatrix}\]</div>
 <p><strong>（5分）</strong></p>
 <hr />
 <p><strong>三、（13分）</strong></p>
 <p>矩阵</p>
-<p>$$\boldsymbol{A} = \begin{pmatrix} 3 &amp; 2 &amp; 2 \ 2 &amp; 3 &amp; -2 \end{pmatrix}$$</p>
-<p>(1) 计算矩阵 $\boldsymbol{A}$ 的SVD分解；</p>
-<p>(2) 假设 $\boldsymbol{B}$ 是一个 $n \times d$ 的矩阵，矩阵 $\boldsymbol{M}$ 是 $(n+d) \times (n+d)$ 定义为</p>
-<p>$$\boldsymbol{M}=\begin{pmatrix} \boldsymbol{O} &amp; \boldsymbol{B}^\top \ \boldsymbol{B} &amp; \boldsymbol{O} \end{pmatrix}$$</p>
-<p>显然 $\boldsymbol{M}$ 是对称矩阵。请证明矩阵 $\boldsymbol{M}$ 的对角化会产生 $\boldsymbol{B}$ 的奇异值分解所需要的所有信息。</p>
+<div class="arithmatex">\[\boldsymbol{A} = \begin{pmatrix} 3 &amp; 2 &amp; 2 \\ 2 &amp; 3 &amp; -2 \end{pmatrix}\]</div>
+<p>(1) 计算矩阵 <span class="arithmatex">\(\boldsymbol{A}\)</span> 的SVD分解；</p>
+<p>(2) 假设 <span class="arithmatex">\(\boldsymbol{B}\)</span> 是一个 <span class="arithmatex">\(n \times d\)</span> 的矩阵，矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 是 <span class="arithmatex">\((n+d) \times (n+d)\)</span> 定义为</p>
+<div class="arithmatex">\[\boldsymbol{M}=\begin{pmatrix} \boldsymbol{O} &amp; \boldsymbol{B}^\top \\ \boldsymbol{B} &amp; \boldsymbol{O} \end{pmatrix}\]</div>
+<p>显然 <span class="arithmatex">\(\boldsymbol{M}\)</span> 是对称矩阵。请证明矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的对角化会产生 <span class="arithmatex">\(\boldsymbol{B}\)</span> 的奇异值分解所需要的所有信息。</p>
 <h3 id="_3">答案<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>（1）易计算</p>
-<p>$$\boldsymbol{A}\boldsymbol{A}^\top=\begin{pmatrix} 17 &amp; 8 \ 8 &amp; 17 \end{pmatrix}$$</p>
-<p>求得其特征值为 $25,9$。对应的特征向量分别为 $(1/\sqrt{2},1/\sqrt{2})^\top, (-1/\sqrt{2},1/\sqrt{2})^\top$，因此，</p>
-<p>$$\boldsymbol{U} =\begin{pmatrix} 1/\sqrt{2} &amp; -1/\sqrt{2} \ 1/\sqrt{2} &amp; 1/\sqrt{2} \end{pmatrix}$$</p>
+<div class="arithmatex">\[\boldsymbol{A}\boldsymbol{A}^\top=\begin{pmatrix} 17 &amp; 8 \\ 8 &amp; 17 \end{pmatrix}\]</div>
+<p>求得其特征值为 <span class="arithmatex">\(25,9\)</span>。对应的特征向量分别为 <span class="arithmatex">\((1/\sqrt{2},1/\sqrt{2})^\top, (-1/\sqrt{2},1/\sqrt{2})^\top\)</span>，因此，</p>
+<div class="arithmatex">\[\boldsymbol{U} =\begin{pmatrix} 1/\sqrt{2} &amp; -1/\sqrt{2} \\ 1/\sqrt{2} &amp; 1/\sqrt{2} \end{pmatrix}\]</div>
 <p><strong>（4分）</strong></p>
-<p>由 $\boldsymbol{A}^\top \boldsymbol{U}$ 与 $\boldsymbol{V}$ 的关系可直接计算出</p>
-<p>$$\boldsymbol{V} =\begin{pmatrix} 1/\sqrt{2} &amp; -1/3\sqrt{2} &amp; -2/3 \ 1/\sqrt{2} &amp; 1/3\sqrt{2} &amp; 2/3 \ 0 &amp; -4/3\sqrt{2} &amp; 1/3 \end{pmatrix}$$</p>
+<p>由 <span class="arithmatex">\(\boldsymbol{A}^\top \boldsymbol{U}\)</span> 与 <span class="arithmatex">\(\boldsymbol{V}\)</span> 的关系可直接计算出</p>
+<div class="arithmatex">\[\boldsymbol{V} =\begin{pmatrix} 1/\sqrt{2} &amp; -1/3\sqrt{2} &amp; -2/3 \\ 1/\sqrt{2} &amp; 1/3\sqrt{2} &amp; 2/3 \\ 0 &amp; -4/3\sqrt{2} &amp; 1/3 \end{pmatrix}\]</div>
 <p><strong>（3分）</strong></p>
-<p>（2）$\boldsymbol{B}$ 的奇异值分解所需要的信息为 $\boldsymbol{B}^T \boldsymbol{B}$ 的特征向量和 $\boldsymbol{B}\boldsymbol{B}^T$ 的特征向量，以及对应的特征值。现假设对应于特征值为 $\lambda^2(\lambda&gt;0)$ 的 $\boldsymbol{B}^T \boldsymbol{B}$ 的特征向量为 $\boldsymbol{x}_1(|\boldsymbol{x}_1|_2=1)$，$\boldsymbol{B}\boldsymbol{B}^T$ 的特征向量为 $\boldsymbol{x}_2(|\boldsymbol{x}_2|_2=1)$。因此，$\boldsymbol{B}^T \boldsymbol{B}\boldsymbol{x}_1 = \lambda^2 \boldsymbol{x}_1$ 以及 $\boldsymbol{B}\boldsymbol{B}^T \boldsymbol{x}_2 = \lambda^2 \boldsymbol{x}_2$。故</p>
-<p>$$(\boldsymbol{B}\boldsymbol{B}^T)\boldsymbol{B}\boldsymbol{x}_1 = \lambda^2 \boldsymbol{B}\boldsymbol{x}_1$$</p>
-<p>所以存在 $k$ 使得 $\boldsymbol{B}\boldsymbol{x}_1=k\boldsymbol{x}_2$。由于 $|\boldsymbol{x}_1|_2=|\boldsymbol{x}_2|_2=1$，可得 $k=\lambda$，即 $\boldsymbol{B}\boldsymbol{x}_1 = \lambda \boldsymbol{x}_2$。同理有 $\boldsymbol{B}^T \boldsymbol{x}_2 = \lambda \boldsymbol{x}_1$。 <strong>（3分）</strong></p>
-<p>下面证明 $\boldsymbol{x}=\begin{pmatrix} \boldsymbol{x}_1 \ \boldsymbol{x}_2 \end{pmatrix}$ 是矩阵 $\boldsymbol{M}$ 的特征值为 $\lambda$ 的特征向量。易计算</p>
-<p>$$\boldsymbol{M}\boldsymbol{x} = \begin{pmatrix} 0 &amp; \boldsymbol{B}^\top \ \boldsymbol{B} &amp; 0 \end{pmatrix} \begin{pmatrix} \boldsymbol{x}_1 \ \boldsymbol{x}_2 \end{pmatrix}= \begin{pmatrix} \boldsymbol{B}^T \boldsymbol{x}_2 \ \boldsymbol{B}\boldsymbol{x}_1 \end{pmatrix} =\lambda \begin{pmatrix} \boldsymbol{x}_1 \ \boldsymbol{x}_2 \end{pmatrix}$$</p>
-<p>因此，$\boldsymbol{B}$ 的奇异值分解信息包含在 $\boldsymbol{M}$ 的对角化过程中。 <strong>（3分）</strong></p>
+<p>（2）<span class="arithmatex">\(\boldsymbol{B}\)</span> 的奇异值分解所需要的信息为 <span class="arithmatex">\(\boldsymbol{B}^T \boldsymbol{B}\)</span> 的特征向量和 <span class="arithmatex">\(\boldsymbol{B}\boldsymbol{B}^T\)</span> 的特征向量，以及对应的特征值。现假设对应于特征值为 <span class="arithmatex">\(\lambda^2(\lambda&gt;0)\)</span> 的 <span class="arithmatex">\(\boldsymbol{B}^T \boldsymbol{B}\)</span> 的特征向量为 <span class="arithmatex">\(\boldsymbol{x}_1(\|\boldsymbol{x}_1\|_2=1)\)</span>，<span class="arithmatex">\(\boldsymbol{B}\boldsymbol{B}^T\)</span> 的特征向量为 <span class="arithmatex">\(\boldsymbol{x}_2(\|\boldsymbol{x}_2\|_2=1)\)</span>。因此，<span class="arithmatex">\(\boldsymbol{B}^T \boldsymbol{B}\boldsymbol{x}_1 = \lambda^2 \boldsymbol{x}_1\)</span> 以及 <span class="arithmatex">\(\boldsymbol{B}\boldsymbol{B}^T \boldsymbol{x}_2 = \lambda^2 \boldsymbol{x}_2\)</span>。故</p>
+<div class="arithmatex">\[(\boldsymbol{B}\boldsymbol{B}^T)\boldsymbol{B}\boldsymbol{x}_1 = \lambda^2 \boldsymbol{B}\boldsymbol{x}_1\]</div>
+<p>所以存在 <span class="arithmatex">\(k\)</span> 使得 <span class="arithmatex">\(\boldsymbol{B}\boldsymbol{x}_1=k\boldsymbol{x}_2\)</span>。由于 <span class="arithmatex">\(\|\boldsymbol{x}_1\|_2=\|\boldsymbol{x}_2\|_2=1\)</span>，可得 <span class="arithmatex">\(k=\lambda\)</span>，即 <span class="arithmatex">\(\boldsymbol{B}\boldsymbol{x}_1 = \lambda \boldsymbol{x}_2\)</span>。同理有 <span class="arithmatex">\(\boldsymbol{B}^T \boldsymbol{x}_2 = \lambda \boldsymbol{x}_1\)</span>。 <strong>（3分）</strong></p>
+<p>下面证明 <span class="arithmatex">\(\boldsymbol{x}=\begin{pmatrix} \boldsymbol{x}_1 \\ \boldsymbol{x}_2 \end{pmatrix}\)</span> 是矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的特征值为 <span class="arithmatex">\(\lambda\)</span> 的特征向量。易计算</p>
+<div class="arithmatex">\[\boldsymbol{M}\boldsymbol{x} = \begin{pmatrix} 0 &amp; \boldsymbol{B}^\top \\ \boldsymbol{B} &amp; 0 \end{pmatrix} \begin{pmatrix} \boldsymbol{x}_1 \\ \boldsymbol{x}_2 \end{pmatrix}= \begin{pmatrix} \boldsymbol{B}^T \boldsymbol{x}_2 \\ \boldsymbol{B}\boldsymbol{x}_1 \end{pmatrix} =\lambda \begin{pmatrix} \boldsymbol{x}_1 \\ \boldsymbol{x}_2 \end{pmatrix}\]</div>
+<p>因此，<span class="arithmatex">\(\boldsymbol{B}\)</span> 的奇异值分解信息包含在 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的对角化过程中。 <strong>（3分）</strong></p>
 <hr />
 <p><strong>四、（13分）</strong></p>
 <p>完成下列函数求导或梯度：</p>
-<p>(1) 求激活函数 $\sigma(x)=\dfrac{1}{1+e^{-x}}$ 的导数；</p>
-<p>(2) 求函数 $f(\boldsymbol{X}) = \operatorname{Tr}(\boldsymbol{X}^{-1})$ 对 $\boldsymbol{X}$ 的梯度，其中 $\boldsymbol{X} \in \mathbb{R}^{m\times n}$。</p>
-<p>(3) 若非奇异矩阵 $\boldsymbol{A} \in \mathbb{R}^{n \times n}$，$\boldsymbol{x} \in \mathbb{R}^{n \times 1}$，$\boldsymbol{y} \in \mathbb{R}^{n \times 1}$，求函数 $f(\boldsymbol{A}) = \boldsymbol{y}^\top \boldsymbol{A}^{-1} \boldsymbol{x}$ 对 $\boldsymbol{A}$ 的梯度。</p>
+<p>(1) 求激活函数 <span class="arithmatex">\(\sigma(x)=\dfrac{1}{1+e^{-x}}\)</span> 的导数；</p>
+<p>(2) 求函数 <span class="arithmatex">\(f(\boldsymbol{X}) = \operatorname{Tr}(\boldsymbol{X}^{-1})\)</span> 对 <span class="arithmatex">\(\boldsymbol{X}\)</span> 的梯度，其中 <span class="arithmatex">\(\boldsymbol{X} \in \mathbb{R}^{m\times n}\)</span>。</p>
+<p>(3) 若非奇异矩阵 <span class="arithmatex">\(\boldsymbol{A} \in \mathbb{R}^{n \times n}\)</span>，<span class="arithmatex">\(\boldsymbol{x} \in \mathbb{R}^{n \times 1}\)</span>，<span class="arithmatex">\(\boldsymbol{y} \in \mathbb{R}^{n \times 1}\)</span>，求函数 <span class="arithmatex">\(f(\boldsymbol{A}) = \boldsymbol{y}^\top \boldsymbol{A}^{-1} \boldsymbol{x}\)</span> 对 <span class="arithmatex">\(\boldsymbol{A}\)</span> 的梯度。</p>
 <h3 id="_4">答案<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>（1）$\sigma'(x)=\dfrac{e^{-x}}{(1+e^{-x})^2}=\sigma(x)(1-\sigma(x))$ <strong>（4分）</strong></p>
+<p>（1）<span class="arithmatex">\(\sigma'(x)=\dfrac{e^{-x}}{(1+e^{-x})^2}=\sigma(x)(1-\sigma(x))\)</span> <strong>（4分）</strong></p>
 <p>（2）因为</p>
-<p>$$
+<div class="arithmatex">\[
 \begin{aligned}
-0=dI=d(\boldsymbol{X}\boldsymbol{X}^{-1})&amp;= d\boldsymbol{X}\boldsymbol{X}^{-1}+\boldsymbol{X}d\boldsymbol{X}^{-1}\
-\boldsymbol{X}d\boldsymbol{X}^{-1}&amp;=-d\boldsymbol{X}\boldsymbol{X}^{-1}\
+0=dI=d(\boldsymbol{X}\boldsymbol{X}^{-1})&amp;= d\boldsymbol{X}\boldsymbol{X}^{-1}+\boldsymbol{X}d\boldsymbol{X}^{-1}\\
+\boldsymbol{X}d\boldsymbol{X}^{-1}&amp;=-d\boldsymbol{X}\boldsymbol{X}^{-1}\\
 d\boldsymbol{X}^{-1}&amp;=-\boldsymbol{X}^{-1}d\boldsymbol{X}\boldsymbol{X}^{-1}
 \end{aligned}
-$$</p>
+\]</div>
 <p>所以</p>
-<p>$$
+<div class="arithmatex">\[
 \begin{aligned}
-d\operatorname{Tr}(\boldsymbol{X}^{-1}) &amp;= \operatorname{Tr}(d\boldsymbol{X}^{-1})\
-&amp;= \operatorname{Tr}(-\boldsymbol{X}^{-1}d\boldsymbol{X}\boldsymbol{X}^{-1})\
+d\operatorname{Tr}(\boldsymbol{X}^{-1}) &amp;= \operatorname{Tr}(d\boldsymbol{X}^{-1})\\
+&amp;= \operatorname{Tr}(-\boldsymbol{X}^{-1}d\boldsymbol{X}\boldsymbol{X}^{-1})\\
 &amp;= \operatorname{Tr}(-(\boldsymbol{X}^{-1})^{2}d\boldsymbol{X})
 \end{aligned}
-$$</p>
+\]</div>
 <p>即</p>
-<p>$$
+<div class="arithmatex">\[
 \begin{aligned}
 \frac{\partial \operatorname{Tr}(\boldsymbol{X}^{-1})}{\partial \boldsymbol{X}} = -(\boldsymbol{X}^{-T})^{2}
 \end{aligned}
-$$</p>
+\]</div>
 <p><strong>（5分）</strong></p>
 <p>（3）</p>
-<p>$$
+<div class="arithmatex">\[
 \begin{aligned}
-df(\boldsymbol{A}) &amp;= \operatorname{Tr}(d\boldsymbol{y}^\top \boldsymbol{A}^{-1}\boldsymbol{x})\
-&amp;= \operatorname{Tr}(\boldsymbol{y}^\top d\boldsymbol{A}^{-1}\boldsymbol{x})\
-&amp;= \operatorname{Tr}(-\boldsymbol{y}^\top \boldsymbol{A}^{-1}d\boldsymbol{A}\boldsymbol{A}^{-1}\boldsymbol{x})\
+df(\boldsymbol{A}) &amp;= \operatorname{Tr}(d\boldsymbol{y}^\top \boldsymbol{A}^{-1}\boldsymbol{x})\\
+&amp;= \operatorname{Tr}(\boldsymbol{y}^\top d\boldsymbol{A}^{-1}\boldsymbol{x})\\
+&amp;= \operatorname{Tr}(-\boldsymbol{y}^\top \boldsymbol{A}^{-1}d\boldsymbol{A}\boldsymbol{A}^{-1}\boldsymbol{x})\\
 &amp;= \operatorname{Tr}(-\boldsymbol{A}^{-1}\boldsymbol{x}\boldsymbol{y}^\top \boldsymbol{A}^{-1}d\boldsymbol{A})
 \end{aligned}
-$$</p>
+\]</div>
 <p>同理，求得其梯度。 <strong>（4分）</strong></p>
 <hr />
 <p><strong>五、（13分）</strong></p>
 <p>计算和证明以下问题：</p>
-<p>(1) 同时抛2颗骰子，事件 $A,B,C$ 分别表示为</p>
+<p>(1) 同时抛2颗骰子，事件 <span class="arithmatex">\(A,B,C\)</span> 分别表示为</p>
 <p>(A) 仅有一个骰子是3</p>
 <p>(B) 至少一个骰子是4</p>
 <p>(C) 骰子上点数总和为7</p>
-<p>试计算事件 $A,B,C$ 发生后所提供的信息量；</p>
+<p>试计算事件 <span class="arithmatex">\(A,B,C\)</span> 发生后所提供的信息量；</p>
 <p>(2) 证明联合熵和条件熵有如下关系：</p>
-<p>$$H(X,Y) = H(X) + H(Y\mid X)$$</p>
+<div class="arithmatex">\[H(X,Y) = H(X) + H(Y\mid X)\]</div>
 <h3 id="_5">答案<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<p>（1）$H_A=-\log \dfrac{5}{18}$，$H_B=-\log \dfrac{1}{6}$，$H_C=-\log \dfrac{1}{2}$ <strong>（6分）</strong></p>
+<p>（1）<span class="arithmatex">\(H_A=-\log \dfrac{5}{18}\)</span>，<span class="arithmatex">\(H_B=-\log \dfrac{1}{6}\)</span>，<span class="arithmatex">\(H_C=-\log \dfrac{1}{2}\)</span> <strong>（6分）</strong></p>
 <p>（2）</p>
-<p>$$
+<div class="arithmatex">\[
 \begin{aligned}
-H(X,Y)&amp;=\mathbb{E}(\log\frac{1}{p(xy)})\
-&amp;=\mathbb{E}(\log\frac{1}{p(x)p(y|x)})\
-&amp;=\mathbb{E}(\log\frac{1}{p(x)}+\log\frac{1}{p(y|x)})\
-&amp;=\mathbb{E}(\log\frac{1}{p(x)})+\mathbb{E}(\log\frac{1}{p(y|x)})\
+H(X,Y)&amp;=\mathbb{E}(\log\frac{1}{p(xy)})\\
+&amp;=\mathbb{E}(\log\frac{1}{p(x)p(y|x)})\\
+&amp;=\mathbb{E}(\log\frac{1}{p(x)}+\log\frac{1}{p(y|x)})\\
+&amp;=\mathbb{E}(\log\frac{1}{p(x)})+\mathbb{E}(\log\frac{1}{p(y|x)})\\
 &amp;=H(X)+H(Y|X)
 \end{aligned}
-$$</p>
+\]</div>
 <p><strong>（7分）</strong></p>
 <hr />
 <p><strong>六、（12分）</strong></p>
 <p>求解以下问题：</p>
-<p>(1) 假设总体 $X \sim N\left(\mu, \sigma_0^{2}\right)$（$\sigma_0^{2}$ 已知），$X_{1}, X_{2}, \ldots, X_{n}$ 为来自总体 $X$ 的样本，由过去的经验和知识，我们可以确定 $\mu$ 的取值比较集中在 $\hat{\mu}$ 附近，离 $\hat{\mu}$ 越远，$\mu$ 取值的可能性越小，于是我们假定 $\mu$ 的先验分布为正态分布</p>
-<p>$$\pi(\mu)=\frac{1}{\sqrt{2 \pi \hat{\sigma}^{2}}} \exp \left[-\frac{1}{2 \hat{\sigma}^{2}}\left(\mu-\hat{\mu}\right)^{2}\right] \quad (\hat{\mu}, \hat{\sigma} \text{已知})$$</p>
-<p>求 $\mu$ 的后验概率分布。</p>
-<p>(2) 假设总体 $X \sim P(\lambda)$，$X_{1}, X_{2}, \ldots, X_{n}$ 为来自总体 $X$ 的样本，假定 $\lambda$ 的先验分布为伽玛分布 $\Gamma(\alpha, \beta)$，求 $\lambda$ 的后验期望估计（泊松分布的分布律：$P(X=k) = \frac{e^{-\lambda} \lambda^k}{k!}$，泊松分布的期望为 $\lambda$；伽马分布的概率密度函数：$f(x ; \alpha, \beta)=\frac{x^{\alpha-1} e^{-\beta x} \beta^{\alpha}}{\Gamma(\alpha)}$，伽马分布的期望为 $\alpha/\beta$）。</p>
+<p>(1) 假设总体 <span class="arithmatex">\(X \sim N\left(\mu, \sigma_0^{2}\right)\)</span>（<span class="arithmatex">\(\sigma_0^{2}\)</span> 已知），<span class="arithmatex">\(X_{1}, X_{2}, \ldots, X_{n}\)</span> 为来自总体 <span class="arithmatex">\(X\)</span> 的样本，由过去的经验和知识，我们可以确定 <span class="arithmatex">\(\mu\)</span> 的取值比较集中在 <span class="arithmatex">\(\hat{\mu}\)</span> 附近，离 <span class="arithmatex">\(\hat{\mu}\)</span> 越远，<span class="arithmatex">\(\mu\)</span> 取值的可能性越小，于是我们假定 <span class="arithmatex">\(\mu\)</span> 的先验分布为正态分布</p>
+<div class="arithmatex">\[\pi(\mu)=\frac{1}{\sqrt{2 \pi \hat{\sigma}^{2}}} \exp \left[-\frac{1}{2 \hat{\sigma}^{2}}\left(\mu-\hat{\mu}\right)^{2}\right] \quad (\hat{\mu}, \hat{\sigma} \text{已知})\]</div>
+<p>求 <span class="arithmatex">\(\mu\)</span> 的后验概率分布。</p>
+<p>(2) 假设总体 <span class="arithmatex">\(X \sim P(\lambda)\)</span>，<span class="arithmatex">\(X_{1}, X_{2}, \ldots, X_{n}\)</span> 为来自总体 <span class="arithmatex">\(X\)</span> 的样本，假定 <span class="arithmatex">\(\lambda\)</span> 的先验分布为伽玛分布 <span class="arithmatex">\(\Gamma(\alpha, \beta)\)</span>，求 <span class="arithmatex">\(\lambda\)</span> 的后验期望估计（泊松分布的分布律：<span class="arithmatex">\(P(X=k) = \frac{e^{-\lambda} \lambda^k}{k!}\)</span>，泊松分布的期望为 <span class="arithmatex">\(\lambda\)</span>；伽马分布的概率密度函数：<span class="arithmatex">\(f(x ; \alpha, \beta)=\frac{x^{\alpha-1} e^{-\beta x} \beta^{\alpha}}{\Gamma(\alpha)}\)</span>，伽马分布的期望为 <span class="arithmatex">\(\alpha/\beta\)</span>）。</p>
 <h3 id="_6">答案<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>（1）样本分布密度为</p>
-<p>$$
+<div class="arithmatex">\[
 q(\mathbf{x} \mid \mu)=\frac{1}{\sigma_0^{n}(2 \pi)^{n / 2}} \exp \left[-\frac{1}{2 \sigma_0^{2}} \sum_{i=1}^{n}\left(x_{i}-\mu\right)^{2}\right]
-$$</p>
+\]</div>
 <p>于是后验密度函数为</p>
-<p>$$
+<div class="arithmatex">\[
 h(\mu \mid \mathbf{x})=\frac{q(\mathbf{x} \mid \mu) \cdot \pi(\mu)}{f_{\mathbf{x}}(\mathbf{x})}=\frac{q(\mathbf{x} \mid \mu) \cdot \pi(\mu)}{\int_{-\infty}^{+\infty} q(\mathbf{x} \mid \mu) \cdot \pi(\mu) d \mu}
-$$</p>
-<p>$$
+\]</div>
+<div class="arithmatex">\[
 \propto \exp \left[-\frac{1}{2 \sigma_0^{2}} \sum_{i=1}^{n}\left(x_{i}-\mu\right)^{2}\right] \cdot \exp \left[-\frac{1}{2 \hat{\sigma}^{2}}\left(\mu-\hat{\mu}\right)^{2}\right]
-$$</p>
+\]</div>
 <p>化简得</p>
-<p>$$
+<div class="arithmatex">\[
 h(\mu \mid \mathbf{x}) \propto \exp \left[-\frac{(\mu-t)^{2}}{2 \eta^{2}}\right]
-$$</p>
-<p>其中 $t=\dfrac{\frac{n}{\sigma_0^{2}} \bar{x}+\frac{1}{\sigma_{\mu}^{2}} \hat{\mu}}{\frac{n}{\sigma_0^{2}}+\frac{1}{\hat{\sigma}^{2}}}$，</p>
-<p>$\eta^{2}=\dfrac{1}{\frac{n}{\sigma_0^{2}}+\frac{1}{\sigma_{\mu}^{2}}}$，于是</p>
-<p>$$
+\]</div>
+<p>其中 <span class="arithmatex">\(t=\dfrac{\frac{n}{\sigma_0^{2}} \bar{x}+\frac{1}{\sigma_{\mu}^{2}} \hat{\mu}}{\frac{n}{\sigma_0^{2}}+\frac{1}{\hat{\sigma}^{2}}}\)</span>，</p>
+<p><span class="arithmatex">\(\eta^{2}=\dfrac{1}{\frac{n}{\sigma_0^{2}}+\frac{1}{\sigma_{\mu}^{2}}}\)</span>，于是</p>
+<div class="arithmatex">\[
 \mu \mid \mathbf{x} \sim N\left(\frac{\frac{n}{\sigma_0^{2}} \bar{x}+\frac{1}{\sigma_{\mu}^{2}} \hat{\mu}}{\frac{n}{\sigma_0^{2}}+\frac{1}{\hat{\sigma}^{2}}}, \frac{1}{\frac{n}{\sigma_0^{2}}+\frac{1}{\sigma_{\mu}^{2}}}\right)
-$$</p>
+\]</div>
 <p><strong>（6分）</strong></p>
-<p>（2）因为 $\lambda$ 的先验密度函数 $\pi(\lambda)$ 为伽玛分布 $\Gamma(\alpha, \beta)$，即</p>
-<p>$$
+<p>（2）因为 <span class="arithmatex">\(\lambda\)</span> 的先验密度函数 <span class="arithmatex">\(\pi(\lambda)\)</span> 为伽玛分布 <span class="arithmatex">\(\Gamma(\alpha, \beta)\)</span>，即</p>
+<div class="arithmatex">\[
 \pi(\lambda) \propto \lambda^{\alpha-1} e^{-\beta \lambda}
-$$</p>
+\]</div>
 <p>样本分布密度函数为：</p>
-<p>$$
+<div class="arithmatex">\[
 q(\mathbf{x} \mid \lambda)=\frac{\lambda^{\sum_{i=1}^{n} x_{i}}}{x_{1} ! x_{2} ! \ldots x_{n} !} e^{-n \lambda} \propto \lambda^{\sum_{i=1}^{n} x_{i}} e^{-n \lambda}
-$$</p>
+\]</div>
 <p>所以</p>
-<p>$$
+<div class="arithmatex">\[
 h(\lambda \mid \mathbf{x}) \propto \lambda^{\alpha+\sum_{i=1}^{n} x_{i}-1} e^{-(\beta+n) \lambda}
-$$</p>
+\]</div>
 <p>即</p>
-<p>$$
+<div class="arithmatex">\[
 \lambda \mid \mathbf{x} \sim \Gamma\left(\alpha+\sum_{i=1}^{n} x_{i}, \beta+n\right)
-$$</p>
-<p>故 $\lambda$ 的后验期望估计为</p>
-<p>$$
+\]</div>
+<p>故 <span class="arithmatex">\(\lambda\)</span> 的后验期望估计为</p>
+<div class="arithmatex">\[
 \hat{\lambda}=\frac{\alpha+\sum_{i=1}^{n} x_{i}}{\beta+n}=\frac{n}{\beta+n} \bar{x}+\frac{\beta}{\beta+n} \frac{\alpha}{\beta}
-$$</p>
-<p>它是样本均值 $\bar{x}$ 和先验分布 $\Gamma(\alpha, \beta)$ 的均值 $\frac{\alpha}{\beta}$ 的加权平均。 <strong>（6分）</strong></p>
+\]</div>
+<p>它是样本均值 <span class="arithmatex">\(\bar{x}\)</span> 和先验分布 <span class="arithmatex">\(\Gamma(\alpha, \beta)\)</span> 的均值 <span class="arithmatex">\(\frac{\alpha}{\beta}\)</span> 的加权平均。 <strong>（6分）</strong></p>
 <hr />
 <p><strong>七、（12分）</strong></p>
 <p>求证下列与凸集或凸函数相关的问题：</p>
-<p>(1) 证明：设 $f: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$ 是仿射变换，即 $f(\boldsymbol{x})=\boldsymbol{A}\boldsymbol{x}+\boldsymbol{b}$，$\boldsymbol{A} \in \mathbb{R}^{m \times n}$，$\boldsymbol{b} \in \mathbb{R}^{m}$，则凸集在 $f$ 下的像是凸集：</p>
-<p>$$S \subseteq \mathbb{R}^{n} \text{ 为凸集} \Rightarrow f(S) \stackrel{\text{def}}{=}{f(\boldsymbol{x}) \mid \boldsymbol{x} \in S} \text{ 为凸集}$$</p>
-<p>(2) 判定函数 $f(x)=\max(|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{b}|_2,|\boldsymbol{x}^\top \boldsymbol{x}|_1)$，$\boldsymbol{A}\in \mathbb{R}^{m\times n}, \boldsymbol{x}\in \mathbb{R}^{n}, \boldsymbol{b}\in \mathbb{R}^m$ 是否为凸函数，并说明理由。</p>
+<p>(1) 证明：设 <span class="arithmatex">\(f: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}\)</span> 是仿射变换，即 <span class="arithmatex">\(f(\boldsymbol{x})=\boldsymbol{A}\boldsymbol{x}+\boldsymbol{b}\)</span>，<span class="arithmatex">\(\boldsymbol{A} \in \mathbb{R}^{m \times n}\)</span>，<span class="arithmatex">\(\boldsymbol{b} \in \mathbb{R}^{m}\)</span>，则凸集在 <span class="arithmatex">\(f\)</span> 下的像是凸集：</p>
+<div class="arithmatex">\[S \subseteq \mathbb{R}^{n} \text{ 为凸集} \Rightarrow f(S) \stackrel{\text{def}}{=}\{f(\boldsymbol{x}) \mid \boldsymbol{x} \in S\} \text{ 为凸集}\]</div>
+<p>(2) 判定函数 <span class="arithmatex">\(f(x)=\max(\|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{b}\|_2,\|\boldsymbol{x}^\top \boldsymbol{x}\|_1)\)</span>，<span class="arithmatex">\(\boldsymbol{A}\in \mathbb{R}^{m\times n}, \boldsymbol{x}\in \mathbb{R}^{n}, \boldsymbol{b}\in \mathbb{R}^m\)</span> 是否为凸函数，并说明理由。</p>
 <h3 id="_7">答案<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<p>（1）令 $\boldsymbol{y}_1, \boldsymbol{y}_2$ 表示在像集合中的任意两个点，它们的原象分别为 $\boldsymbol{x}_1, \boldsymbol{x}_2$。因此，</p>
-<p>$\boldsymbol{y}_1=\boldsymbol{A}\boldsymbol{x}_1+\boldsymbol{b}$</p>
-<p>$\boldsymbol{y}_2=\boldsymbol{A}\boldsymbol{x}_2+\boldsymbol{b}$</p>
+<p>（1）令 <span class="arithmatex">\(\boldsymbol{y}_1, \boldsymbol{y}_2\)</span> 表示在像集合中的任意两个点，它们的原象分别为 <span class="arithmatex">\(\boldsymbol{x}_1, \boldsymbol{x}_2\)</span>。因此，</p>
+<p><span class="arithmatex">\(\boldsymbol{y}_1=\boldsymbol{A}\boldsymbol{x}_1+\boldsymbol{b}\)</span></p>
+<p><span class="arithmatex">\(\boldsymbol{y}_2=\boldsymbol{A}\boldsymbol{x}_2+\boldsymbol{b}\)</span></p>
 <p>因此，有</p>
-<p>$$(1-\lambda)\boldsymbol{y}_1+\lambda\boldsymbol{y}_2=\boldsymbol{A}((1-\lambda)\boldsymbol{x}_1 + \lambda \boldsymbol{x}_2)+\boldsymbol{b}$$</p>
+<div class="arithmatex">\[(1-\lambda)\boldsymbol{y}_1+\lambda\boldsymbol{y}_2=\boldsymbol{A}((1-\lambda)\boldsymbol{x}_1 + \lambda \boldsymbol{x}_2)+\boldsymbol{b}\]</div>
 <p>故得证。 <strong>（6分）</strong></p>
-<p>（2）由仿射函数的任意范数为凸函数可知 $|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{b}|_2$ 为凸函数，另外 $|\boldsymbol{x}^\top \boldsymbol{x}|_1$ 为欧几里得范数的平方，显然为凸函数。根据逐点取最大值具有保凸性，可知 $f(x)$ 是凸函数。 <strong>（6分）</strong></p>
+<p>（2）由仿射函数的任意范数为凸函数可知 <span class="arithmatex">\(\|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{b}\|_2\)</span> 为凸函数，另外 <span class="arithmatex">\(\|\boldsymbol{x}^\top \boldsymbol{x}\|_1\)</span> 为欧几里得范数的平方，显然为凸函数。根据逐点取最大值具有保凸性，可知 <span class="arithmatex">\(f(x)\)</span> 是凸函数。 <strong>（6分）</strong></p>
 <hr />
 <p><strong>八、（11分）</strong></p>
 <p>考虑优化问题</p>
-<p>$$\min_{\boldsymbol{x}} \boldsymbol{x}^{\mathrm{T}} \boldsymbol{W} \boldsymbol{x}$$</p>
-<p>其中 $\boldsymbol{W} \in S_+^{n}$ 是对称半正定矩阵。</p>
-<p>(1) 求出在任意点 $\boldsymbol{x} = (x_1,x_2,\cdots,x_n)^\top$ 处沿负梯度方向迭代的最佳步长 $\alpha$。</p>
+<div class="arithmatex">\[\min_{\boldsymbol{x}} \boldsymbol{x}^{\mathrm{T}} \boldsymbol{W} \boldsymbol{x}\]</div>
+<p>其中 <span class="arithmatex">\(\boldsymbol{W} \in S_+^{n}\)</span> 是对称半正定矩阵。</p>
+<p>(1) 求出在任意点 <span class="arithmatex">\(\boldsymbol{x} = (x_1,x_2,\cdots,x_n)^\top\)</span> 处沿负梯度方向迭代的最佳步长 <span class="arithmatex">\(\alpha\)</span>。</p>
 <p>(2) 若对上述优化问题增加约束条件</p>
-<p>$$x_{i}^{2}=1, \quad i=1, \cdots, n$$</p>
-<p>请写出此时约束优化问题的拉格朗日函数 $L(\boldsymbol{x},\boldsymbol{\lambda})$，并计算出约束优化问题的拉格朗日对偶函数。</p>
+<div class="arithmatex">\[x_{i}^{2}=1, \quad i=1, \cdots, n\]</div>
+<p>请写出此时约束优化问题的拉格朗日函数 <span class="arithmatex">\(L(\boldsymbol{x},\boldsymbol{\lambda})\)</span>，并计算出约束优化问题的拉格朗日对偶函数。</p>
 <h3 id="_8">答案<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<p>（1）可求得 $f(\boldsymbol{x}) = \boldsymbol{x}^{\mathrm{T}} \boldsymbol{W} \boldsymbol{x}$ 的梯度为 $2\boldsymbol{W}\boldsymbol{x}$。因此，为寻求得最佳步长，需求解</p>
-<p>$$
+<p>（1）可求得 <span class="arithmatex">\(f(\boldsymbol{x}) = \boldsymbol{x}^{\mathrm{T}} \boldsymbol{W} \boldsymbol{x}\)</span> 的梯度为 <span class="arithmatex">\(2\boldsymbol{W}\boldsymbol{x}\)</span>。因此，为寻求得最佳步长，需求解</p>
+<div class="arithmatex">\[
 \min_{\boldsymbol{x}} (\boldsymbol{x} - 2\alpha \boldsymbol{W}\boldsymbol{x})^{\mathrm{T}} \boldsymbol{W}(\boldsymbol{x} - 2\alpha \boldsymbol{W}\boldsymbol{x})
-$$</p>
+\]</div>
 <p><strong>（2分）</strong></p>
 <p>求极值可得：</p>
-<p>$$\alpha = \frac{\boldsymbol{x}^\top \boldsymbol{W}^2 \boldsymbol{x}}{2\boldsymbol{x}^\top \boldsymbol{W}^3 \boldsymbol{x}}$$</p>
+<div class="arithmatex">\[\alpha = \frac{\boldsymbol{x}^\top \boldsymbol{W}^2 \boldsymbol{x}}{2\boldsymbol{x}^\top \boldsymbol{W}^3 \boldsymbol{x}}\]</div>
 <p><strong>（3分）</strong></p>
 <p>（2）若增加约束条件，可得Lagrange函数为</p>
-<p>$$
+<div class="arithmatex">\[
 L(\boldsymbol{x}, \boldsymbol{\nu})=\boldsymbol{x}^{\mathrm{T}} \boldsymbol{W} \boldsymbol{x}+\sum_{i=1}^n \nu_i\left(x_i^2-1\right)
-$$</p>
-<p>$$
+\]</div>
+<div class="arithmatex">\[
 =\boldsymbol{x}^{\mathrm{T}}(\boldsymbol{W}+\operatorname{diag}(\boldsymbol{\nu})) \boldsymbol{x}-\mathbf{1}^{\mathrm{T}} \boldsymbol{\nu}
-$$</p>
+\]</div>
 <p><strong>（3分）</strong></p>
-<p>对 $\boldsymbol{x}$ 求极小得到Lagrange对偶函数</p>
-<p>$$
+<p>对 <span class="arithmatex">\(\boldsymbol{x}\)</span> 求极小得到Lagrange对偶函数</p>
+<div class="arithmatex">\[
 \begin{aligned}
-g(\boldsymbol{\nu}) &amp;=\inf _{\boldsymbol{x}} \boldsymbol{x}^{\mathrm{T}}(\boldsymbol{W}+\operatorname{diag}(\boldsymbol{\nu})) \boldsymbol{x}-\mathbf{1}^{\mathrm{T}} \boldsymbol{\nu} \
-&amp;= \begin{cases}-\mathbf{1}^{\mathrm{T}} \boldsymbol{\nu} &amp; \boldsymbol{W}+\operatorname{diag}(\boldsymbol{\nu}) \succeq \mathbf{0} \
+g(\boldsymbol{\nu}) &amp;=\inf _{\boldsymbol{x}} \boldsymbol{x}^{\mathrm{T}}(\boldsymbol{W}+\operatorname{diag}(\boldsymbol{\nu})) \boldsymbol{x}-\mathbf{1}^{\mathrm{T}} \boldsymbol{\nu} \\
+&amp;= \begin{cases}-\mathbf{1}^{\mathrm{T}} \boldsymbol{\nu} &amp; \boldsymbol{W}+\operatorname{diag}(\boldsymbol{\nu}) \succeq \mathbf{0} \\
 -\infty &amp; \text{其他情况}\end{cases}
 \end{aligned}
-$$</p>
+\]</div>
 <p><strong>（3分）</strong></p>
 
 
@@ -2196,6 +2196,10 @@ $$</p>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

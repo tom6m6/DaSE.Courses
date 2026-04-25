@@ -1708,11 +1708,11 @@
 <hr />
 <h2 id="3">3. 矩阵螺旋折叠提取器<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <h3 id="description_2">Description<a class="headerlink" href="#description_2" title="Permanent link">&para;</a></h3>
-<p>在图像处理和数据压缩中，经常需要按照特定的顺序对二维数组进行相关操作。请设计程序，从一个 $3 \times 3$ 的矩阵中，按照对角线扫描的顺序提取元素并存入一个一维数组中，然后输出该一维数组的全部元素。</p>
+<p>在图像处理和数据压缩中，经常需要按照特定的顺序对二维数组进行相关操作。请设计程序，从一个 <span class="arithmatex">\(3 \times 3\)</span> 的矩阵中，按照对角线扫描的顺序提取元素并存入一个一维数组中，然后输出该一维数组的全部元素。</p>
 <p>定义函数 <code>void extract_diag(int matrix[3][3], int result[6]);</code>，函数功能为将矩阵 <code>matrix</code> 的主对角线从左上到右下的 3 个元素拷贝至 <code>result</code> 数组的前 3 个元素位置，然后将矩阵 <code>matrix</code> 的副对角线从右上到左下的 3 个元素拷贝至 <code>result</code> 数组的后 3 个元素位置。函数体不要出现类似 <code>matrix[1][1]</code> 及 <code>result[1]</code> 的通过索引访问数组方式，必须通过指针地址偏移的方式访问数组元素，若使用索引方式访问数组，则本题最多仅可获得50%的分数。</p>
 <p>主函数接收标准输入提供的矩阵值，调用函数后输出 <code>result</code> 数组的全部元素（主函数内允许通过索引方式对数组操作）。</p>
 <h3 id="input_2">Input<a class="headerlink" href="#input_2" title="Permanent link">&para;</a></h3>
-<p>$3 \times 3$ 的整数矩阵，每个元素的值介于 -100~100 之间，最后一行最后一个整数最后没有换行符。</p>
+<p><span class="arithmatex">\(3 \times 3\)</span> 的整数矩阵，每个元素的值介于 -100~100 之间，最后一行最后一个整数最后没有换行符。</p>
 <h3 id="output_2">Output<a class="headerlink" href="#output_2" title="Permanent link">&para;</a></h3>
 <p>输出 result 数组的全部元素，以空格间隔，最后一个数字后不要输出多余的空格。</p>
 <p><strong>Sample Input 1</strong></p>
@@ -1773,7 +1773,7 @@ int scores;   // 学生成绩
 </ul>
 <p>排序后按照指定格式重新输出全体学生信息。</p>
 <h3 id="input_3">Input<a class="headerlink" href="#input_3" title="Permanent link">&para;</a></h3>
-<p>第 1 行为一个正整数 N，表示接下来提供的学生信息数目， $1 &lt;= N &lt;= 10$。</p>
+<p>第 1 行为一个正整数 N，表示接下来提供的学生信息数目， <span class="arithmatex">\(1 &lt;= N &lt;= 10\)</span>。</p>
 <p>接下来 N 行按照姓名（仅包含大小写英文字母）、学号（由3位数字构成）、成绩（介于0~100）的顺序输入，以空格分隔。</p>
 <p>所有学生的学号是唯一的。</p>
 <h3 id="output_3">Output<a class="headerlink" href="#output_3" title="Permanent link">&para;</a></h3>
@@ -1900,12 +1900,12 @@ Amy 131 75
 <h2 id="2_1">2. 卢卡斯数<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h2>
 <h3 id="description_6">Description<a class="headerlink" href="#description_6" title="Permanent link">&para;</a></h3>
 <p>卢卡斯数是一个以数学家爱德华·卢卡斯命名的整数序列，他既研究了这个数列，也研究了有密切关系的斐波那契数。</p>
-<p>$$L_n = L(n) = \begin{cases} 2 &amp; \text{if } n = 0; \ 1 &amp; \text{if } n = 1; \ L(n-1) + L(n-2) &amp; \text{if } n &gt; 1. \end{cases}$$</p>
+<div class="arithmatex">\[L_n = L(n) = \begin{cases} 2 &amp; \text{if } n = 0; \\ 1 &amp; \text{if } n = 1; \\ L(n-1) + L(n-2) &amp; \text{if } n &gt; 1. \end{cases}\]</div>
 <p>请设计函数 <code>int lucas(int n);</code>，函数功能为返回第 n 项卢卡斯数；</p>
-<p>请设计函数 <code>void find_lucas(int m, int n);</code>，函数功能为输出 $[m, n]$ 区间内所有的卢卡斯数。</p>
+<p>请设计函数 <code>void find_lucas(int m, int n);</code>，函数功能为输出 <span class="arithmatex">\([m, n]\)</span> 区间内所有的卢卡斯数。</p>
 <p>在主函数中接收用户从键盘上输入的两个数字，调用函数，输出区间内所有的卢卡斯数。</p>
 <h3 id="input_5">Input<a class="headerlink" href="#input_5" title="Permanent link">&para;</a></h3>
-<p>以空格为间隔的两个正整数 m 和 n，保证 $3 &lt;= m &lt;= n &lt;= 10,000,000$。</p>
+<p>以空格为间隔的两个正整数 m 和 n，保证 <span class="arithmatex">\(3 &lt;= m &lt;= n &lt;= 10,000,000\)</span>。</p>
 <h3 id="output_5">Output<a class="headerlink" href="#output_5" title="Permanent link">&para;</a></h3>
 <p>介于区间 [m, n] 中的所有卢卡斯数，若有多个数字，以空格间隔，输出最后一个数字后必须输出空格。</p>
 <p><strong>Sample Input 1</strong></p>
@@ -1928,8 +1928,8 @@ Amy 131 75
 <hr />
 <h2 id="3_1">3. 简易图像模糊滤镜<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h2>
 <h3 id="description_7">Description<a class="headerlink" href="#description_7" title="Permanent link">&para;</a></h3>
-<p>假设你正在开发一个简单的图像处理软件。图像由 $3 \times 3$ 的像素矩阵组成，每个像素的值为0~255。为了减少图像噪点，需要实现一个“平滑滤波器”：将矩阵中心位置的像素值，更新为其四周（含自身）共9个像素点的平均值。</p>
-<p>定义函数 <code>void smooth(int (*ptr)[3]);</code> 函数功能为将 <code>ptr</code> 指向的区域及其后续区域表示的 $3 \times 3$ 矩阵所有元素的值求平均值（取整数部分），并替换矩阵中心位置的值。</p>
+<p>假设你正在开发一个简单的图像处理软件。图像由 <span class="arithmatex">\(3 \times 3\)</span> 的像素矩阵组成，每个像素的值为0~255。为了减少图像噪点，需要实现一个“平滑滤波器”：将矩阵中心位置的像素值，更新为其四周（含自身）共9个像素点的平均值。</p>
+<p>定义函数 <code>void smooth(int (*ptr)[3]);</code> 函数功能为将 <code>ptr</code> 指向的区域及其后续区域表示的 <span class="arithmatex">\(3 \times 3\)</span> 矩阵所有元素的值求平均值（取整数部分），并替换矩阵中心位置的值。</p>
 <p>在主函数中使用动态内存分配方式创建数组，调用函数，并按照格式输出矩阵的每个元素。</p>
 <p>整个程序代码不要出现类似 <code>ptr[1][1]</code> 通过索引访问数组方式，必须通过指针地址偏移的方式访问数组元素，若使用索引方式访问数组，则本题最多仅可获得50%的分数。</p>
 <h3 id="input_6">Input<a class="headerlink" href="#input_6" title="Permanent link">&para;</a></h3>
@@ -1992,7 +1992,7 @@ int scores;   // 学生成绩
 </ul>
 <p>排序后按照指定格式重新输出全体学生信息。</p>
 <h3 id="input_7">Input<a class="headerlink" href="#input_7" title="Permanent link">&para;</a></h3>
-<p>第 1 行为一个正整数 N，表示接下来提供的学生信息数目， $1 &lt;= N &lt;= 10$。</p>
+<p>第 1 行为一个正整数 N，表示接下来提供的学生信息数目， <span class="arithmatex">\(1 &lt;= N &lt;= 10\)</span>。</p>
 <p>接下来 N 行按照姓名（仅包含大小写英文字母）、学号（由3位数字构成）、成绩（介于0~100）的顺序输入，以空格分隔。</p>
 <p>所有学生的学号是唯一的。</p>
 <h3 id="output_7">Output<a class="headerlink" href="#output_7" title="Permanent link">&para;</a></h3>
@@ -2122,6 +2122,10 @@ Amy 131 75
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

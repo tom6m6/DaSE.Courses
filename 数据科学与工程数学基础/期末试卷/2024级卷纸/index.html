@@ -1700,70 +1700,70 @@
 <hr />
 <p><strong>题 1 (22分) 选择题</strong>
 单选题一道 4 分，多选题一道 6 分，总计 22 分。单选题不选、错选均不得分；多选题不选、错选不得分，少选得 3 分。</p>
-<p>(1) 设矩阵 $\mathbf{A} \in \mathbb{R}^{4 \times 5}$，秩 $\text{rank}(\mathbf{A}) = 3$。结合四个基本子空间、正交关系及投影的核心概念，下列说法正确的是 ( )</p>
-<p>A. 行空间 $\text{Row}(\mathbf{A}) \subseteq \mathbb{R}^4$，其正交补为零空间 $\text{Null}(\mathbf{A})$，且 $\dim(\text{Row}(\mathbf{A})) + \dim(\text{Null}(\mathbf{A})) = 4$，同时 $\text{Row}(\mathbf{A}) \oplus \text{Null}(\mathbf{A}) = \mathbb{R}^4$</p>
-<p>B. 列空间 $\text{Col}(\mathbf{A})$ 与左零空间 $\text{Null}(\mathbf{A}^T)$ 正交，$\text{Col}(\mathbf{A}) \oplus \text{Null}(\mathbf{A}^T) = \mathbb{R}^5$，且 $\dim(\text{Null}(\mathbf{A}^T)) = 5 - 3 = 2$</p>
-<p>C. 向量 $\mathbf{x} \in \mathbb{R}^4$ 在 $\text{Col}(\mathbf{A})$ 上的正交投影为 $\pi_U(\mathbf{x})$，则 $\mathbf{x} - \pi_U(\mathbf{x})$ 与 $\text{Col}(\mathbf{A})$ 中所有向量正交</p>
-<p>D. 对 $\mathbf{A}$ 进行初等列变换后得到矩阵 $\mathbf{B}$，则 $\text{Row}(\mathbf{A}) = \text{Row}(\mathbf{B})$，且 $\text{Col}(\mathbf{A}) = \text{Col}(\mathbf{B})$</p>
+<p>(1) 设矩阵 <span class="arithmatex">\(\mathbf{A} \in \mathbb{R}^{4 \times 5}\)</span>，秩 <span class="arithmatex">\(\text{rank}(\mathbf{A}) = 3\)</span>。结合四个基本子空间、正交关系及投影的核心概念，下列说法正确的是 ( )</p>
+<p>A. 行空间 <span class="arithmatex">\(\text{Row}(\mathbf{A}) \subseteq \mathbb{R}^4\)</span>，其正交补为零空间 <span class="arithmatex">\(\text{Null}(\mathbf{A})\)</span>，且 <span class="arithmatex">\(\dim(\text{Row}(\mathbf{A})) + \dim(\text{Null}(\mathbf{A})) = 4\)</span>，同时 <span class="arithmatex">\(\text{Row}(\mathbf{A}) \oplus \text{Null}(\mathbf{A}) = \mathbb{R}^4\)</span></p>
+<p>B. 列空间 <span class="arithmatex">\(\text{Col}(\mathbf{A})\)</span> 与左零空间 <span class="arithmatex">\(\text{Null}(\mathbf{A}^T)\)</span> 正交，<span class="arithmatex">\(\text{Col}(\mathbf{A}) \oplus \text{Null}(\mathbf{A}^T) = \mathbb{R}^5\)</span>，且 <span class="arithmatex">\(\dim(\text{Null}(\mathbf{A}^T)) = 5 - 3 = 2\)</span></p>
+<p>C. 向量 <span class="arithmatex">\(\mathbf{x} \in \mathbb{R}^4\)</span> 在 <span class="arithmatex">\(\text{Col}(\mathbf{A})\)</span> 上的正交投影为 <span class="arithmatex">\(\pi_U(\mathbf{x})\)</span>，则 <span class="arithmatex">\(\mathbf{x} - \pi_U(\mathbf{x})\)</span> 与 <span class="arithmatex">\(\text{Col}(\mathbf{A})\)</span> 中所有向量正交</p>
+<p>D. 对 <span class="arithmatex">\(\mathbf{A}\)</span> 进行初等列变换后得到矩阵 <span class="arithmatex">\(\mathbf{B}\)</span>，则 <span class="arithmatex">\(\text{Row}(\mathbf{A}) = \text{Row}(\mathbf{B})\)</span>，且 <span class="arithmatex">\(\text{Col}(\mathbf{A}) = \text{Col}(\mathbf{B})\)</span></p>
 <p>(2) 【多选】下列关于向量范数、矩阵范数的说法错误的是 ( )</p>
-<p>A. 设 $\mathbf{u}$ 为 $n$ 维单位列向量（即 $|\mathbf{u}|_2 = 1$），$\mathbf{I}_n$ 为 $n$ 维单位矩阵，$\mathbf{A} = \mathbf{I}_n - 2\mathbf{u}\mathbf{u}^T$。若 $\mathbf{A}\mathbf{x} = \mathbf{y}$ (其中 $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$)，则 $|\mathbf{x}|_2 = |\mathbf{y}|_2$</p>
-<p>B. 若 $|\mathbf{x}| = \sum_{i=1}^n x_i^2$，则 $|\mathbf{x}|$ 是 $\mathbb{R}^n$ 上的范数</p>
-<p>C. 若 $|\mathbf{x}|_p$ 是 $\mathbb{R}^n$ 上的 $l_p$ 范数，则对任意非零常数 $k$，有 $|k\mathbf{x}|_p = k \cdot |\mathbf{x}|_p$</p>
-<p>D. 对任意非零向量 $\mathbf{x} \in \mathbb{R}^n$ ($n \ge 2$)，恒有 $|\mathbf{x}|<em>1 \ge |\mathbf{x}|</em>\infty$</p>
-<p>(3) 设向量 $\boldsymbol{\alpha}$ 在基 $B_1 = \left{ \mathbf{a}_1 = \begin{pmatrix} 1 \ 1 \end{pmatrix}, \mathbf{a}_2 = \begin{pmatrix} 1 \ -1 \end{pmatrix} \right}$ 下的坐标为 $(2, 1)^T$，则 $\boldsymbol{\alpha}$ 在基 $B_2 = \left{ \mathbf{b}_1 = \begin{pmatrix} 1 \ 0 \end{pmatrix}, \mathbf{b}_2 = \begin{pmatrix} 0 \ 1 \end{pmatrix} \right}$ 下的坐标是 ( )</p>
-<p>A. $\left(\frac{1}{2}, \frac{5}{2}\right)^T$
-B. $(-1, 3)^T$
-C. $(2, 3)^T$
-D. $(3, 1)^T$</p>
+<p>A. 设 <span class="arithmatex">\(\mathbf{u}\)</span> 为 <span class="arithmatex">\(n\)</span> 维单位列向量（即 <span class="arithmatex">\(\|\mathbf{u}\|_2 = 1\)</span>），<span class="arithmatex">\(\mathbf{I}_n\)</span> 为 <span class="arithmatex">\(n\)</span> 维单位矩阵，<span class="arithmatex">\(\mathbf{A} = \mathbf{I}_n - 2\mathbf{u}\mathbf{u}^T\)</span>。若 <span class="arithmatex">\(\mathbf{A}\mathbf{x} = \mathbf{y}\)</span> (其中 <span class="arithmatex">\(\mathbf{x}, \mathbf{y} \in \mathbb{R}^n\)</span>)，则 <span class="arithmatex">\(\|\mathbf{x}\|_2 = \|\mathbf{y}\|_2\)</span></p>
+<p>B. 若 <span class="arithmatex">\(\|\mathbf{x}\| = \sum_{i=1}^n x_i^2\)</span>，则 <span class="arithmatex">\(\|\mathbf{x}\|\)</span> 是 <span class="arithmatex">\(\mathbb{R}^n\)</span> 上的范数</p>
+<p>C. 若 <span class="arithmatex">\(\|\mathbf{x}\|_p\)</span> 是 <span class="arithmatex">\(\mathbb{R}^n\)</span> 上的 <span class="arithmatex">\(l_p\)</span> 范数，则对任意非零常数 <span class="arithmatex">\(k\)</span>，有 <span class="arithmatex">\(\|k\mathbf{x}\|_p = k \cdot \|\mathbf{x}\|_p\)</span></p>
+<p>D. 对任意非零向量 <span class="arithmatex">\(\mathbf{x} \in \mathbb{R}^n\)</span> (<span class="arithmatex">\(n \ge 2\)</span>)，恒有 <span class="arithmatex">\(\|\mathbf{x}\|_1 \ge \|\mathbf{x}\|_\infty\)</span></p>
+<p>(3) 设向量 <span class="arithmatex">\(\boldsymbol{\alpha}\)</span> 在基 <span class="arithmatex">\(B_1 = \left\{ \mathbf{a}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}, \mathbf{a}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix} \right\}\)</span> 下的坐标为 <span class="arithmatex">\((2, 1)^T\)</span>，则 <span class="arithmatex">\(\boldsymbol{\alpha}\)</span> 在基 <span class="arithmatex">\(B_2 = \left\{ \mathbf{b}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \mathbf{b}_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \right\}\)</span> 下的坐标是 ( )</p>
+<p>A. <span class="arithmatex">\(\left(\frac{1}{2}, \frac{5}{2}\right)^T\)</span>
+B. <span class="arithmatex">\((-1, 3)^T\)</span>
+C. <span class="arithmatex">\((2, 3)^T\)</span>
+D. <span class="arithmatex">\((3, 1)^T\)</span></p>
 <p>(4) 下列关于矩阵分解的说法中，正确的是 ( )</p>
-<p>A. 任意 $n$ 阶实矩阵 $\mathbf{A}$ 都可进行形如 $\mathbf{A} = \mathbf{Q}\mathbf{\Lambda}\mathbf{Q}^T$ 的谱分解，且分解式中 $\mathbf{Q}$ 为正交矩阵，对角矩阵 $\mathbf{\Lambda}$ 的对角元为矩阵的特征值</p>
-<p>B. 设 $\mathbf{A} \in \mathbb{R}^{m \times n}$ ($m \ge n$) 为列满秩矩阵，则 $\mathbf{A}$ 的 QR 分解 $\mathbf{A} = \mathbf{Q} \begin{pmatrix} \mathbf{R} \ \mathbf{0} \end{pmatrix}$ （其中 $\mathbf{Q}$ 为 $m$ 阶正交矩阵，$\mathbf{R}$ 为 $n$ 阶上三角矩阵且对角元为正）一定唯一</p>
+<p>A. 任意 <span class="arithmatex">\(n\)</span> 阶实矩阵 <span class="arithmatex">\(\mathbf{A}\)</span> 都可进行形如 <span class="arithmatex">\(\mathbf{A} = \mathbf{Q}\mathbf{\Lambda}\mathbf{Q}^T\)</span> 的谱分解，且分解式中 <span class="arithmatex">\(\mathbf{Q}\)</span> 为正交矩阵，对角矩阵 <span class="arithmatex">\(\mathbf{\Lambda}\)</span> 的对角元为矩阵的特征值</p>
+<p>B. 设 <span class="arithmatex">\(\mathbf{A} \in \mathbb{R}^{m \times n}\)</span> (<span class="arithmatex">\(m \ge n\)</span>) 为列满秩矩阵，则 <span class="arithmatex">\(\mathbf{A}\)</span> 的 QR 分解 <span class="arithmatex">\(\mathbf{A} = \mathbf{Q} \begin{pmatrix} \mathbf{R} \\ \mathbf{0} \end{pmatrix}\)</span> （其中 <span class="arithmatex">\(\mathbf{Q}\)</span> 为 <span class="arithmatex">\(m\)</span> 阶正交矩阵，<span class="arithmatex">\(\mathbf{R}\)</span> 为 <span class="arithmatex">\(n\)</span> 阶上三角矩阵且对角元为正）一定唯一</p>
 <p>C.和D.不全</p>
 <p>(5) 关于凸集，以下说法正确的是 ( )</p>
 <p>A. 两个凸集的并集一定是凸集</p>
 <p>B. 线段一定是仿射集</p>
-<p>C. 闭球 ${ \mathbf{x} \in \mathbb{R}^n \mid |\mathbf{x} - \mathbf{x}_0| \le r }$ (其中 $|\cdot|$ 是范数，$r &gt; 0$) 是凸集</p>
-<p>D. 设 $\mathbf{A} \in \mathbb{R}^{m \times n}, \mathbf{C} \in \mathbb{R}^{p \times n}, \mathbf{x} \in \mathbb{R}^n, \mathbf{b} \in \mathbb{R}^m, \mathbf{d} \in \mathbb{R}^p$。则多面体 ${ \mathbf{x} \mid \mathbf{A}\mathbf{x} \le \mathbf{b}, \mathbf{C}\mathbf{x} = \mathbf{d} }$ 仅在矩阵 $\mathbf{A}$ 行满秩时是凸集</p>
+<p>C. 闭球 <span class="arithmatex">\(\{ \mathbf{x} \in \mathbb{R}^n \mid \|\mathbf{x} - \mathbf{x}_0\| \le r \}\)</span> (其中 <span class="arithmatex">\(\|\cdot\|\)</span> 是范数，<span class="arithmatex">\(r &gt; 0\)</span>) 是凸集</p>
+<p>D. 设 <span class="arithmatex">\(\mathbf{A} \in \mathbb{R}^{m \times n}, \mathbf{C} \in \mathbb{R}^{p \times n}, \mathbf{x} \in \mathbb{R}^n, \mathbf{b} \in \mathbb{R}^m, \mathbf{d} \in \mathbb{R}^p\)</span>。则多面体 <span class="arithmatex">\(\{ \mathbf{x} \mid \mathbf{A}\mathbf{x} \le \mathbf{b}, \mathbf{C}\mathbf{x} = \mathbf{d} \}\)</span> 仅在矩阵 <span class="arithmatex">\(\mathbf{A}\)</span> 行满秩时是凸集</p>
 <hr />
-<p><strong>题 2 (13分)</strong> 设矩阵 $\mathbf{A} = \begin{bmatrix} 1 &amp; 1 \ 1 &amp; 0 \ 0 &amp; 1 \end{bmatrix} \in \mathbb{R}^{3 \times 2}$，向量 $\mathbf{b} = \begin{bmatrix} 3 \ 1 \ 1 \end{bmatrix} \in \mathbb{R}^3$。</p>
-<p>(1) (4分) 计算矩阵 $\mathbf{A}$ 的 2-范数 (谱范数) $|\mathbf{A}|_2$；</p>
-<p>(2) (5分) 求向量 $\mathbf{b}$ 在列空间 $\text{Col}(\mathbf{A})$ 上的正交投影向量 $\hat{\mathbf{b}}$，并计算 $|\hat{\mathbf{b}}|_2$；</p>
-<p>(3) (4分) 已知 $\mathbf{c}$ 是 $\text{Col}(\mathbf{A})$ 中的任意向量，证明：$|\mathbf{b} - \hat{\mathbf{b}}|_2 \le |\mathbf{b} - \mathbf{c}|_2$ 成立，并且当且仅当 $\mathbf{c} = \hat{\mathbf{b}}$ 时取等号。</p>
+<p><strong>题 2 (13分)</strong> 设矩阵 <span class="arithmatex">\(\mathbf{A} = \begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix} \in \mathbb{R}^{3 \times 2}\)</span>，向量 <span class="arithmatex">\(\mathbf{b} = \begin{bmatrix} 3 \\ 1 \\ 1 \end{bmatrix} \in \mathbb{R}^3\)</span>。</p>
+<p>(1) (4分) 计算矩阵 <span class="arithmatex">\(\mathbf{A}\)</span> 的 2-范数 (谱范数) <span class="arithmatex">\(\|\mathbf{A}\|_2\)</span>；</p>
+<p>(2) (5分) 求向量 <span class="arithmatex">\(\mathbf{b}\)</span> 在列空间 <span class="arithmatex">\(\text{Col}(\mathbf{A})\)</span> 上的正交投影向量 <span class="arithmatex">\(\hat{\mathbf{b}}\)</span>，并计算 <span class="arithmatex">\(\|\hat{\mathbf{b}}\|_2\)</span>；</p>
+<p>(3) (4分) 已知 <span class="arithmatex">\(\mathbf{c}\)</span> 是 <span class="arithmatex">\(\text{Col}(\mathbf{A})\)</span> 中的任意向量，证明：<span class="arithmatex">\(\|\mathbf{b} - \hat{\mathbf{b}}\|_2 \le \|\mathbf{b} - \mathbf{c}\|_2\)</span> 成立，并且当且仅当 <span class="arithmatex">\(\mathbf{c} = \hat{\mathbf{b}}\)</span> 时取等号。</p>
 <hr />
 <p><strong>题 3 (18分)</strong>
 $$
 \mathbf{A} = \begin{bmatrix} 1 &amp; 1 \ 1 &amp; 0 \ 0 &amp; 1 \end{bmatrix}, \quad \mathbf{b} = \begin{bmatrix} 4 \ 1 \ 3 \end{bmatrix}, \quad \mathbf{c} = \begin{bmatrix} 0 \ 1 \ 8 \end{bmatrix}
 $$</p>
-<p>(1) (2分) 矩阵 $\mathbf{A}$ 能否进行 QR 分解，为什么？直接写出结论及原因即可；</p>
-<p>(2) (6分) 求矩阵 $\mathbf{A}$ 的 QR 分解；</p>
-<p>(3) (5分) 利用 (2) 中的分解结果来求解方程组 $\mathbf{A}\mathbf{x} = \mathbf{b}$；</p>
-<p>(4) (5分) 求最小二乘问题 $\min |\mathbf{A}\mathbf{x} - \mathbf{c}|_2$ 的全部解。</p>
+<p>(1) (2分) 矩阵 <span class="arithmatex">\(\mathbf{A}\)</span> 能否进行 QR 分解，为什么？直接写出结论及原因即可；</p>
+<p>(2) (6分) 求矩阵 <span class="arithmatex">\(\mathbf{A}\)</span> 的 QR 分解；</p>
+<p>(3) (5分) 利用 (2) 中的分解结果来求解方程组 <span class="arithmatex">\(\mathbf{A}\mathbf{x} = \mathbf{b}\)</span>；</p>
+<p>(4) (5分) 求最小二乘问题 <span class="arithmatex">\(\min \|\mathbf{A}\mathbf{x} - \mathbf{c}\|_2\)</span> 的全部解。</p>
 <hr />
 <p><strong>题 4 (10分)</strong> 设矩阵
 $$
 \mathbf{A} = \begin{pmatrix} 1 &amp; 2 \ 2 &amp; 1 \ 0 &amp; 0 \end{pmatrix} \in \mathbb{R}^{3 \times 2}
 $$</p>
-<p>(1) (6分) 求矩阵 $\mathbf{A}$ 的奇异值分解 $\mathbf{A} = \mathbf{U}\mathbf{\Sigma}\mathbf{V}^T$；
-(2) (4分) 求 $\mathbf{A}$ 的 Moore-Penrose 伪逆 $\mathbf{A}^{\dagger}$。</p>
+<p>(1) (6分) 求矩阵 <span class="arithmatex">\(\mathbf{A}\)</span> 的奇异值分解 <span class="arithmatex">\(\mathbf{A} = \mathbf{U}\mathbf{\Sigma}\mathbf{V}^T\)</span>；
+(2) (4分) 求 <span class="arithmatex">\(\mathbf{A}\)</span> 的 Moore-Penrose 伪逆 <span class="arithmatex">\(\mathbf{A}^{\dagger}\)</span>。</p>
 <p><strong>【参考材料】</strong>
-已知 $\mathbf{A}^T\mathbf{A} = \begin{pmatrix} 5 &amp; 4 \ 4 &amp; 5 \end{pmatrix}$，其特征值 $\lambda_1 = 9, \lambda_2 = 1$ 对应的特征向量分别为：
+已知 <span class="arithmatex">\(\mathbf{A}^T\mathbf{A} = \begin{pmatrix} 5 &amp; 4 \\ 4 &amp; 5 \end{pmatrix}\)</span>，其特征值 <span class="arithmatex">\(\lambda_1 = 9, \lambda_2 = 1\)</span> 对应的特征向量分别为：
 $$
 \mathbf{x}_1 = \begin{pmatrix} 1 \ 1 \end{pmatrix}, \mathbf{x}_2 = \begin{pmatrix} 1 \ -1 \end{pmatrix}
 $$</p>
 <hr />
-<p><strong>题 5 (8分)</strong> 设 $\mathbf{A}$ 是一个 $m \times n$ 实矩阵，$\text{rank}(\mathbf{A}) = r$，且 $\mathbf{A}$ 的紧奇异值分解为 $\mathbf{A} = \mathbf{U}_r\mathbf{\Sigma}_r\mathbf{V}_r^T$。证明：</p>
-<p>(1) (3分) 任意向量 $\mathbf{x} \in \mathbb{R}^n$ 在 $\text{Col}(\mathbf{A}^T)$ 上的正交投影为 $\pi_{\text{Col}(\mathbf{A}^T)}(\mathbf{x}) = \mathbf{V}_r\mathbf{V}_r^T\mathbf{x}$；</p>
-<p>(2) (5分) $\mathbf{V}_r\mathbf{V}_r^T = \mathbf{A}^T\mathbf{A}$。</p>
+<p><strong>题 5 (8分)</strong> 设 <span class="arithmatex">\(\mathbf{A}\)</span> 是一个 <span class="arithmatex">\(m \times n\)</span> 实矩阵，<span class="arithmatex">\(\text{rank}(\mathbf{A}) = r\)</span>，且 <span class="arithmatex">\(\mathbf{A}\)</span> 的紧奇异值分解为 <span class="arithmatex">\(\mathbf{A} = \mathbf{U}_r\mathbf{\Sigma}_r\mathbf{V}_r^T\)</span>。证明：</p>
+<p>(1) (3分) 任意向量 <span class="arithmatex">\(\mathbf{x} \in \mathbb{R}^n\)</span> 在 <span class="arithmatex">\(\text{Col}(\mathbf{A}^T)\)</span> 上的正交投影为 <span class="arithmatex">\(\pi_{\text{Col}(\mathbf{A}^T)}(\mathbf{x}) = \mathbf{V}_r\mathbf{V}_r^T\mathbf{x}\)</span>；</p>
+<p>(2) (5分) <span class="arithmatex">\(\mathbf{V}_r\mathbf{V}_r^T = \mathbf{A}^T\mathbf{A}\)</span>。</p>
 <hr />
 <p><strong>题 6 (18分)</strong></p>
-<p>(1) (4分) 已知向量值函数 $\mathbf{f}(\mathbf{x}): \mathbb{R}^3 \to \mathbb{R}^2$ (其中 $\mathbf{x} = [x_1, x_2, x_3]^T$)，表达式为：
+<p>(1) (4分) 已知向量值函数 <span class="arithmatex">\(\mathbf{f}(\mathbf{x}): \mathbb{R}^3 \to \mathbb{R}^2\)</span> (其中 <span class="arithmatex">\(\mathbf{x} = [x_1, x_2, x_3]^T\)</span>)，表达式为：
 $$
 \mathbf{f}(\mathbf{x}) = \begin{bmatrix} f_1(\mathbf{x}) \ f_2(\mathbf{x}) \end{bmatrix} = \begin{bmatrix} 3x_1x_2 + x_1^2x_3 + 2x_3^2 \ x_2\sin(x_1) + x_1^3x_3 - x_2^2 \end{bmatrix}
 $$
-求 $\mathbf{f}(\mathbf{x})$ 的 Jacobian 矩阵 $\mathbf{J} = \frac{\partial \mathbf{f}(\mathbf{x})}{\partial \mathbf{x}^T}$；</p>
+求 <span class="arithmatex">\(\mathbf{f}(\mathbf{x})\)</span> 的 Jacobian 矩阵 <span class="arithmatex">\(\mathbf{J} = \frac{\partial \mathbf{f}(\mathbf{x})}{\partial \mathbf{x}^T}\)</span>；</p>
 <p>(2)</p>
-<p>(a) (3分) 证明 $d|\mathbf{X}| = \text{Tr}(|\mathbf{X}|\mathbf{X}^{-1}d\mathbf{X})$，其中变量 $\mathbf{X} \in \mathbb{R}^{n \times n}$ 非奇异；</p>
-<p>(b) (5分) 用 (a) 的结论求实值函数 $f(\mathbf{X}) = |\mathbf{X}^3|$ (其中 $|\cdot|$ 表示行列式) 的梯度矩阵。</p>
+<p>(a) (3分) 证明 <span class="arithmatex">\(d|\mathbf{X}| = \text{Tr}(|\mathbf{X}|\mathbf{X}^{-1}d\mathbf{X})\)</span>，其中变量 <span class="arithmatex">\(\mathbf{X} \in \mathbb{R}^{n \times n}\)</span> 非奇异；</p>
+<p>(b) (5分) 用 (a) 的结论求实值函数 <span class="arithmatex">\(f(\mathbf{X}) = |\mathbf{X}^3|\)</span> (其中 <span class="arithmatex">\(|\cdot|\)</span> 表示行列式) 的梯度矩阵。</p>
 <p>(3) (6分) 考虑一个两层的全连接神经网络：
 $$
 \mathbf{y} = \mathbf{f}(\mathbf{x}) = \text{ReLU}(\mathbf{A}_2(\text{ReLU}(\mathbf{A}_1\mathbf{x} + \mathbf{b}_1)) + \mathbf{b}_2)
@@ -1772,12 +1772,12 @@ $$
 $$
 \mathbf{A}_1 = \begin{bmatrix} 2 &amp; 3 \ -2 &amp; 1 \ 3 &amp; -1 \end{bmatrix}, \quad \mathbf{A}_2 = \begin{bmatrix} 3 &amp; -1 &amp; 0 \ 1 &amp; -2 &amp; 2 \end{bmatrix}, \quad \mathbf{b}_1 = \begin{bmatrix} -1 \ 4 \ -2 \end{bmatrix}, \quad \mathbf{b}_2 = \begin{bmatrix} 2 \ -1 \end{bmatrix}
 $$
-假设输入为 $\mathbf{x} = (1, -1)^T$，并且对应的真实输出为 $\mathbf{\hat{y}} = (0, 1)^T$。采用平方损失 $L = \frac{1}{2}|\mathbf{y} - \mathbf{\hat{y}}|_2^2$。试计算函数 $L$ 关于 $\mathbf{b}_1$ 的梯度。</p>
+假设输入为 <span class="arithmatex">\(\mathbf{x} = (1, -1)^T\)</span>，并且对应的真实输出为 <span class="arithmatex">\(\mathbf{\hat{y}} = (0, 1)^T\)</span>。采用平方损失 <span class="arithmatex">\(L = \frac{1}{2}\|\mathbf{y} - \mathbf{\hat{y}}\|_2^2\)</span>。试计算函数 <span class="arithmatex">\(L\)</span> 关于 <span class="arithmatex">\(\mathbf{b}_1\)</span> 的梯度。</p>
 <hr />
-<p><strong>题 7 (11分)</strong> 考虑优化问题 $\min f(\mathbf{x}) = x_1^2 + 4x_2^2 + 2x_1x_2 + 4x_1 + 8x_2$。</p>
-<p>(1) (4分) 判断 $f(\mathbf{x})$ 是否为凸函数，并说明理由；</p>
+<p><strong>题 7 (11分)</strong> 考虑优化问题 <span class="arithmatex">\(\min f(\mathbf{x}) = x_1^2 + 4x_2^2 + 2x_1x_2 + 4x_1 + 8x_2\)</span>。</p>
+<p>(1) (4分) 判断 <span class="arithmatex">\(f(\mathbf{x})\)</span> 是否为凸函数，并说明理由；</p>
 <p>(2) (4分) 利用最优性条件求局部极小值点；</p>
-<p>(3) (3分) 证明：若 $\mathbf{x}^<em>$ 是 $f(\mathbf{x})$ 的局部极小点，则 $\mathbf{x}^</em>$ 也是 $f(\mathbf{x})$ 的全局极小点。</p>
+<p>(3) (3分) 证明：若 <span class="arithmatex">\(\mathbf{x}^*\)</span> 是 <span class="arithmatex">\(f(\mathbf{x})\)</span> 的局部极小点，则 <span class="arithmatex">\(\mathbf{x}^*\)</span> 也是 <span class="arithmatex">\(f(\mathbf{x})\)</span> 的全局极小点。</p>
 
 
 
@@ -1837,6 +1837,10 @@ $$
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

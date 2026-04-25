@@ -1702,112 +1702,112 @@
 <hr />
 <p><strong>一、（13分）</strong></p>
 <p>完成以下问题：</p>
-<p>(1) 对矩阵 $\boldsymbol{M} = \begin{pmatrix} 5 &amp; 3 &amp; -1 &amp; 3 \ 0 &amp; 1 &amp; 1 &amp; -2 \ -5 &amp; -3 &amp; 4 &amp; -4 \ 0 &amp; 1 &amp; 1 &amp; 0 \end{pmatrix}$ 进行LU分解；</p>
-<p>(2) 设 $A$ 对称且 $a_{11} \neq 0$，并假经过一步Gauss消去之后，$A$ 具有如下形式</p>
-<p>$$\left[\begin{array}{ll} a_{11} &amp; a_1^{\mathrm{T}} \ \boldsymbol{0} &amp; A_2 \end{array}\right]$$</p>
-<p>证明：$A_2$ 仍是对称矩阵。</p>
+<p>(1) 对矩阵 <span class="arithmatex">\(\boldsymbol{M} = \begin{pmatrix} 5 &amp; 3 &amp; -1 &amp; 3 \\ 0 &amp; 1 &amp; 1 &amp; -2 \\ -5 &amp; -3 &amp; 4 &amp; -4 \\ 0 &amp; 1 &amp; 1 &amp; 0 \end{pmatrix}\)</span> 进行LU分解；</p>
+<p>(2) 设 <span class="arithmatex">\(A\)</span> 对称且 <span class="arithmatex">\(a_{11} \neq 0\)</span>，并假经过一步Gauss消去之后，<span class="arithmatex">\(A\)</span> 具有如下形式</p>
+<div class="arithmatex">\[\left[\begin{array}{ll} a_{11} &amp; a_1^{\mathrm{T}} \\ \boldsymbol{0} &amp; A_2 \end{array}\right]\]</div>
+<p>证明：<span class="arithmatex">\(A_2\)</span> 仍是对称矩阵。</p>
 <p><strong>答案：</strong></p>
 <p>（1）</p>
-<p>$$\boldsymbol{A}=\begin{pmatrix} 5 &amp; 3 &amp; -1 &amp; 3 \ 0 &amp; 1 &amp; 1 &amp; -2 \ -5 &amp; -3 &amp; 4 &amp; -4 \ 0 &amp; 1 &amp; 1 &amp; 0 \end{pmatrix} = \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \ 0 &amp; 1 &amp; 0 &amp; 0 \ -1 &amp; 0 &amp; 1 &amp; 0 \ 0 &amp; 1 &amp; 0 &amp; 1 \end{pmatrix} \begin{pmatrix} 5 &amp; 3 &amp; -1 &amp; 3 \ 0 &amp; 1 &amp; 1 &amp; -2 \ 0 &amp; 0 &amp; 3 &amp; -1 \ 0 &amp; 0 &amp; 0 &amp; 2 \end{pmatrix} =\boldsymbol{L}\boldsymbol{U}$$</p>
+<div class="arithmatex">\[\boldsymbol{A}=\begin{pmatrix} 5 &amp; 3 &amp; -1 &amp; 3 \\ 0 &amp; 1 &amp; 1 &amp; -2 \\ -5 &amp; -3 &amp; 4 &amp; -4 \\ 0 &amp; 1 &amp; 1 &amp; 0 \end{pmatrix} = \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ -1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 1 \end{pmatrix} \begin{pmatrix} 5 &amp; 3 &amp; -1 &amp; 3 \\ 0 &amp; 1 &amp; 1 &amp; -2 \\ 0 &amp; 0 &amp; 3 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 2 \end{pmatrix} =\boldsymbol{L}\boldsymbol{U}\]</div>
 <p><strong>（7分）</strong></p>
-<p>（2）记矩阵 $A$ 和高斯变换矩阵分别为：</p>
-<p>$$A = \left[\begin{array}{ll} a_{11} &amp; a_1^{\mathrm{T}} \ a_1 &amp; A_1 \end{array}\right], \quad G = \left[\begin{array}{ll} 1 &amp; \boldsymbol{0}^{\mathrm{T}} \ -l_1 &amp; I \end{array}\right]$$</p>
+<p>（2）记矩阵 <span class="arithmatex">\(A\)</span> 和高斯变换矩阵分别为：</p>
+<div class="arithmatex">\[A = \left[\begin{array}{ll} a_{11} &amp; a_1^{\mathrm{T}} \\ a_1 &amp; A_1 \end{array}\right], \quad G = \left[\begin{array}{ll} 1 &amp; \boldsymbol{0}^{\mathrm{T}} \\ -l_1 &amp; I \end{array}\right]\]</div>
 <p>则</p>
-<p>$$GA=\left[\begin{array}{ll} a_{11} &amp; a_1^{\mathrm{T}} \ -a_{11} l_1+a_1 &amp; -l_1 a_1^{\mathrm{T}} + A_1 \end{array}\right]$$</p>
-<p>易知 $-a_{11} l_1+a_1=\boldsymbol{0}$ 以及 $A_2=-l_1 a_1^{\mathrm{T}} + A_1$。由第一个等式可得 $l_1=1/a_{11} a_1$，代入第二个等式知</p>
-<p>$$A_2=-\frac{1}{a_{11}} a_1 a_1^{\mathrm{T}} + A_1$$</p>
-<p>故可知 $A_2$ 仍是对称矩阵。 <strong>（6分）</strong></p>
+<div class="arithmatex">\[GA=\left[\begin{array}{ll} a_{11} &amp; a_1^{\mathrm{T}} \\ -a_{11} l_1+a_1 &amp; -l_1 a_1^{\mathrm{T}} + A_1 \end{array}\right]\]</div>
+<p>易知 <span class="arithmatex">\(-a_{11} l_1+a_1=\boldsymbol{0}\)</span> 以及 <span class="arithmatex">\(A_2=-l_1 a_1^{\mathrm{T}} + A_1\)</span>。由第一个等式可得 <span class="arithmatex">\(l_1=1/a_{11} a_1\)</span>，代入第二个等式知</p>
+<div class="arithmatex">\[A_2=-\frac{1}{a_{11}} a_1 a_1^{\mathrm{T}} + A_1\]</div>
+<p>故可知 <span class="arithmatex">\(A_2\)</span> 仍是对称矩阵。 <strong>（6分）</strong></p>
 <hr />
 <p><strong>二、（10分）</strong></p>
-<p>$\mathbb{R}^5$ 的欧氏空间。子空间 $U \subseteq \mathbb{R}^{5}$ 和 $\boldsymbol{x} \in \mathbb{R}^{5}$ 如下：</p>
-<p>$$U=\text{span} \left{ \left[\begin{array}{c}{0} \ {-1} \ {2} \ {0} \ {1}\end{array}\right],\left[\begin{array}{c}{1} \ {-1} \ {1} \ {-1} \ {1}\end{array}\right] \right}, \quad \boldsymbol{x}=\left[\begin{array}{c}{0} \ {1} \ {0} \ {0} \ {0}\end{array}\right]$$</p>
-<p>请确定 $\boldsymbol{x}$ 在子空间 $\mathbb{U}$ 上的正交投影 $\pi_{\mathbb{U}}(\boldsymbol{x})$。</p>
+<p><span class="arithmatex">\(\mathbb{R}^5\)</span> 的欧氏空间。子空间 <span class="arithmatex">\(U \subseteq \mathbb{R}^{5}\)</span> 和 <span class="arithmatex">\(\boldsymbol{x} \in \mathbb{R}^{5}\)</span> 如下：</p>
+<div class="arithmatex">\[U=\text{span} \left\{ \left[\begin{array}{c}{0} \\ {-1} \\ {2} \\ {0} \\ {1}\end{array}\right],\left[\begin{array}{c}{1} \\ {-1} \\ {1} \\ {-1} \\ {1}\end{array}\right] \right\}, \quad \boldsymbol{x}=\left[\begin{array}{c}{0} \\ {1} \\ {0} \\ {0} \\ {0}\end{array}\right]\]</div>
+<p>请确定 <span class="arithmatex">\(\boldsymbol{x}\)</span> 在子空间 <span class="arithmatex">\(\mathbb{U}\)</span> 上的正交投影 <span class="arithmatex">\(\pi_{\mathbb{U}}(\boldsymbol{x})\)</span>。</p>
 <p><strong>答案：</strong></p>
-<p>首先，将 $U$ 中的基向量构成矩阵 $A$：</p>
-<p>$$A=\left[\begin{array}{ll} 0 &amp; 1 \ -1 &amp; -1 \ 2 &amp; 1 \ 0 &amp; -1 \ 1 &amp; 1 \end{array}\right]$$</p>
+<p>首先，将 <span class="arithmatex">\(U\)</span> 中的基向量构成矩阵 <span class="arithmatex">\(A\)</span>：</p>
+<div class="arithmatex">\[A=\left[\begin{array}{ll} 0 &amp; 1 \\ -1 &amp; -1 \\ 2 &amp; 1 \\ 0 &amp; -1 \\ 1 &amp; 1 \end{array}\right]\]</div>
 <p>易计算出</p>
-<p>$$A^{\mathrm{T}} A=\left[\begin{array}{ll} 6 &amp; 4 \ 4 &amp; 5 \end{array}\right], \quad (A^{\mathrm{T}} A)^{-1}=\left[\begin{array}{ll} 5/14 &amp; -2/7 \ -2/7 &amp; 3/7 \end{array}\right]$$</p>
+<div class="arithmatex">\[A^{\mathrm{T}} A=\left[\begin{array}{ll} 6 &amp; 4 \\ 4 &amp; 5 \end{array}\right], \quad (A^{\mathrm{T}} A)^{-1}=\left[\begin{array}{ll} 5/14 &amp; -2/7 \\ -2/7 &amp; 3/7 \end{array}\right]\]</div>
 <p><strong>（4分）</strong></p>
-<p>然后，计算投影矩阵 $P_U$：</p>
-<p>$$P_U=\left[\begin{array}{ccccc} 3/7 &amp; -1/7 &amp; -1/7 &amp; -3/7 &amp; 1/7 \ -1/7 &amp; 3/14 &amp; -2/7 &amp; 1/7 &amp; -3/14 \ -1/7 &amp; -2/7 &amp; 5/7 &amp; 1/7 &amp; 2/7 \ -3/7 &amp; 1/7 &amp; 1/7 &amp; 3/7 &amp; -1/7 \ 1/7 &amp; -3/14 &amp; 2/7 &amp; -1/7 &amp; 3/14 \end{array}\right]$$</p>
+<p>然后，计算投影矩阵 <span class="arithmatex">\(P_U\)</span>：</p>
+<div class="arithmatex">\[P_U=\left[\begin{array}{ccccc} 3/7 &amp; -1/7 &amp; -1/7 &amp; -3/7 &amp; 1/7 \\ -1/7 &amp; 3/14 &amp; -2/7 &amp; 1/7 &amp; -3/14 \\ -1/7 &amp; -2/7 &amp; 5/7 &amp; 1/7 &amp; 2/7 \\ -3/7 &amp; 1/7 &amp; 1/7 &amp; 3/7 &amp; -1/7 \\ 1/7 &amp; -3/14 &amp; 2/7 &amp; -1/7 &amp; 3/14 \end{array}\right]\]</div>
 <p>因此，投影</p>
-<p>$$\pi_U(x) = P_U x = (-1/7, ~ 3/14, ~ -2/7, ~ 1/7, ~ -3/14)$$</p>
+<div class="arithmatex">\[\pi_U(x) = P_U x = (-1/7, ~ 3/14, ~ -2/7, ~ 1/7, ~ -3/14)\]</div>
 <p><strong>（6分）</strong></p>
 <hr />
 <p><strong>三、（13分）</strong></p>
 <p>完成下列矩阵函数求梯度：</p>
-<p>(1) 求函数 $f(\boldsymbol{x})=\boldsymbol{a}^{\mathrm{T}} \boldsymbol{x}$ 和 $g(\boldsymbol{x})=\boldsymbol{x}^{\mathrm{T}} \boldsymbol{A} \boldsymbol{x}$ 的 Hessian 矩阵；</p>
+<p>(1) 求函数 <span class="arithmatex">\(f(\boldsymbol{x})=\boldsymbol{a}^{\mathrm{T}} \boldsymbol{x}\)</span> 和 <span class="arithmatex">\(g(\boldsymbol{x})=\boldsymbol{x}^{\mathrm{T}} \boldsymbol{A} \boldsymbol{x}\)</span> 的 Hessian 矩阵；</p>
 <p>(2) 考虑一个两层的全连接神经网络：</p>
-<p>$$\boldsymbol{y}=\boldsymbol{f}(\boldsymbol{x})=\mathrm{ReLU}(\boldsymbol{A}_2(\mathrm{ReLU}(\boldsymbol{A}_1\boldsymbol{x}+\boldsymbol{b}_1))+\boldsymbol{b}_2)$$</p>
+<div class="arithmatex">\[\boldsymbol{y}=\boldsymbol{f}(\boldsymbol{x})=\mathrm{ReLU}(\boldsymbol{A}_2(\mathrm{ReLU}(\boldsymbol{A}_1\boldsymbol{x}+\boldsymbol{b}_1))+\boldsymbol{b}_2)\]</div>
 <p>其中</p>
-<p>$$\boldsymbol{A}_1=\begin{bmatrix} 2 &amp; 3 \ -2 &amp; 1 \ 3 &amp; -1 \end{bmatrix}, \boldsymbol{A}_2=\begin{bmatrix} 3 &amp; -1 &amp; 0 \ 1 &amp; -2 &amp; 2 \end{bmatrix}, \boldsymbol{b}_1=\begin{bmatrix} -1 \ 4 \ -2 \end{bmatrix}, \boldsymbol{b}_2=\begin{bmatrix} 2 \ -3 \end{bmatrix}$$</p>
-<p>假设输入为 $\boldsymbol{x}=(1,-1)$，并且对应的真实输出为 $\hat{\boldsymbol{y}}=(0,1)$，采用平方损失 $L=\frac12|\boldsymbol{y}-\hat{\boldsymbol{y}}|_2^2$。试计算函数 $L$ 关于 $\boldsymbol{b}_1$ 的梯度。</p>
+<div class="arithmatex">\[\boldsymbol{A}_1=\begin{bmatrix} 2 &amp; 3 \\ -2 &amp; 1 \\ 3 &amp; -1 \end{bmatrix}, \boldsymbol{A}_2=\begin{bmatrix} 3 &amp; -1 &amp; 0 \\ 1 &amp; -2 &amp; 2 \end{bmatrix}, \boldsymbol{b}_1=\begin{bmatrix} -1 \\ 4 \\ -2 \end{bmatrix}, \boldsymbol{b}_2=\begin{bmatrix} 2 \\ -3 \end{bmatrix}\]</div>
+<p>假设输入为 <span class="arithmatex">\(\boldsymbol{x}=(1,-1)\)</span>，并且对应的真实输出为 <span class="arithmatex">\(\hat{\boldsymbol{y}}=(0,1)\)</span>，采用平方损失 <span class="arithmatex">\(L=\frac12\|\boldsymbol{y}-\hat{\boldsymbol{y}}\|_2^2\)</span>。试计算函数 <span class="arithmatex">\(L\)</span> 关于 <span class="arithmatex">\(\boldsymbol{b}_1\)</span> 的梯度。</p>
 <p><strong>答案：</strong></p>
-<p>（1）因为 $\frac{\partial f}{\partial \boldsymbol{x}} = \boldsymbol{a}$，因此 $H_f = \boldsymbol{0}$。又</p>
-<p>$$\begin{aligned} d(g)&amp;= \operatorname{Tr}( d\boldsymbol{x}^{\mathrm{T}} \cdot \boldsymbol{A} \boldsymbol{x} + \boldsymbol{A} \boldsymbol{x} d\boldsymbol{x}) \ &amp;=\operatorname{Tr}(\boldsymbol{x}^{\mathrm{T}} (\boldsymbol{A}^{\mathrm{T}} + \boldsymbol{A}) d\boldsymbol{x}) \end{aligned}$$</p>
-<p>所以 Hessian 矩阵 $H_g = \boldsymbol{A}^{\mathrm{T}} + \boldsymbol{A}$。 <strong>（5分）</strong></p>
+<p>（1）因为 <span class="arithmatex">\(\frac{\partial f}{\partial \boldsymbol{x}} = \boldsymbol{a}\)</span>，因此 <span class="arithmatex">\(H_f = \boldsymbol{0}\)</span>。又</p>
+<div class="arithmatex">\[\begin{aligned} d(g)&amp;= \operatorname{Tr}( d\boldsymbol{x}^{\mathrm{T}} \cdot \boldsymbol{A} \boldsymbol{x} + \boldsymbol{A} \boldsymbol{x} d\boldsymbol{x}) \\ &amp;=\operatorname{Tr}(\boldsymbol{x}^{\mathrm{T}} (\boldsymbol{A}^{\mathrm{T}} + \boldsymbol{A}) d\boldsymbol{x}) \end{aligned}\]</div>
+<p>所以 Hessian 矩阵 <span class="arithmatex">\(H_g = \boldsymbol{A}^{\mathrm{T}} + \boldsymbol{A}\)</span>。 <strong>（5分）</strong></p>
 <p>（2）先计算前向过程：</p>
-<p>$$\boldsymbol{A}_1\boldsymbol{x}+\boldsymbol{b}_1=\begin{bmatrix} -2 \ 1 \ 2 \end{bmatrix}, \quad \boldsymbol{A}_2(\mathrm{ReLU}(\boldsymbol{A}_1\boldsymbol{x}+\boldsymbol{b}_1))+\boldsymbol{b}_2=\begin{bmatrix} 1 \ 0 \end{bmatrix}$$</p>
-<p>故 $\boldsymbol{y}=(1,0)$，从而 $L=1$。</p>
+<div class="arithmatex">\[\boldsymbol{A}_1\boldsymbol{x}+\boldsymbol{b}_1=\begin{bmatrix} -2 \\ 1 \\ 2 \end{bmatrix}, \quad \boldsymbol{A}_2(\mathrm{ReLU}(\boldsymbol{A}_1\boldsymbol{x}+\boldsymbol{b}_1))+\boldsymbol{b}_2=\begin{bmatrix} 1 \\ 0 \end{bmatrix}\]</div>
+<p>故 <span class="arithmatex">\(\boldsymbol{y}=(1,0)\)</span>，从而 <span class="arithmatex">\(L=1\)</span>。</p>
 <p>记</p>
-<p>$$\boldsymbol{k}=\mathrm{ReLU}(\boldsymbol{A}_1\boldsymbol{x}+\boldsymbol{b}_1)$$</p>
+<div class="arithmatex">\[\boldsymbol{k}=\mathrm{ReLU}(\boldsymbol{A}_1\boldsymbol{x}+\boldsymbol{b}_1)\]</div>
 <p>然后分别计算</p>
-<p>$$\frac{\partial L}{\partial \boldsymbol{y}}=\begin{bmatrix} 1 \ -1 \end{bmatrix}, \quad \frac{\partial \boldsymbol{y}^{\mathrm{T}}}{\partial \boldsymbol{k}}=\begin{bmatrix} 3 &amp; 0 \ -1 &amp; 0 \ 0 &amp; 0 \end{bmatrix}, \quad \frac{\partial \boldsymbol{k}^{\mathrm{T}}}{\partial \boldsymbol{b}_1}=\begin{bmatrix} 0 &amp; 0 &amp; 0 \ 0 &amp; 1 &amp; 0 \ 0 &amp; 0 &amp; 1 \end{bmatrix}$$</p>
+<div class="arithmatex">\[\frac{\partial L}{\partial \boldsymbol{y}}=\begin{bmatrix} 1 \\ -1 \end{bmatrix}, \quad \frac{\partial \boldsymbol{y}^{\mathrm{T}}}{\partial \boldsymbol{k}}=\begin{bmatrix} 3 &amp; 0 \\ -1 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}, \quad \frac{\partial \boldsymbol{k}^{\mathrm{T}}}{\partial \boldsymbol{b}_1}=\begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\]</div>
 <p>所以有</p>
-<p>$$\frac{\partial L}{\partial \boldsymbol{b}_1}=\frac{\partial \boldsymbol{k}^{\mathrm{T}}}{\partial \boldsymbol{b}_1}\frac{\partial \boldsymbol{y}^{\mathrm{T}}}{\partial \boldsymbol{k}}\frac{\partial L}{\partial \boldsymbol{y}} =\begin{bmatrix} 0 &amp; 0 &amp; 0 \ 0 &amp; 1 &amp; 0 \ 0 &amp; 0 &amp; 1 \end{bmatrix} \begin{bmatrix} 3 &amp; 0 \ -1 &amp; 0 \ 0 &amp; 0 \end{bmatrix}\begin{bmatrix} 1 \ -1 \end{bmatrix}=\begin{bmatrix} 0 \ -1 \ 0 \end{bmatrix}$$</p>
+<div class="arithmatex">\[\frac{\partial L}{\partial \boldsymbol{b}_1}=\frac{\partial \boldsymbol{k}^{\mathrm{T}}}{\partial \boldsymbol{b}_1}\frac{\partial \boldsymbol{y}^{\mathrm{T}}}{\partial \boldsymbol{k}}\frac{\partial L}{\partial \boldsymbol{y}} =\begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \begin{bmatrix} 3 &amp; 0 \\ -1 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}\begin{bmatrix} 1 \\ -1 \end{bmatrix}=\begin{bmatrix} 0 \\ -1 \\ 0 \end{bmatrix}\]</div>
 <p><strong>（8分）</strong></p>
 <hr />
 <p><strong>四、（13分）</strong></p>
 <p>完成下列问题：</p>
-<p>(1) 设已知矩阵 $\boldsymbol{M} \in \mathbb{R}^{m \times n}$ 的SVD分解为 $\boldsymbol{U} \boldsymbol{\Sigma} \boldsymbol{V}^{\mathrm{T}}$，请写出拼接矩阵 $\boldsymbol{A} = [\boldsymbol{M} \quad \boldsymbol{M}]$ 的奇异值分解；</p>
-<p>(2) 令 $\boldsymbol{A}$ 为 $m\times n$ 矩阵，且 $\boldsymbol{P}$ 为 $m\times m$ 正交矩阵。证明：$\boldsymbol{P} \boldsymbol{A}$ 与 $\boldsymbol{A}$ 的奇异值相同。并说明矩阵 $\boldsymbol{P} \boldsymbol{A}$ 与 $\boldsymbol{A}$ 的左、右奇异向量有何关系？</p>
+<p>(1) 设已知矩阵 <span class="arithmatex">\(\boldsymbol{M} \in \mathbb{R}^{m \times n}\)</span> 的SVD分解为 <span class="arithmatex">\(\boldsymbol{U} \boldsymbol{\Sigma} \boldsymbol{V}^{\mathrm{T}}\)</span>，请写出拼接矩阵 <span class="arithmatex">\(\boldsymbol{A} = [\boldsymbol{M} \quad \boldsymbol{M}]\)</span> 的奇异值分解；</p>
+<p>(2) 令 <span class="arithmatex">\(\boldsymbol{A}\)</span> 为 <span class="arithmatex">\(m\times n\)</span> 矩阵，且 <span class="arithmatex">\(\boldsymbol{P}\)</span> 为 <span class="arithmatex">\(m\times m\)</span> 正交矩阵。证明：<span class="arithmatex">\(\boldsymbol{P} \boldsymbol{A}\)</span> 与 <span class="arithmatex">\(\boldsymbol{A}\)</span> 的奇异值相同。并说明矩阵 <span class="arithmatex">\(\boldsymbol{P} \boldsymbol{A}\)</span> 与 <span class="arithmatex">\(\boldsymbol{A}\)</span> 的左、右奇异向量有何关系？</p>
 <p><strong>答案：</strong></p>
-<p>（1）因为 $\boldsymbol{M}=\boldsymbol{U} \boldsymbol{\Sigma} \boldsymbol{V}^{\mathrm{T}}$，因此</p>
-<p>$$\boldsymbol{A} \boldsymbol{A}^{\mathrm{T}} = 2 \boldsymbol{M} \boldsymbol{M}^{\mathrm{T}} = \boldsymbol{U} \cdot 2\boldsymbol{\Sigma}_{m \times m}^2 \cdot \boldsymbol{U}^{\mathrm{T}}$$</p>
-<p>故 $\boldsymbol{A}$ 的奇异值为 $\sqrt{2}\boldsymbol{\Sigma}_{m \times 2n}$，左奇异向量构成的正交矩阵就是 $\boldsymbol{U}$。 <strong>（3分）</strong></p>
-<p>由 $\boldsymbol{U}^{\mathrm{T}} \boldsymbol{A}$ 与右奇异向量（设为 $\boldsymbol{V}_{\boldsymbol{A}}$）的关系可直接计算出</p>
-<p>$$[\boldsymbol{\Sigma}<em>{m \times n}\boldsymbol{V}^{\mathrm{T}} \quad \boldsymbol{\Sigma}</em>{m \times n}\boldsymbol{V}^{\mathrm{T}}] = \sqrt{2} \boldsymbol{\Sigma}<em>{m \times 2n} \boldsymbol{V}</em>{\boldsymbol{A}}^{\mathrm{T}}$$</p>
-<p>对比等式两边可得 $\boldsymbol{V}_{\boldsymbol{A}}^{\mathrm{T}}$ 的前 $n$ 行即为 $[\frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}} \quad \frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}}]$。对此进行正交扩充，可得</p>
-<p>$$\boldsymbol{V}_{\boldsymbol{A}}^{\mathrm{T}} = \left[\begin{array}{ll} \frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}} &amp; \frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}} \ \frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}} &amp; -\frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}} \end{array}\right]$$</p>
+<p>（1）因为 <span class="arithmatex">\(\boldsymbol{M}=\boldsymbol{U} \boldsymbol{\Sigma} \boldsymbol{V}^{\mathrm{T}}\)</span>，因此</p>
+<div class="arithmatex">\[\boldsymbol{A} \boldsymbol{A}^{\mathrm{T}} = 2 \boldsymbol{M} \boldsymbol{M}^{\mathrm{T}} = \boldsymbol{U} \cdot 2\boldsymbol{\Sigma}_{m \times m}^2 \cdot \boldsymbol{U}^{\mathrm{T}}\]</div>
+<p>故 <span class="arithmatex">\(\boldsymbol{A}\)</span> 的奇异值为 <span class="arithmatex">\(\sqrt{2}\boldsymbol{\Sigma}_{m \times 2n}\)</span>，左奇异向量构成的正交矩阵就是 <span class="arithmatex">\(\boldsymbol{U}\)</span>。 <strong>（3分）</strong></p>
+<p>由 <span class="arithmatex">\(\boldsymbol{U}^{\mathrm{T}} \boldsymbol{A}\)</span> 与右奇异向量（设为 <span class="arithmatex">\(\boldsymbol{V}_{\boldsymbol{A}}\)</span>）的关系可直接计算出</p>
+<div class="arithmatex">\[[\boldsymbol{\Sigma}_{m \times n}\boldsymbol{V}^{\mathrm{T}} \quad \boldsymbol{\Sigma}_{m \times n}\boldsymbol{V}^{\mathrm{T}}] = \sqrt{2} \boldsymbol{\Sigma}_{m \times 2n} \boldsymbol{V}_{\boldsymbol{A}}^{\mathrm{T}}\]</div>
+<p>对比等式两边可得 <span class="arithmatex">\(\boldsymbol{V}_{\boldsymbol{A}}^{\mathrm{T}}\)</span> 的前 <span class="arithmatex">\(n\)</span> 行即为 <span class="arithmatex">\([\frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}} \quad \frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}}]\)</span>。对此进行正交扩充，可得</p>
+<div class="arithmatex">\[\boldsymbol{V}_{\boldsymbol{A}}^{\mathrm{T}} = \left[\begin{array}{ll} \frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}} &amp; \frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}} \\ \frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}} &amp; -\frac{1}{\sqrt{2}}\boldsymbol{V}^{\mathrm{T}} \end{array}\right]\]</div>
 <p><strong>（4分）</strong></p>
-<p>（2）因为 $(\boldsymbol{P}\boldsymbol{A})^{\mathrm{T}} (\boldsymbol{P}\boldsymbol{A}) = \boldsymbol{A}^{\mathrm{T}}\boldsymbol{P}^{\mathrm{T}}\boldsymbol{P}\boldsymbol{A}=\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}$，故它们的奇异值相同。 <strong>（2分）</strong></p>
-<p>假设 $\boldsymbol{A}$ 的SVD分解为</p>
-<p>$$\boldsymbol{A}=U \Sigma V^{\mathrm{T}}$$</p>
-<p>其中 $U, V \in \mathbb{R}^{n \times n}$ 正交。故</p>
-<p>$$\boldsymbol{P}\boldsymbol{A}=\boldsymbol{P} U \Sigma V^{\mathrm{T}}$$</p>
-<p>因为 $\boldsymbol{P}$ 为正交矩阵，因此 $\boldsymbol{P} U$ 为其左奇异向量，$V$ 就是 $\boldsymbol{P} \boldsymbol{A}$ 的右奇异向量。 <strong>（4分）</strong></p>
+<p>（2）因为 <span class="arithmatex">\((\boldsymbol{P}\boldsymbol{A})^{\mathrm{T}} (\boldsymbol{P}\boldsymbol{A}) = \boldsymbol{A}^{\mathrm{T}}\boldsymbol{P}^{\mathrm{T}}\boldsymbol{P}\boldsymbol{A}=\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\)</span>，故它们的奇异值相同。 <strong>（2分）</strong></p>
+<p>假设 <span class="arithmatex">\(\boldsymbol{A}\)</span> 的SVD分解为</p>
+<div class="arithmatex">\[\boldsymbol{A}=U \Sigma V^{\mathrm{T}}\]</div>
+<p>其中 <span class="arithmatex">\(U, V \in \mathbb{R}^{n \times n}\)</span> 正交。故</p>
+<div class="arithmatex">\[\boldsymbol{P}\boldsymbol{A}=\boldsymbol{P} U \Sigma V^{\mathrm{T}}\]</div>
+<p>因为 <span class="arithmatex">\(\boldsymbol{P}\)</span> 为正交矩阵，因此 <span class="arithmatex">\(\boldsymbol{P} U\)</span> 为其左奇异向量，<span class="arithmatex">\(V\)</span> 就是 <span class="arithmatex">\(\boldsymbol{P} \boldsymbol{A}\)</span> 的右奇异向量。 <strong>（4分）</strong></p>
 <hr />
 <p><strong>五、（12分）</strong></p>
 <p>已知矩阵</p>
-<p>$$\boldsymbol{M} = \begin{pmatrix} 5 &amp; 1 &amp; 2 \ -2 &amp; -3 &amp; 4 \ 1 &amp; 3 &amp; -1 \end{pmatrix}$$</p>
-<p>(1) 计算矩阵 $\boldsymbol{M}$ 的 $1$ 范数和 $\infty$ 范数；</p>
-<p>(2) 证明：如果矩阵 $\boldsymbol{A} = [\boldsymbol{a}_1, \boldsymbol{a}_2, \cdots, \boldsymbol{a}_n]$ 是按列分块的，那么 $|\boldsymbol{A}|_F^2 = |\boldsymbol{a}_1|_2^2 + |\boldsymbol{a}_2|_2^2 + \cdots + |\boldsymbol{a}_n|_2^2$。</p>
-<p>(3) 设 $a_1,a_2,\cdots,a_n$ 是 $n$ 个正数，证明：由</p>
-<p>$$\Omega(\boldsymbol{x})=\left(\sum_{i=1}^na_ix_i^2\right)^{\frac{1}{2}}$$</p>
-<p>定义的函数 $\Omega: \mathbb{R}^n\to\mathbb{R}$ 是一个范数。</p>
+<div class="arithmatex">\[\boldsymbol{M} = \begin{pmatrix} 5 &amp; 1 &amp; 2 \\ -2 &amp; -3 &amp; 4 \\ 1 &amp; 3 &amp; -1 \end{pmatrix}\]</div>
+<p>(1) 计算矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的 <span class="arithmatex">\(1\)</span> 范数和 <span class="arithmatex">\(\infty\)</span> 范数；</p>
+<p>(2) 证明：如果矩阵 <span class="arithmatex">\(\boldsymbol{A} = [\boldsymbol{a}_1, \boldsymbol{a}_2, \cdots, \boldsymbol{a}_n]\)</span> 是按列分块的，那么 <span class="arithmatex">\(\|\boldsymbol{A}\|_F^2 = \|\boldsymbol{a}_1\|_2^2 + \|\boldsymbol{a}_2\|_2^2 + \cdots + \|\boldsymbol{a}_n\|_2^2\)</span>。</p>
+<p>(3) 设 <span class="arithmatex">\(a_1,a_2,\cdots,a_n\)</span> 是 <span class="arithmatex">\(n\)</span> 个正数，证明：由</p>
+<div class="arithmatex">\[\Omega(\boldsymbol{x})=\left(\sum_{i=1}^na_ix_i^2\right)^{\frac{1}{2}}\]</div>
+<p>定义的函数 <span class="arithmatex">\(\Omega: \mathbb{R}^n\to\mathbb{R}\)</span> 是一个范数。</p>
 <p><strong>答案：</strong></p>
 <p>（1）</p>
-<p>$$|\boldsymbol{M}|_1=\max{5+|-2|+1, 1+|-3|+3, 2+4+|-1|}=8$$</p>
-<p>$$|\boldsymbol{M}|_{\infty}=\max{5+1+2, |-2|+|-3|+4, 1+3+|-1|}=9$$</p>
+<div class="arithmatex">\[\|\boldsymbol{M}\|_1=\max\{5+|-2|+1, 1+|-3|+3, 2+4+|-1|\}=8\]</div>
+<div class="arithmatex">\[\|\boldsymbol{M}\|_{\infty}=\max\{5+1+2, |-2|+|-3|+4, 1+3+|-1|\}=9\]</div>
 <p><strong>（2分）</strong></p>
-<p>（2）因为矩阵 $\boldsymbol{A}$ 的 $F$ 范数的平方是矩阵各元素的平方和，而 $\boldsymbol{a}_1$ 的 $\ell_2$ 范数的平方是矩阵第一列元素的平方和，以此类推，$\boldsymbol{a}_n$ 的 $\ell_2$ 范数的平方是矩阵第 $n$ 列元素的平方和。因此，得证。 <strong>（5分）</strong></p>
+<p>（2）因为矩阵 <span class="arithmatex">\(\boldsymbol{A}\)</span> 的 <span class="arithmatex">\(F\)</span> 范数的平方是矩阵各元素的平方和，而 <span class="arithmatex">\(\boldsymbol{a}_1\)</span> 的 <span class="arithmatex">\(\ell_2\)</span> 范数的平方是矩阵第一列元素的平方和，以此类推，<span class="arithmatex">\(\boldsymbol{a}_n\)</span> 的 <span class="arithmatex">\(\ell_2\)</span> 范数的平方是矩阵第 <span class="arithmatex">\(n\)</span> 列元素的平方和。因此，得证。 <strong>（5分）</strong></p>
 <p>（3）可以通过定义证明该函数具有范数的非负性、齐次性和三角不等式，只要证明过程合理即可。 <strong>（5分）</strong></p>
 <hr />
 <p><strong>六、（12分）</strong></p>
 <p>求解以下问题：</p>
-<p>(1) 假设 $X_{1} \rightarrow X_{2} \rightarrow X_{3} \rightarrow \cdots \rightarrow X_{n}$ 是一个马尔科夫链，即</p>
-<p>$$p\left(x_{1}, x_{2}, \ldots, x_{n}\right)=p\left(x_{1}\right) p\left(x_{2} \mid x_{1}\right) \cdots p\left(x_{n} \mid x_{n-1}\right)$$</p>
-<p>试化简 $I\left(X_{1} ; X_{2}, \ldots, X_{n}\right)$。</p>
-<p>(2) $X$ 和 $Y$ 是 ${0,1,2,3}$ 上的独立、等概率分布的随机变量，求 $H(X+Y)$。</p>
+<p>(1) 假设 <span class="arithmatex">\(X_{1} \rightarrow X_{2} \rightarrow X_{3} \rightarrow \cdots \rightarrow X_{n}\)</span> 是一个马尔科夫链，即</p>
+<div class="arithmatex">\[p\left(x_{1}, x_{2}, \ldots, x_{n}\right)=p\left(x_{1}\right) p\left(x_{2} \mid x_{1}\right) \cdots p\left(x_{n} \mid x_{n-1}\right)\]</div>
+<p>试化简 <span class="arithmatex">\(I\left(X_{1} ; X_{2}, \ldots, X_{n}\right)\)</span>。</p>
+<p>(2) <span class="arithmatex">\(X\)</span> 和 <span class="arithmatex">\(Y\)</span> 是 <span class="arithmatex">\(\{0,1,2,3\}\)</span> 上的独立、等概率分布的随机变量，求 <span class="arithmatex">\(H(X+Y)\)</span>。</p>
 <p><strong>答案：</strong></p>
 <p>（1）</p>
-<p>$$\begin{aligned} I\left(X_{1} ; X_{2}, \ldots, X_{n}\right) &amp;=H\left(X_{1}\right)-H\left(X_{1} \mid X_{2}, \ldots, X_{n}\right) \ &amp;=H\left(X_{1}\right)-\left[H\left(X_{1}, X_{2}, \ldots, X_{n}\right)-H\left(X_{2}, \ldots, X_{n}\right)\right] \ &amp;=H\left(X_{1}\right)-\left[\sum_{i=1}^{n} H\left(X_{i} \mid X_{i-1}, \ldots, X_{1}\right)-\sum_{i=2}^{n} H\left(X_{i} \mid X_{i-1}, \ldots, X_{2}\right)\right] \ &amp;=H\left(X_{1}\right)-\left[\left(H\left(X_{1}\right)+\sum_{i=2}^{n} H\left(X_{i} \mid X_{i-1}\right)\right) -\left(H\left(X_{2}\right)+\sum_{i=3}^{n} H\left(X_{i} \mid X_{i-1}\right)\right)\right] \ &amp;=H\left(X_{2}\right)-H\left(X_{2} \mid X_{1}\right) \ &amp;=I\left(X_{2} ; X_{1}\right) \ &amp;=I\left(X_{1} ; X_{2}\right) \end{aligned}$$</p>
+<div class="arithmatex">\[\begin{aligned} I\left(X_{1} ; X_{2}, \ldots, X_{n}\right) &amp;=H\left(X_{1}\right)-H\left(X_{1} \mid X_{2}, \ldots, X_{n}\right) \\ &amp;=H\left(X_{1}\right)-\left[H\left(X_{1}, X_{2}, \ldots, X_{n}\right)-H\left(X_{2}, \ldots, X_{n}\right)\right] \\ &amp;=H\left(X_{1}\right)-\left[\sum_{i=1}^{n} H\left(X_{i} \mid X_{i-1}, \ldots, X_{1}\right)-\sum_{i=2}^{n} H\left(X_{i} \mid X_{i-1}, \ldots, X_{2}\right)\right] \\ &amp;=H\left(X_{1}\right)-\left[\left(H\left(X_{1}\right)+\sum_{i=2}^{n} H\left(X_{i} \mid X_{i-1}\right)\right) -\left(H\left(X_{2}\right)+\sum_{i=3}^{n} H\left(X_{i} \mid X_{i-1}\right)\right)\right] \\ &amp;=H\left(X_{2}\right)-H\left(X_{2} \mid X_{1}\right) \\ &amp;=I\left(X_{2} ; X_{1}\right) \\ &amp;=I\left(X_{1} ; X_{2}\right) \end{aligned}\]</div>
 <p><strong>（7分）</strong></p>
-<p>（2）$X+Y$ 的分布律：</p>
+<p>（2）<span class="arithmatex">\(X+Y\)</span> 的分布律：</p>
 <table>
 <thead>
 <tr>
-<th>$X+Y$</th>
+<th><span class="arithmatex">\(X+Y\)</span></th>
 <th>0</th>
 <th>1</th>
 <th>2</th>
@@ -1831,50 +1831,50 @@
 </tbody>
 </table>
 <p>因此</p>
-<p>$$H(X+Y) =-( 2\frac{1}{16} \log_2 \frac{1}{16} + 2\frac{2}{16} \log_2 \frac{2}{16} + 2\frac{3}{16} \log_2 \frac{3}{16} + \frac{4}{16} \log_2 \frac{4}{16})$$</p>
+<div class="arithmatex">\[H(X+Y) =-( 2\frac{1}{16} \log_2 \frac{1}{16} + 2\frac{2}{16} \log_2 \frac{2}{16} + 2\frac{3}{16} \log_2 \frac{3}{16} + \frac{4}{16} \log_2 \frac{4}{16})\]</div>
 <p>也可以用其他对数，这里可化简也可以不化简。 <strong>（5分）</strong></p>
 <hr />
 <p><strong>七、（13分）</strong></p>
 <p>求解下述问题：</p>
-<p>(1) 请计算负熵函数 $f(\boldsymbol{x})=\sum_{i=1}^{n} x_i \log x_i$ 的共轭函数。</p>
-<p>(2) 用Lagrange乘子法求欠定方程 $\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}$ 的最小二范数解，其中 $\boldsymbol{A}\in\mathbb{R}^{m\times n}, m\leq n, \operatorname{rank}(\boldsymbol{A})=m$。</p>
+<p>(1) 请计算负熵函数 <span class="arithmatex">\(f(\boldsymbol{x})=\sum_{i=1}^{n} x_i \log x_i\)</span> 的共轭函数。</p>
+<p>(2) 用Lagrange乘子法求欠定方程 <span class="arithmatex">\(\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}\)</span> 的最小二范数解，其中 <span class="arithmatex">\(\boldsymbol{A}\in\mathbb{R}^{m\times n}, m\leq n, \operatorname{rank}(\boldsymbol{A})=m\)</span>。</p>
 <p><strong>答案：</strong></p>
-<p>（1）设 $g(x) = \langle x,y \rangle-f(x) = \langle x,y \rangle-\sum_{i=1}^{n} x_i \log x_i$，对 $x$ 求梯度可得：</p>
-<p>$$\nabla g = [y_1-\log x_1 - 1~ y_2-\log x_2 - 1~ \cdots~ y_n-\log x_n - 1]^{\mathrm{T}}$$</p>
-<p>因此，可得最优解为 $x_i = e^{y_i - 1}$，代入即得：</p>
-<p>$$f^* (\boldsymbol{y}) = \sum_{i=1}^{n} e^{y_i - 1}$$</p>
+<p>（1）设 <span class="arithmatex">\(g(x) = \langle x,y \rangle-f(x) = \langle x,y \rangle-\sum_{i=1}^{n} x_i \log x_i\)</span>，对 <span class="arithmatex">\(x\)</span> 求梯度可得：</p>
+<div class="arithmatex">\[\nabla g = [y_1-\log x_1 - 1~ y_2-\log x_2 - 1~ \cdots~ y_n-\log x_n - 1]^{\mathrm{T}}\]</div>
+<p>因此，可得最优解为 <span class="arithmatex">\(x_i = e^{y_i - 1}\)</span>，代入即得：</p>
+<div class="arithmatex">\[f^* (\boldsymbol{y}) = \sum_{i=1}^{n} e^{y_i - 1}\]</div>
 <p><strong>（6分）</strong></p>
 <p>（2）优化问题为</p>
-<p>$$\begin{aligned} \texttt{min} \quad &amp; f(\boldsymbol{x})=\frac{1}{2}|\boldsymbol{x}|_{2}^2 \ \texttt{subject to} \quad &amp; \boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \end{aligned}$$</p>
+<div class="arithmatex">\[\begin{aligned} \texttt{min} \quad &amp; f(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{x}\|_{2}^2 \\ \texttt{subject to} \quad &amp; \boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \end{aligned}\]</div>
 <p>Lagrange函数为：</p>
-<p>$$L(\boldsymbol{x}, \boldsymbol{\lambda})=\frac{1}{2}\boldsymbol{x}^{\mathrm{T}}\boldsymbol{x}-\boldsymbol{\lambda}^{\mathrm{T}}(\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b})$$</p>
-<p>$$\frac{\partial L}{\partial \boldsymbol{x}}= \boldsymbol{x} -\boldsymbol{A}^{\mathrm{T}}\boldsymbol{\lambda}$$</p>
-<p>令 $\frac{\partial L}{\partial \boldsymbol{x}}=0$，有：</p>
-<p>$$\boldsymbol{x}=\boldsymbol{A}^{\mathrm{T}}\boldsymbol{\lambda}$$</p>
-<p>$$g(\boldsymbol{\lambda})=-\frac{1}{2}\boldsymbol{\lambda}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}}\lambda+\boldsymbol{\lambda}^{\mathrm{T}}\boldsymbol{b}$$</p>
-<p>令 $\frac{\partial g}{\partial \boldsymbol{\lambda}}=0$：</p>
-<p>$$-\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}}\lambda+\boldsymbol{b}=\boldsymbol{0}$$</p>
-<p>由 $\boldsymbol{A}\in\mathbb{R}^{m\times n}, \operatorname{rank}(\boldsymbol{A})=m$ 得 $\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}}$ 可逆，因此</p>
-<p>$$\boldsymbol{\lambda}=(\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}})^{-1}\boldsymbol{b}$$</p>
-<p>因此，$\boldsymbol{x}$ 满足 $\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}$ 的最小二范数解：</p>
-<p>$$\boldsymbol{x}=\boldsymbol{A}^{\mathrm{T}}(\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}})^{-1}\boldsymbol{b}$$</p>
+<div class="arithmatex">\[L(\boldsymbol{x}, \boldsymbol{\lambda})=\frac{1}{2}\boldsymbol{x}^{\mathrm{T}}\boldsymbol{x}-\boldsymbol{\lambda}^{\mathrm{T}}(\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b})\]</div>
+<div class="arithmatex">\[\frac{\partial L}{\partial \boldsymbol{x}}= \boldsymbol{x} -\boldsymbol{A}^{\mathrm{T}}\boldsymbol{\lambda}\]</div>
+<p>令 <span class="arithmatex">\(\frac{\partial L}{\partial \boldsymbol{x}}=0\)</span>，有：</p>
+<div class="arithmatex">\[\boldsymbol{x}=\boldsymbol{A}^{\mathrm{T}}\boldsymbol{\lambda}\]</div>
+<div class="arithmatex">\[g(\boldsymbol{\lambda})=-\frac{1}{2}\boldsymbol{\lambda}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}}\lambda+\boldsymbol{\lambda}^{\mathrm{T}}\boldsymbol{b}\]</div>
+<p>令 <span class="arithmatex">\(\frac{\partial g}{\partial \boldsymbol{\lambda}}=0\)</span>：</p>
+<div class="arithmatex">\[-\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}}\lambda+\boldsymbol{b}=\boldsymbol{0}\]</div>
+<p>由 <span class="arithmatex">\(\boldsymbol{A}\in\mathbb{R}^{m\times n}, \operatorname{rank}(\boldsymbol{A})=m\)</span> 得 <span class="arithmatex">\(\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}}\)</span> 可逆，因此</p>
+<div class="arithmatex">\[\boldsymbol{\lambda}=(\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}})^{-1}\boldsymbol{b}\]</div>
+<p>因此，<span class="arithmatex">\(\boldsymbol{x}\)</span> 满足 <span class="arithmatex">\(\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}\)</span> 的最小二范数解：</p>
+<div class="arithmatex">\[\boldsymbol{x}=\boldsymbol{A}^{\mathrm{T}}(\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}})^{-1}\boldsymbol{b}\]</div>
 <p><strong>（7分）</strong></p>
 <hr />
 <p><strong>八、（14分）</strong></p>
 <p>求解如下优化问题：</p>
-<p>(1) 使用梯度下降法和固定步长 $\lambda =0.1$ 计算 $\min f(x)=(x_{1}-1)^{2}+16(x_{2}-2)^{2}$，初始点 $x^{(0)}=(3,2)^{T}$，迭代至第三步后终止，请计算迭代过程中的解、梯度和函数值（第三步不用计算梯度和函数值，计算结果保留小数点后两位）。</p>
+<p>(1) 使用梯度下降法和固定步长 <span class="arithmatex">\(\lambda =0.1\)</span> 计算 <span class="arithmatex">\(\min f(x)=(x_{1}-1)^{2}+16(x_{2}-2)^{2}\)</span>，初始点 <span class="arithmatex">\(x^{(0)}=(3,2)^{T}\)</span>，迭代至第三步后终止，请计算迭代过程中的解、梯度和函数值（第三步不用计算梯度和函数值，计算结果保留小数点后两位）。</p>
 <p>(2) 请谈谈牛顿法与BFGS方法之间的区别与联系。</p>
 <p><strong>答案：</strong></p>
 <p>（1）易求得梯度为：</p>
-<p>$$\nabla f = [2(x_1 - 1) \quad 32(x_2 - 2) ]^{\mathrm{T}}$$</p>
+<div class="arithmatex">\[\nabla f = [2(x_1 - 1) \quad 32(x_2 - 2) ]^{\mathrm{T}}\]</div>
 <p>具体迭代结果：</p>
 <table>
 <thead>
 <tr>
-<th>$k$</th>
-<th>$x^{(k)^{\mathrm{T}}}$</th>
-<th>$g_k^{\mathrm{T}}$</th>
-<th>$f_k$</th>
+<th><span class="arithmatex">\(k\)</span></th>
+<th><span class="arithmatex">\(x^{(k)^{\mathrm{T}}}\)</span></th>
+<th><span class="arithmatex">\(g_k^{\mathrm{T}}\)</span></th>
+<th><span class="arithmatex">\(f_k\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -1993,6 +1993,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

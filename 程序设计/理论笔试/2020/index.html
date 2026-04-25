@@ -1947,13 +1947,13 @@ int main()
 <p><strong>24)</strong> 已知文件 file.txt 中的内容为 abcdefg。现用文件指针 fp 以读写方式打开 file.txt，并且先后调用函数 <code>fseek(fp, 3, 0)</code> 和 <code>fputs("hij", fp)</code>，然后关闭文件。请问 file.txt 中的内容变为 ( )。</p>
 <p><strong>25)</strong> 使用冒泡排序对序列 2, 5, 3, 4, 1, 6 进行降序排序(大在前，小在后)，请问第一趟排序过后的序列变为 ( )。(注:一趟排序指算法中的外层循环迭代一遍)</p>
 <h2 id="2026276288">三、程序设计题（共20分，26和27题各6分，28题8分）<a class="headerlink" href="#2026276288" title="Permanent link">&para;</a></h2>
-<p><strong>26)</strong> 神经网络中每个神经元的输出是这样计算的：每个神经元有 n 个输入元素$x_i$，记为 $X={x_{1},x_{2},...,x_{n}}$，每个输入元素有一个对应的权重 $w_{i}$，记为 $W={w_{1},w_{2},...,w_{n}}$。计算时首先对X进行加权求和，即：</p>
-<p>$$f(X)=\sum_{i=1}^{n}w_{i}\times x_{i}$$</p>
+<p><strong>26)</strong> 神经网络中每个神经元的输出是这样计算的：每个神经元有 n 个输入元素<span class="arithmatex">\(x_i\)</span>，记为 <span class="arithmatex">\(X=\{x_{1},x_{2},...,x_{n}\}\)</span>，每个输入元素有一个对应的权重 <span class="arithmatex">\(w_{i}\)</span>，记为 <span class="arithmatex">\(W=\{w_{1},w_{2},...,w_{n}\}\)</span>。计算时首先对X进行加权求和，即：</p>
+<div class="arithmatex">\[f(X)=\sum_{i=1}^{n}w_{i}\times x_{i}\]</div>
 <p>然后将 f(X) 作为输入，输入到一个所谓的“激活函数”继续做计算，并将计算结果作为该神经元的输出。其中Sigmoid函数是一个比较常见的激活函数，它的定义是：</p>
-<p>$$S(x)=\frac{1}{1+e^{-x}}$$</p>
+<div class="arithmatex">\[S(x)=\frac{1}{1+e^{-x}}\]</div>
 <p>请编写函数 <code>neuron()</code> 来实现一个神经元的输出计算，并使用Sigmoid激活函数。其中，x存储输入元素，w存储相应的权重，n为输入元素个数。</p>
 <p>(注1: 允许使用C语言自带的库函数，允许自定义函数并实现)</p>
-<p>(注2: $e=2.72$)</p>
+<p>(注2: <span class="arithmatex">\(e=2.72\)</span>)</p>
 <pre><code>float neuron (int x[], int w[], int n);
 </code></pre>
 <p><strong>27)</strong> 选择排序。请在适当的地方添加代码，补全选择排序算法(要求降序)。</p>
@@ -2057,6 +2057,10 @@ int main()
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

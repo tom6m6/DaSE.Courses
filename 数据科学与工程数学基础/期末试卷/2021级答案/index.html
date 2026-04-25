@@ -1722,29 +1722,29 @@
 </table>
 <hr />
 <p><strong>一、（13分）</strong></p>
-<p>假设 $Q \in \mathbb{R}^{n \times n} \backslash{0}$ 是一个投影矩阵。</p>
-<p>(1) 证明：$Q z=z, \ \forall z \in \mathcal{R}(Q)$以及$Q y-y \in \mathcal{N}(Q), \ \forall y \in \mathbb{R}^n$。</p>
-<p>(2) 证明：$Q$的特征值$\lambda \in \Lambda(Q) \subseteq{0,1}$。</p>
-<p>(3) 假设$\mathcal{R}(Q)=\operatorname{span}\left(u_1, \ldots, u_r\right)$ ， $\mathcal{N}(Q)=\operatorname{span}\left(v_{r+1}, \ldots, v_n\right)$ 这里$r$表示投影矩阵的秩，请据此写出$Q$的特征分解 $Q=X D X^{-1}$的具体形式。</p>
-<p>(4) 证明：当 $Q \neq I_n$， $\operatorname{det}(Q)=0$。</p>
+<p>假设 <span class="arithmatex">\(Q \in \mathbb{R}^{n \times n} \backslash\{0\}\)</span> 是一个投影矩阵。</p>
+<p>(1) 证明：<span class="arithmatex">\(Q z=z, \ \forall z \in \mathcal{R}(Q)\)</span>以及<span class="arithmatex">\(Q y-y \in \mathcal{N}(Q), \ \forall y \in \mathbb{R}^n\)</span>。</p>
+<p>(2) 证明：<span class="arithmatex">\(Q\)</span>的特征值<span class="arithmatex">\(\lambda \in \Lambda(Q) \subseteq\{0,1\}\)</span>。</p>
+<p>(3) 假设<span class="arithmatex">\(\mathcal{R}(Q)=\operatorname{span}\left(u_1, \ldots, u_r\right)\)</span> ， <span class="arithmatex">\(\mathcal{N}(Q)=\operatorname{span}\left(v_{r+1}, \ldots, v_n\right)\)</span> 这里<span class="arithmatex">\(r\)</span>表示投影矩阵的秩，请据此写出<span class="arithmatex">\(Q\)</span>的特征分解 <span class="arithmatex">\(Q=X D X^{-1}\)</span>的具体形式。</p>
+<p>(4) 证明：当 <span class="arithmatex">\(Q \neq I_n\)</span>， <span class="arithmatex">\(\operatorname{det}(Q)=0\)</span>。</p>
 <p><strong>解：</strong></p>
 <p>(1)
-$\forall \ y \in \mathcal{R}(Q)$必存在$x \in \mathbb{R}^n$，使得$y=Q x$ 成立。因此，$Q y=Q^2 x=Q x=y$。另外，
-$\forall x \in \mathbb{R}^n$，$Q(Q x-x)=Q^2 x-Q x=Q x-Q x=0$。 <strong>（3分）</strong></p>
+<span class="arithmatex">\(\forall \ y \in \mathcal{R}(Q)\)</span>必存在<span class="arithmatex">\(x \in \mathbb{R}^n\)</span>，使得<span class="arithmatex">\(y=Q x\)</span> 成立。因此，<span class="arithmatex">\(Q y=Q^2 x=Q x=y\)</span>。另外，
+<span class="arithmatex">\(\forall x \in \mathbb{R}^n\)</span>，<span class="arithmatex">\(Q(Q x-x)=Q^2 x-Q x=Q x-Q x=0\)</span>。 <strong>（3分）</strong></p>
 <p>(2)
-对 $\lambda \in \Lambda(Q)$，$x \in \mathbb{R}^n \backslash{0}$，有 $Q x=\lambda x$. 由于 $Q=Q^2$,  $\lambda x=Q x=Q(Q x)=Q(\lambda x)=\lambda Q x=\lambda^2 x$。因为 $x \neq 0 \in \mathbb{R}^n$，故 $\lambda=\lambda^2$，$\lambda \in{0, 1}$。因此 $\Lambda(Q) \subseteq{0,1}$。 <strong>（3分）</strong></p>
+对 <span class="arithmatex">\(\lambda \in \Lambda(Q)\)</span>，<span class="arithmatex">\(x \in \mathbb{R}^n \backslash\{0\}\)</span>，有 <span class="arithmatex">\(Q x=\lambda x\)</span>. 由于 <span class="arithmatex">\(Q=Q^2\)</span>,  <span class="arithmatex">\(\lambda x=Q x=Q(Q x)=Q(\lambda x)=\lambda Q x=\lambda^2 x\)</span>。因为 <span class="arithmatex">\(x \neq 0 \in \mathbb{R}^n\)</span>，故 <span class="arithmatex">\(\lambda=\lambda^2\)</span>，<span class="arithmatex">\(\lambda \in\{0, 1\}\)</span>。因此 <span class="arithmatex">\(\Lambda(Q) \subseteq\{0,1\}\)</span>。 <strong>（3分）</strong></p>
 <p>(3)
-由(1)可知，$\forall i = 1,...,r, u_i\in \mathcal{R}(Q), Q u_i=u_i$，以及$\forall j = r+1,...,n,v_j\in \mathcal{N}(Q),Q v_j=0$。
-故令 $$X:=\left(u_1|\cdots| u_r\left|v_{r+1}\right| \cdots \mid v_n\right) \in \mathbb{R}^{n \times n},$$ $$D:=\operatorname{diag}<em>{n \times n}(\underbrace{1, \ldots, 1}</em>{r \text { times }}, 0 \ldots, 0) \in \mathbb{R}^{n \times n},$$
-此时$Q=X D X^{-1}$。 <strong>（4分）</strong></p>
-<p>(4) 反证$\operatorname{det}(Q) \neq 0 \Longrightarrow Q=I_n$。由于 $\operatorname{det}(Q) \neq 0$，故$Q$ 可逆。故由 $Q^2=Q$，得 $Q^{-1} Q^2=Q^{-1} Q$，即$Q=I_n$。 <strong>（3分）</strong></p>
+由(1)可知，<span class="arithmatex">\(\forall i = 1,...,r, u_i\in \mathcal{R}(Q), Q u_i=u_i\)</span>，以及<span class="arithmatex">\(\forall j = r+1,...,n,v_j\in \mathcal{N}(Q),Q v_j=0\)</span>。
+故令 $<span class="arithmatex">\(X:=\left(u_1|\cdots| u_r\left|v_{r+1}\right| \cdots \mid v_n\right) \in \mathbb{R}^{n \times n},\)</span>$ $<span class="arithmatex">\(D:=\operatorname{diag}_{n \times n}(\underbrace{1, \ldots, 1}_{r \text { times }}, 0 \ldots, 0) \in \mathbb{R}^{n \times n},\)</span>$
+此时<span class="arithmatex">\(Q=X D X^{-1}\)</span>。 <strong>（4分）</strong></p>
+<p>(4) 反证<span class="arithmatex">\(\operatorname{det}(Q) \neq 0 \Longrightarrow Q=I_n\)</span>。由于 <span class="arithmatex">\(\operatorname{det}(Q) \neq 0\)</span>，故<span class="arithmatex">\(Q\)</span> 可逆。故由 <span class="arithmatex">\(Q^2=Q\)</span>，得 <span class="arithmatex">\(Q^{-1} Q^2=Q^{-1} Q\)</span>，即<span class="arithmatex">\(Q=I_n\)</span>。 <strong>（3分）</strong></p>
 <hr />
 <p><strong>二、（12分）</strong></p>
-<p>已知矩阵$$\boldsymbol{M} = \begin{pmatrix} 0&amp;-3&amp;3\0&amp;0&amp;4\2&amp;1&amp;1 \end{pmatrix}$$</p>
-<p>(1) 先求矩阵$\boldsymbol{M}$的QR分解，然后根据QR分解求解方程组$\boldsymbol{M} \boldsymbol{x} = \boldsymbol{b}$，其中$\boldsymbol{b}=[6, 4, 1]^{\mathrm{T}}$；</p>
+<p>已知矩阵$<span class="arithmatex">\(\boldsymbol{M} = \begin{pmatrix} 0&amp;-3&amp;3\\0&amp;0&amp;4\\2&amp;1&amp;1 \end{pmatrix}\)</span>$</p>
+<p>(1) 先求矩阵<span class="arithmatex">\(\boldsymbol{M}\)</span>的QR分解，然后根据QR分解求解方程组<span class="arithmatex">\(\boldsymbol{M} \boldsymbol{x} = \boldsymbol{b}\)</span>，其中<span class="arithmatex">\(\boldsymbol{b}=[6, 4, 1]^{\mathrm{T}}\)</span>；</p>
 <p>(2) 请根据你对LU分解、Cholesky分解和QR分解的理解，谈谈它们之间的联系与差异。</p>
 <p><strong>解：</strong></p>
-<p>（1）因为 $\boldsymbol{\alpha}_1=(0,0,2)^{\mathrm{T}}$, 记 $a_1=\left|\alpha_1\right|_2=2$, 令 $\quad \boldsymbol{w}_1=\frac{\alpha_1-a_1 e_1}{\left|\alpha_1-a_1 e_1\right|_2}=$ $\frac{1}{\sqrt{2}}(-1,0,1)^{\mathrm{T}}$, 则
+<p>（1）因为 <span class="arithmatex">\(\boldsymbol{\alpha}_1=(0,0,2)^{\mathrm{T}}\)</span>, 记 <span class="arithmatex">\(a_1=\left\|\alpha_1\right\|_2=2\)</span>, 令 <span class="arithmatex">\(\quad \boldsymbol{w}_1=\frac{\alpha_1-a_1 e_1}{\left\|\alpha_1-a_1 e_1\right\|_2}=\)</span> <span class="arithmatex">\(\frac{1}{\sqrt{2}}(-1,0,1)^{\mathrm{T}}\)</span>, 则
 $$
 \boldsymbol{H}_1=I-2 \boldsymbol{w}_1 \boldsymbol{w}_1^H=\left(\begin{array}{ccc}
 0 &amp; 0 &amp; 1 \
@@ -1760,7 +1760,7 @@ $$
 0 &amp; -3 &amp; 3
 \end{array}\right)
 $$
-记 $\boldsymbol{\beta}=(0,-3)^{\mathrm{T}}$, 则 $b_2=\left|\boldsymbol{\beta}_2\right|_2=3$, 令 $\boldsymbol{w}_2=\frac{\boldsymbol{\beta}_2-b_2 e_1}{\left|\boldsymbol{\beta}_2-b_2 \boldsymbol{e}_1\right|_2}=\frac{1}{\sqrt{2}}(-1,-1)^{\mathrm{T}}$
+记 <span class="arithmatex">\(\boldsymbol{\beta}=(0,-3)^{\mathrm{T}}\)</span>, 则 <span class="arithmatex">\(b_2=\left\|\boldsymbol{\beta}_2\right\|_2=3\)</span>, 令 <span class="arithmatex">\(\boldsymbol{w}_2=\frac{\boldsymbol{\beta}_2-b_2 e_1}{\left\|\boldsymbol{\beta}_2-b_2 \boldsymbol{e}_1\right\|_2}=\frac{1}{\sqrt{2}}(-1,-1)^{\mathrm{T}}\)</span>
 $$
 \widetilde{\boldsymbol{H}}_2=\boldsymbol{I}-2 \boldsymbol{w}_2 \boldsymbol{w}_2^{\boldsymbol{H}}=\left(\begin{array}{cc}
 0 &amp; -1 \
@@ -1786,7 +1786,7 @@ $$
 0 &amp; 0 &amp; -4
 \end{array}\right)=\boldsymbol{R}
 $$
-易知 $\mathrm{Rx}=H_2 H_1 b=(1,-6,-4)^{\mathrm{T}}$, 故可求得
+易知 <span class="arithmatex">\(\mathrm{Rx}=H_2 H_1 b=(1,-6,-4)^{\mathrm{T}}\)</span>, 故可求得
 $
 \mathrm{x}=(1 / 2, \quad-1, \quad 1)^{\mathrm{T}}
 $ <strong>（7分）</strong></p>
@@ -1794,10 +1794,10 @@ $ <strong>（7分）</strong></p>
 <hr />
 <p><strong>三、（12分）</strong></p>
 <p>完成下列矩阵函数求梯度：</p>
-<p>(1) 求行列式函数$f(\boldsymbol{X})=|\boldsymbol{X}^3|$的梯度矩阵，其中变量$\boldsymbol{X} \in \mathbb{R}^{n\times n} $非奇异；</p>
-<p>(2) 求迹函数$f(\boldsymbol{X}) = \operatorname{Tr}(\boldsymbol{X}^{\mathrm{T}}\boldsymbol{X}^{-1}\boldsymbol{A})$的梯度矩阵，其中变量$\boldsymbol{X} \in \mathbb{R}^{n\times n} $非奇异。</p>
+<p>(1) 求行列式函数<span class="arithmatex">\(f(\boldsymbol{X})=|\boldsymbol{X}^3|\)</span>的梯度矩阵，其中变量$\boldsymbol{X} \in \mathbb{R}^{n\times n} $非奇异；</p>
+<p>(2) 求迹函数<span class="arithmatex">\(f(\boldsymbol{X}) = \operatorname{Tr}(\boldsymbol{X}^{\mathrm{T}}\boldsymbol{X}^{-1}\boldsymbol{A})\)</span>的梯度矩阵，其中变量$\boldsymbol{X} \in \mathbb{R}^{n\times n} $非奇异。</p>
 <p><strong>解：</strong></p>
-<p>（1）因为$d|\boldsymbol{X}| =\operatorname{Tr}(|\boldsymbol{X}|\boldsymbol{X}^{-1}d\boldsymbol{X})$，因此
+<p>（1）因为<span class="arithmatex">\(d|\boldsymbol{X}| =\operatorname{Tr}(|\boldsymbol{X}|\boldsymbol{X}^{-1}d\boldsymbol{X})\)</span>，因此
 $$
 \begin{aligned}
 d(|\boldsymbol{X}^{3}|)&amp;= \operatorname{Tr}( \boldsymbol{X} \boldsymbol{X}^{-3} d\boldsymbol{X}^{3})\
@@ -1805,15 +1805,15 @@ d(|\boldsymbol{X}^{3}|)&amp;= \operatorname{Tr}( \boldsymbol{X} \boldsymbol{X}^{
 &amp;=\operatorname{Tr}(3|\boldsymbol{X}|^3 \boldsymbol{X}^{-1} d\boldsymbol{X})
 \end{aligned}
 $$
-所以梯度矩阵$3|\boldsymbol{X}|^3 (\boldsymbol{X}^{-1})^{\mathrm{T}}$。 <strong>（6分）</strong></p>
+所以梯度矩阵<span class="arithmatex">\(3|\boldsymbol{X}|^3 (\boldsymbol{X}^{-1})^{\mathrm{T}}\)</span>。 <strong>（6分）</strong></p>
 <p>（2）</p>
-<p>$$
+<div class="arithmatex">\[
 \begin{aligned}
-d\operatorname{Tr}(\boldsymbol{X}^{\mathrm{T}} \boldsymbol{X}^{-1} \boldsymbol{A}) &amp;= \operatorname{Tr}(d(\boldsymbol{X}^{\mathrm{T}} \boldsymbol{X}^{-1} \boldsymbol{A}))\
-&amp;= \operatorname{Tr}( d\boldsymbol{X}^{\mathrm{T}} \boldsymbol{X}^{-1}\boldsymbol{A} -\boldsymbol{X}^{\mathrm{T}} \boldsymbol{X}^{-1} d\boldsymbol{X} \boldsymbol{X}^{-1} \boldsymbol{A})\
+d\operatorname{Tr}(\boldsymbol{X}^{\mathrm{T}} \boldsymbol{X}^{-1} \boldsymbol{A}) &amp;= \operatorname{Tr}(d(\boldsymbol{X}^{\mathrm{T}} \boldsymbol{X}^{-1} \boldsymbol{A}))\\
+&amp;= \operatorname{Tr}( d\boldsymbol{X}^{\mathrm{T}} \boldsymbol{X}^{-1}\boldsymbol{A} -\boldsymbol{X}^{\mathrm{T}} \boldsymbol{X}^{-1} d\boldsymbol{X} \boldsymbol{X}^{-1} \boldsymbol{A})\\
 &amp;= \operatorname{Tr}((\boldsymbol{A}^{\mathrm{T}} (\boldsymbol{X}^{-1})^{\mathrm{T}} -\boldsymbol{X}^{-1}\boldsymbol{A}\boldsymbol{X}^{\mathrm{T}} \boldsymbol{X}^{-1}) d\boldsymbol{X})
 \end{aligned}
-$$</p>
+\]</div>
 <p>即</p>
 <p>$$
 \begin{aligned}
@@ -1824,24 +1824,24 @@ $$
 <strong>（6分）</strong></p>
 <hr />
 <p><strong>四、（13分）</strong></p>
-<p>矩阵$$\boldsymbol{A} = \begin{pmatrix} 7/5&amp;-1/5\ 1/5&amp;7/5\ 0&amp;0 \end{pmatrix}$$</p>
-<p>(1) 计算矩阵 $\boldsymbol{A}$ 的SVD分解；</p>
-<p>(2) 假设$\boldsymbol{M}$是任意一个非奇异$n \times d$的矩阵，已知其奇异值分解为$\boldsymbol{M} = \boldsymbol{U} \Sigma \boldsymbol{V}^{\mathrm{T}}$，其中$\boldsymbol{U} = [u_1, u_2, \cdots, u_n]$，$\Sigma = \operatorname{diag}(\lambda_1, \lambda_2, \cdots, \lambda_n)$，$\boldsymbol{V} = [v_1, v_2, \cdots, v_n]$。请分别写出矩阵$\boldsymbol{M}$的逆矩阵的SVD分解；</p>
-<p>(3) 请写出(2)中$\boldsymbol{M}$的转置矩阵的SVD分解。</p>
+<p>矩阵$<span class="arithmatex">\(\boldsymbol{A} = \begin{pmatrix} 7/5&amp;-1/5\\ 1/5&amp;7/5\\ 0&amp;0 \end{pmatrix}\)</span>$</p>
+<p>(1) 计算矩阵 <span class="arithmatex">\(\boldsymbol{A}\)</span> 的SVD分解；</p>
+<p>(2) 假设<span class="arithmatex">\(\boldsymbol{M}\)</span>是任意一个非奇异<span class="arithmatex">\(n \times d\)</span>的矩阵，已知其奇异值分解为<span class="arithmatex">\(\boldsymbol{M} = \boldsymbol{U} \Sigma \boldsymbol{V}^{\mathrm{T}}\)</span>，其中<span class="arithmatex">\(\boldsymbol{U} = [u_1, u_2, \cdots, u_n]\)</span>，<span class="arithmatex">\(\Sigma = \operatorname{diag}(\lambda_1, \lambda_2, \cdots, \lambda_n)\)</span>，<span class="arithmatex">\(\boldsymbol{V} = [v_1, v_2, \cdots, v_n]\)</span>。请分别写出矩阵<span class="arithmatex">\(\boldsymbol{M}\)</span>的逆矩阵的SVD分解；</p>
+<p>(3) 请写出(2)中<span class="arithmatex">\(\boldsymbol{M}\)</span>的转置矩阵的SVD分解。</p>
 <p><strong>解：</strong></p>
 <p>（1）易计算
-$$\boldsymbol{A}^{\mathrm{T}} \boldsymbol{A} =\begin{pmatrix} 2&amp; 0\ 0&amp; 2\end{pmatrix}$$
-求得其特征值为$2,9$。对应的特征向量分别为$(1, 0)^{\mathrm{T}}, (0, 1)^{\mathrm{T}}$，因此，
-$$\boldsymbol{V} =\begin{pmatrix} 1&amp; 0\ 0&amp; 1\end{pmatrix}$$ <strong>（3分）</strong></p>
-<p>由$\boldsymbol{A} \boldsymbol{V}$与$\boldsymbol{U}$的关系可直接计算出
-$$\boldsymbol{U} =\begin{pmatrix} 7/5\sqrt{2}&amp; -1/5\sqrt{2}&amp; 0\ 1/5\sqrt{2}&amp; 7/5\sqrt{2} &amp; 0\ 0&amp; 0 &amp; 1 \end{pmatrix}$$ <strong>（3分）</strong></p>
-<p>（2）因为$\boldsymbol{M}$的SVD分解为
+$<span class="arithmatex">\(\boldsymbol{A}^{\mathrm{T}} \boldsymbol{A} =\begin{pmatrix} 2&amp; 0\\ 0&amp; 2\end{pmatrix}\)</span>$
+求得其特征值为<span class="arithmatex">\(2,9\)</span>。对应的特征向量分别为<span class="arithmatex">\((1, 0)^{\mathrm{T}}, (0, 1)^{\mathrm{T}}\)</span>，因此，
+$<span class="arithmatex">\(\boldsymbol{V} =\begin{pmatrix} 1&amp; 0\\ 0&amp; 1\end{pmatrix}\)</span>$ <strong>（3分）</strong></p>
+<p>由<span class="arithmatex">\(\boldsymbol{A} \boldsymbol{V}\)</span>与<span class="arithmatex">\(\boldsymbol{U}\)</span>的关系可直接计算出
+$<span class="arithmatex">\(\boldsymbol{U} =\begin{pmatrix} 7/5\sqrt{2}&amp; -1/5\sqrt{2}&amp; 0\\ 1/5\sqrt{2}&amp; 7/5\sqrt{2} &amp; 0\\ 0&amp; 0 &amp; 1 \end{pmatrix}\)</span>$ <strong>（3分）</strong></p>
+<p>（2）因为<span class="arithmatex">\(\boldsymbol{M}\)</span>的SVD分解为
 $$
 \boldsymbol{M}=U \Sigma V^{\mathrm{T}}=\left(u_1|\cdots| u_n\right)\left[\operatorname{diag}<em>{n \times n}\left(\lambda_1, \ldots, \lambda_n\right)\right]\left(v_1|\cdots| v_n\right)^{\mathrm{T}}
 $$
-其中 $U, V \in \mathbb{R}^{n \times n}$ 正交, $\lambda_1 \geq \lambda_2 \geq \cdots \geq \lambda_n \geq 0$。 因为$\boldsymbol{M}$可逆，有 $\operatorname{rank}(\boldsymbol{M})=n$ , 故$\lambda_i&gt;0$ , $\forall i \in{1, \ldots, n}$.又由 $\boldsymbol{M}=U \Sigma V^{\mathrm{T}}$ 有 $\boldsymbol{M} v_i=\lambda_i u_i$ $\forall i \in{1, \ldots, n}$ ，因此
-$$\boldsymbol{M}^{-1} u_i=\boldsymbol{M}^{-1}\left(\frac{1}{\lambda_i} \boldsymbol{M} v_i\right)=\frac{1}{\lambda_i} v_i$$
-其中 $\frac{1}{\lambda_n} \geq \cdots \geq \frac{1}{\lambda_2} \geq \frac{1}{\lambda_1}&gt;0$。综上
+其中 <span class="arithmatex">\(U, V \in \mathbb{R}^{n \times n}\)</span> 正交, <span class="arithmatex">\(\lambda_1 \geq \lambda_2 \geq \cdots \geq \lambda_n \geq 0\)</span>。 因为<span class="arithmatex">\(\boldsymbol{M}\)</span>可逆，有 <span class="arithmatex">\(\operatorname{rank}(\boldsymbol{M})=n\)</span> , 故<span class="arithmatex">\(\lambda_i&gt;0\)</span> , <span class="arithmatex">\(\forall i \in\{1, \ldots, n\}\)</span>.又由 <span class="arithmatex">\(\boldsymbol{M}=U \Sigma V^{\mathrm{T}}\)</span> 有 <span class="arithmatex">\(\boldsymbol{M} v_i=\lambda_i u_i\)</span> <span class="arithmatex">\(\forall i \in\{1, \ldots, n\}\)</span> ，因此
+$<span class="arithmatex">\(\boldsymbol{M}^{-1} u_i=\boldsymbol{M}^{-1}\left(\frac{1}{\lambda_i} \boldsymbol{M} v_i\right)=\frac{1}{\lambda_i} v_i\)</span>$
+其中 <span class="arithmatex">\(\frac{1}{\lambda_n} \geq \cdots \geq \frac{1}{\lambda_2} \geq \frac{1}{\lambda_1}&gt;0\)</span>。综上
 $$
 \boldsymbol{M}^{-1}=\left(v_n|\cdots| v_2 \mid v_1\right)\left[\operatorname{diag}</em>{n \times n}\left(\frac{1}{\lambda_n}, \ldots, \frac{1}{\lambda_2}, \frac{1}{\lambda_1}\right)\right]\left(u_n|\cdots| u_2 \mid u_1\right)^{\mathrm{T}},
 $$
@@ -1849,31 +1849,31 @@ $$
 $$
 \boldsymbol{M}^{-1}=(V P)\left(P \Sigma^{-1} P\right)(U P)^{\mathrm{T}}.
 $$
-记 $P:=\left(e_n|\cdots| e_2 \mid e_1\right) \in \mathbb{R}^{n \times n}$. (由于 $P P^{\mathrm{T}}=P^2=I_n$， $P$是正交阵， 且$V P$, $U P$ 是正交阵)。 <strong>（5分）</strong></p>
-<p>（3）因为$\boldsymbol{M}$的SVD分解为
+记 <span class="arithmatex">\(P:=\left(e_n|\cdots| e_2 \mid e_1\right) \in \mathbb{R}^{n \times n}\)</span>. (由于 <span class="arithmatex">\(P P^{\mathrm{T}}=P^2=I_n\)</span>， <span class="arithmatex">\(P\)</span>是正交阵， 且<span class="arithmatex">\(V P\)</span>, <span class="arithmatex">\(U P\)</span> 是正交阵)。 <strong>（5分）</strong></p>
+<p>（3）因为<span class="arithmatex">\(\boldsymbol{M}\)</span>的SVD分解为
 $$
 \boldsymbol{M}=U \Sigma V^{\mathrm{T}}
 $$
-其中 $U, V \in \mathbb{R}^{n \times n}$ 正交。易得 $\boldsymbol{M}^{\mathrm{T}}=V \Sigma U^{\mathrm{T}}.$</p>
-<p>显然$V$, $U$ 是正交阵。 <strong>（2分）</strong></p>
+其中 <span class="arithmatex">\(U, V \in \mathbb{R}^{n \times n}\)</span> 正交。易得 <span class="arithmatex">\(\boldsymbol{M}^{\mathrm{T}}=V \Sigma U^{\mathrm{T}}.\)</span></p>
+<p>显然<span class="arithmatex">\(V\)</span>, <span class="arithmatex">\(U\)</span> 是正交阵。 <strong>（2分）</strong></p>
 <hr />
 <p><strong>五、（13分）</strong></p>
-<p>已知矩阵$$\boldsymbol{M} = \begin{pmatrix} 2&amp;0\ -1&amp;2\ 0&amp;3\ \end{pmatrix}$$</p>
-<p>(1) 计算矩阵 $\boldsymbol{M}$ 的 $1$ 范数和$\infty$范数；</p>
-<p>(2) 计算矩阵 $\boldsymbol{M}$ 的 $F$ 范数和$2$范数。</p>
-<p>(3) 试比较任意矩阵$\boldsymbol{A}$的 $F$ 范数和$2$范数的大小，并给出理由。</p>
+<p>已知矩阵$<span class="arithmatex">\(\boldsymbol{M} = \begin{pmatrix} 2&amp;0\\ -1&amp;2\\ 0&amp;3\\ \end{pmatrix}\)</span>$</p>
+<p>(1) 计算矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的 <span class="arithmatex">\(1\)</span> 范数和<span class="arithmatex">\(\infty\)</span>范数；</p>
+<p>(2) 计算矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的 <span class="arithmatex">\(F\)</span> 范数和<span class="arithmatex">\(2\)</span>范数。</p>
+<p>(3) 试比较任意矩阵<span class="arithmatex">\(\boldsymbol{A}\)</span>的 <span class="arithmatex">\(F\)</span> 范数和<span class="arithmatex">\(2\)</span>范数的大小，并给出理由。</p>
 <p><strong>解：</strong></p>
 <p>（1）
-$$|\boldsymbol{M}|<em>1=\max{2+|-1|,0+2+3}=5$$
-$$|\boldsymbol{M}|</em>{\infty}=\max{2+|0|,|-1|+2, 0+3}=3$$
+$<span class="arithmatex">\(\|\boldsymbol{M}\|_1=\max\{2+\|-1\|,0+2+3\}=5\)</span>$
+$<span class="arithmatex">\(\|\boldsymbol{M}\|_{\infty}=\max\{2+\|0\|,\|-1\|+2, 0+3\}=3\)</span>$
 <strong>（4分）</strong></p>
-<p>（2）$\boldsymbol{M}^{\mathrm{T}} \boldsymbol{M}=\begin{pmatrix}5&amp;-2\-2&amp;13\end{pmatrix}$</p>
-<p>$\lambda_{max}(\boldsymbol{M}^{\mathrm{T}} \boldsymbol{M})=9+2\sqrt{2}$</p>
-<p>$|\boldsymbol{M}|_2=\sqrt{9+2\sqrt{2}}$</p>
+<p>（2）<span class="arithmatex">\(\boldsymbol{M}^{\mathrm{T}} \boldsymbol{M}=\begin{pmatrix}5&amp;-2\\-2&amp;13\end{pmatrix}\)</span></p>
+<p><span class="arithmatex">\(\lambda_{max}(\boldsymbol{M}^{\mathrm{T}} \boldsymbol{M})=9+2\sqrt{2}\)</span></p>
+<p><span class="arithmatex">\(\|\boldsymbol{M}\|_2=\sqrt{9+2\sqrt{2}}\)</span></p>
 <p>易求得
-$|\boldsymbol{M}|_F=\sqrt{18}=3\sqrt{2}$
+<span class="arithmatex">\(\|\boldsymbol{M}\|_F=\sqrt{18}=3\sqrt{2}\)</span>
 <strong>（5分）</strong></p>
-<p>（3）显然$F$范数大于$2$范数，因为$F$范数的平方是所有奇异值的平方之和，而$2$范数的平方是最大奇异值的平方，因此可知这一点成立。 <strong>（4分）</strong></p>
+<p>（3）显然<span class="arithmatex">\(F\)</span>范数大于<span class="arithmatex">\(2\)</span>范数，因为<span class="arithmatex">\(F\)</span>范数的平方是所有奇异值的平方之和，而<span class="arithmatex">\(2\)</span>范数的平方是最大奇异值的平方，因此可知这一点成立。 <strong>（4分）</strong></p>
 <hr />
 <p><strong>六、（12分）</strong></p>
 <p>求解以下问题：</p>
@@ -1882,23 +1882,23 @@ $$
 \Phi(x)=\frac{1}{\sqrt{2\pi}}\int^{x}_{-\infty}e^{-u^{2}/2}du
 $$</p>
 <p>是对数-凹函数. 即 $ \log(\Phi(x)) $ 是凹函数。</p>
-<p>(2) 设总体 $X \sim E(\theta), X_{1}, X_{2}, \ldots, X_{n}$ 为来自总体 $X$ 的样本, $\theta$ 的先验分布为指数分布 $E(\lambda)$ ( $\lambda$ 已知), 求 $\theta$ 的最大后验估计。</p>
+<p>(2) 设总体 <span class="arithmatex">\(X \sim E(\theta), X_{1}, X_{2}, \ldots, X_{n}\)</span> 为来自总体 <span class="arithmatex">\(X\)</span> 的样本, <span class="arithmatex">\(\theta\)</span> 的先验分布为指数分布 <span class="arithmatex">\(E(\lambda)\)</span> ( <span class="arithmatex">\(\lambda\)</span> 已知), 求 <span class="arithmatex">\(\theta\)</span> 的最大后验估计。</p>
 <p><strong>解：</strong></p>
 <p>（1）由题意得,
-$$\Phi(x)=\frac{1}{\sqrt{2\pi}}\int^{x}<em>{-\infty}e^{-u^{2}/2}du $$
-$$\Phi^{'}(x)=\frac{1}{\sqrt{2\pi}}e^{-x^{2}/2}$$
-$$\Phi^{''}(x)=\frac{1}{\sqrt{2\pi}}e^{-x^{2}/2}(-x)$$
-$$(\Phi^{'}(x))^{2}=\frac{1}{2\pi}e^{-x^{2}}$$
-$$\Phi(x)\log\Phi^{''}(x) = \frac{1}{2\pi}\int^{x}</em>{-\infty}e^{-u^{2}/2}du \cdot e^{-x^{2}/2}(-x)$$
+$$\Phi(x)=\frac{1}{\sqrt{2\pi}}\int^{x}_{-\infty}e^{-u^{2}/2}du $$
+$<span class="arithmatex">\(\Phi^{'}(x)=\frac{1}{\sqrt{2\pi}}e^{-x^{2}/2}\)</span>$
+$<span class="arithmatex">\(\Phi^{''}(x)=\frac{1}{\sqrt{2\pi}}e^{-x^{2}/2}(-x)\)</span>$
+$<span class="arithmatex">\((\Phi^{'}(x))^{2}=\frac{1}{2\pi}e^{-x^{2}}\)</span>$
+$<span class="arithmatex">\(\Phi(x)\log\Phi^{''}(x) = \frac{1}{2\pi}\int^{x}_{-\infty}e^{-u^{2}/2}du \cdot e^{-x^{2}/2}(-x)\)</span>$
 <strong>（3分）</strong></p>
-<p>当$x\geq 0$时, $(\Phi^{'}(x))^{2} \geq 0 \geq \Phi(x)\Phi^{''}(x)$.</p>
-<p>当$x &lt; 0$时, 由于$\frac{u^{2}}{2}$是凸函数, 则
-$$\frac{u^{2}}{2} \geq \frac{x^{2}}{2} + (u-x)x\geq xu - \frac{x^{2}}{2}$$
+<p>当<span class="arithmatex">\(x\geq 0\)</span>时, <span class="arithmatex">\((\Phi^{'}(x))^{2} \geq 0 \geq \Phi(x)\Phi^{''}(x)\)</span>.</p>
+<p>当<span class="arithmatex">\(x &lt; 0\)</span>时, 由于<span class="arithmatex">\(\frac{u^{2}}{2}\)</span>是凸函数, 则
+$<span class="arithmatex">\(\frac{u^{2}}{2} \geq \frac{x^{2}}{2} + (u-x)x\geq xu - \frac{x^{2}}{2}\)</span>$
 所以,
-$$\int^{x}<em>{-\infty}e^{-u^{2}/2}du \leq  \int^{x}</em>{-\infty}e^{\frac{x^{2}}{2}- xu}du$$
-$$=  e^{\frac{x^{2}}{2}\cdot\frac{e^{-xu}}{-x}\big|_{u=-\infty}^{x}}$$
-$$=  e^{\frac{x^{2}}{2}}\cdot\frac{e^{-x^{2}}}{-x}$$
-因此$\Phi(x)\Phi^{''}(x) \leq \frac{1}{2\pi}e^{-x^{2}} = (\Phi^{'}(x))^{2}$, $\Phi(x)$是对数凹函数。 <strong>（3分）</strong></p>
+$<span class="arithmatex">\(\int^{x}_{-\infty}e^{-u^{2}/2}du \leq  \int^{x}_{-\infty}e^{\frac{x^{2}}{2}- xu}du\)</span>$
+$<span class="arithmatex">\(=  e^{\frac{x^{2}}{2}\cdot\frac{e^{-xu}}{-x}\big|_{u=-\infty}^{x}}\)</span>$
+$<span class="arithmatex">\(=  e^{\frac{x^{2}}{2}}\cdot\frac{e^{-x^{2}}}{-x}\)</span>$
+因此<span class="arithmatex">\(\Phi(x)\Phi^{''}(x) \leq \frac{1}{2\pi}e^{-x^{2}} = (\Phi^{'}(x))^{2}\)</span>, <span class="arithmatex">\(\Phi(x)\)</span>是对数凹函数。 <strong>（3分）</strong></p>
 <p>（2）因为先验概率密度函数为:
 $$
 \pi(\theta)=\left{\begin{array}{cc}
@@ -1906,14 +1906,14 @@ $$
 0 &amp; \theta \leq 0
 \end{array}\right.
 $$
-样本 $\left(X_{1}, X_{2}, \ldots, X_{n}\right)$ 的联合概率密度为:
+样本 <span class="arithmatex">\(\left(X_{1}, X_{2}, \ldots, X_{n}\right)\)</span> 的联合概率密度为:
 $$
 q(\mathbf{x} \mid \theta)=\prod_{n=2}^{n} f\left(x_{i} \mid \theta\right)=\left{\begin{array}{cc}
 \theta^{n} e^{-\theta \sum_{i=1}^{n} x_{i}} &amp; x_{1}, x_{2}, \ldots, x_{n}&gt;0 \
 0 &amp; \text { 其它 }
 \end{array}\right.
 $$
-所以 $\theta$ 的后验分布密度
+所以 <span class="arithmatex">\(\theta\)</span> 的后验分布密度
 $$
 \begin{gathered}
 h(\theta \mid \mathbf{x}) \propto \theta^{n} e^{-\left(\lambda+\sum_{i=1}^{n} x_{i}\right) \theta} \
@@ -1921,7 +1921,7 @@ h(\theta \mid \mathbf{x}) \propto \theta^{n} e^{-\left(\lambda+\sum_{i=1}^{n} x_
 \frac{\partial \ln h(\theta \mid \mathbf{x})}{\partial \theta}=\frac{n}{\theta}-\left(\lambda+\sum_{i=1}^{n} x_{i}\right)=0
 \end{gathered}
 $$
-求得 $\theta$ 的最大后验估计为 $\hat{\theta}=\frac{1}{\bar{x}+\lambda / n}$ 。当 $n \rightarrow \infty$ 时, $\hat{\theta} \rightarrow \frac{1}{\bar{x}}$, 与传统意义下的极大似然估计是一致的。 <strong>（6分）</strong></p>
+求得 <span class="arithmatex">\(\theta\)</span> 的最大后验估计为 <span class="arithmatex">\(\hat{\theta}=\frac{1}{\bar{x}+\lambda / n}\)</span> 。当 <span class="arithmatex">\(n \rightarrow \infty\)</span> 时, <span class="arithmatex">\(\hat{\theta} \rightarrow \frac{1}{\bar{x}}\)</span>, 与传统意义下的极大似然估计是一致的。 <strong>（6分）</strong></p>
 <hr />
 <p><strong>七、（13分）</strong></p>
 <p>求解下述问题：</p>
@@ -1932,7 +1932,7 @@ $$
 \texttt{suject to} \quad &amp; 1\leq x \leq 5
 \end{aligned}
 $$
-(2) 用Lagrange乘子法证明：矩阵 $\boldsymbol{A}\in\mathbb{R}^{m\times n}$ 的2范数 $$|\boldsymbol{A}|<em>{2}=\max</em>{|\boldsymbol{x}|<em>2=1,\boldsymbol{x}\in\mathbb{R}^n}|\boldsymbol{A}\boldsymbol{x}|</em>{2}$$ 的平方是 $\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}$ 的最大特征值。</p>
+(2) 用Lagrange乘子法证明：矩阵 <span class="arithmatex">\(\boldsymbol{A}\in\mathbb{R}^{m\times n}\)</span> 的2范数 $<span class="arithmatex">\(\|\boldsymbol{A}\|_{2}=\max_{\|\boldsymbol{x}\|_2=1,\boldsymbol{x}\in\mathbb{R}^n}\|\boldsymbol{A}\boldsymbol{x}\|_{2}\)</span>$ 的平方是 <span class="arithmatex">\(\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\)</span> 的最大特征值。</p>
 <p><strong>解：</strong></p>
 <p>（1）原问题等价于
 $$
@@ -1945,8 +1945,8 @@ $$
 \right.
 $$
 求目标函数和约束函数的梯度得,
-$$\nabla_{x}f(x) = -2(x-4), \nabla_{x}g_{1}(x) = -1, \nabla_{x}g_{2}(x) = 1$$
-将约束引入广义Lagrange乘子$v_{1}, v_{2}$, 在KKT条件上有
+$<span class="arithmatex">\(\nabla_{x}f(x) = -2(x-4), \nabla_{x}g_{1}(x) = -1, \nabla_{x}g_{2}(x) = 1\)</span>$
+将约束引入广义Lagrange乘子<span class="arithmatex">\(v_{1}, v_{2}\)</span>, 在KKT条件上有
 $$
 \left{
 \begin{aligned}
@@ -1958,11 +1958,11 @@ $$
 \right.
 $$
 </em><em>（4分）</em>*</p>
-<p>若$v_{1}^{<em>}\neq 0, v_{2}^{</em>}\neq 0$, 无解.
-若$v_{1}^{<em>} = 0, v_{2}^{</em>}\neq 0$, 得$x^{<em>} = 5, v_{2}^{</em>} = 2, -f(x^{<em>}) = -1$.
-若$v_{1}^{</em>} \neq 0, v_{2}^{<em>}= 0$, 得$x^{</em>} = 1, v_{1}^{<em>} = 6, -f(x^{</em>}) = -9$.
-若$v_{1}^{<em>} = 0, v_{2}^{</em>}= 0$, 得$x^{<em>} = 4, f(x^{</em>}) = 0$.
-因此最优点$x^{<em>} = 1$, <code>maximize</code> $f(x) = 9$。 </em><em>（3分）</em>*</p>
+<p>若<span class="arithmatex">\(v_{1}^{*}\neq 0, v_{2}^{*}\neq 0\)</span>, 无解.
+若<span class="arithmatex">\(v_{1}^{*} = 0, v_{2}^{*}\neq 0\)</span>, 得<span class="arithmatex">\(x^{*} = 5, v_{2}^{*} = 2, -f(x^{*}) = -1\)</span>.
+若<span class="arithmatex">\(v_{1}^{*} \neq 0, v_{2}^{*}= 0\)</span>, 得<span class="arithmatex">\(x^{*} = 1, v_{1}^{*} = 6, -f(x^{*}) = -9\)</span>.
+若<span class="arithmatex">\(v_{1}^{*} = 0, v_{2}^{*}= 0\)</span>, 得<span class="arithmatex">\(x^{*} = 4, f(x^{*}) = 0\)</span>.
+因此最优点<span class="arithmatex">\(x^{*} = 1\)</span>, <code>maximize</code> <span class="arithmatex">\(f(x) = 9\)</span>。 <strong>（3分）</strong></p>
 <p>（2）优化问题为
 $$
 \begin{aligned}
@@ -1971,42 +1971,42 @@ $$
 \end{aligned}
 $$
 Lagrange函数为：
-$$L(\boldsymbol{x})=\boldsymbol{x}^{\mathrm{T}}\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{x}-\lambda(\boldsymbol{x}^{\mathrm{T}}\boldsymbol{x}-1)$$
-$$\frac{\partial L}{\partial \boldsymbol{x}}= 2\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{x} -2\lambda\boldsymbol{x}$$
+$<span class="arithmatex">\(L(\boldsymbol{x})=\boldsymbol{x}^{\mathrm{T}}\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{x}-\lambda(\boldsymbol{x}^{\mathrm{T}}\boldsymbol{x}-1)\)</span>$
+$<span class="arithmatex">\(\frac{\partial L}{\partial \boldsymbol{x}}= 2\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{x} -2\lambda\boldsymbol{x}\)</span>$
 令 $ \frac{\partial L}{\partial \boldsymbol{x}}=0 $，有：
-$$\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{x} =\lambda$$
+$<span class="arithmatex">\(\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{x} =\lambda\)</span>$
 <strong>（3分）</strong></p>
-<p>这表示在$ f(\boldsymbol{x}) $的极大值点，$ \boldsymbol{x} $是$ \boldsymbol{A}^{\mathrm{T}}\boldsymbol{A} $的特征向量，$ \lambda $是对应的特征值。此时，
-$$f(\boldsymbol{x})=\boldsymbol{x}^{\mathrm{T}}\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{x}=\boldsymbol{x}^{\mathrm{T}}\lambda\boldsymbol{x}=\lambda\boldsymbol{x}^{\mathrm{T}}\boldsymbol{x}=\lambda$$
-因此说明，为使$ f(\boldsymbol{x}) $最大，$ f(\boldsymbol{x})=\lambda_{max}(\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}) $，其中$ \lambda_{max} $表示最大特征值。即
-$$|\boldsymbol{A}|<em>{2}^2=\lambda</em>{max}(\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A})$$
+<p>这表示在$ f(\boldsymbol{x}) <span class="arithmatex">\(的极大值点，\)</span> \boldsymbol{x} <span class="arithmatex">\(是\)</span> \boldsymbol{A}^{\mathrm{T}}\boldsymbol{A} <span class="arithmatex">\(的特征向量，\)</span> \lambda $是对应的特征值。此时，
+$<span class="arithmatex">\(f(\boldsymbol{x})=\boldsymbol{x}^{\mathrm{T}}\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{x}=\boldsymbol{x}^{\mathrm{T}}\lambda\boldsymbol{x}=\lambda\boldsymbol{x}^{\mathrm{T}}\boldsymbol{x}=\lambda\)</span>$
+因此说明，为使$ f(\boldsymbol{x}) <span class="arithmatex">\(最大，\)</span> f(\boldsymbol{x})=\lambda_{max}(\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}) <span class="arithmatex">\(，其中\)</span> \lambda_{max} $表示最大特征值。即
+$<span class="arithmatex">\(\|\boldsymbol{A}\|_{2}^2=\lambda_{max}(\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A})\)</span>$
 <strong>（3分）</strong></p>
 <hr />
 <p><strong>八、（12分）</strong></p>
 <p>求解如下优化问题：</p>
 <p>(1) 考虑问题</p>
-<p>$\min f(\boldsymbol{x})=3 x_1^2+3 x_2^2-2x_1^2 x_2$ .</p>
-<p>从初始点$\boldsymbol{x}^{(0)}=(0,1)^{\mathrm{T}}$出发, 写出用最速下降法迭代两步的求解过程，并说明迭代是否可以终止。</p>
+<p><span class="arithmatex">\(\min f(\boldsymbol{x})=3 x_1^2+3 x_2^2-2x_1^2 x_2\)</span> .</p>
+<p>从初始点<span class="arithmatex">\(\boldsymbol{x}^{(0)}=(0,1)^{\mathrm{T}}\)</span>出发, 写出用最速下降法迭代两步的求解过程，并说明迭代是否可以终止。</p>
 <p>(2) 尽管牛顿法在求解无约束优化问题时，具有更高阶的收敛速度，但在处理大规模问题时，该方法涉及的Hessian矩阵及其逆矩阵的计算是非常耗时的。因此，研究者们探究了对Hessian矩阵逆近似的迭代方法，也就是拟牛顿法或变尺度法。通常这样近似Hessian矩阵或逆矩阵需要保持原有的性质，即满足割线方程:
-$$\Delta x^{(k)} = \bar{\boldsymbol{H}}^{(k+1)} \Delta g^{(k)},$$
-其中$\bar{\boldsymbol{H}}^{(k)}$表示矩阵的Hessian矩阵逆的近似。如果已经得到上一轮迭代时的近似$\bar{\boldsymbol{H}}^{(k)}$，则一般地做法是通过秩一修正或秩二修正得到下一轮的近似矩阵$\bar{\boldsymbol{H}}^{(k+1)}$。当采用秩二修正时，便得到著名的DFP法。现已知第$k$次迭代时的$\Delta x^{(k)}, \bar{\boldsymbol{H}}^{(k)}, \Delta g^{(k)}$，请给出下一轮迭代的Hessian矩阵逆的近似的推导过程。</p>
+$<span class="arithmatex">\(\Delta x^{(k)} = \bar{\boldsymbol{H}}^{(k+1)} \Delta g^{(k)},\)</span>$
+其中<span class="arithmatex">\(\bar{\boldsymbol{H}}^{(k)}\)</span>表示矩阵的Hessian矩阵逆的近似。如果已经得到上一轮迭代时的近似<span class="arithmatex">\(\bar{\boldsymbol{H}}^{(k)}\)</span>，则一般地做法是通过秩一修正或秩二修正得到下一轮的近似矩阵<span class="arithmatex">\(\bar{\boldsymbol{H}}^{(k+1)}\)</span>。当采用秩二修正时，便得到著名的DFP法。现已知第<span class="arithmatex">\(k\)</span>次迭代时的<span class="arithmatex">\(\Delta x^{(k)}, \bar{\boldsymbol{H}}^{(k)}, \Delta g^{(k)}\)</span>，请给出下一轮迭代的Hessian矩阵逆的近似的推导过程。</p>
 <p><strong>解：</strong></p>
-<p>（1）由题意得, $\nabla_{\boldsymbol{x}}f(\boldsymbol{x}) = (6x_1-4x_1x_2, 6x_2-2x_1^2)^{\mathrm{T}}$，故$g^{(0)}=\nabla_{\boldsymbol{x}}f(\boldsymbol{x}^{(0)})=(0, 6)$。现设最速下降法的步长为$\lambda$, 那么
+<p>（1）由题意得, <span class="arithmatex">\(\nabla_{\boldsymbol{x}}f(\boldsymbol{x}) = (6x_1-4x_1x_2, 6x_2-2x_1^2)^{\mathrm{T}}\)</span>，故<span class="arithmatex">\(g^{(0)}=\nabla_{\boldsymbol{x}}f(\boldsymbol{x}^{(0)})=(0, 6)\)</span>。现设最速下降法的步长为<span class="arithmatex">\(\lambda\)</span>, 那么
 $$
 f(\boldsymbol{x}^{(0)} - \lambda g^{(0)}) = 3(1-6\lambda^2)
 $$
-在$\nabla_{\boldsymbol{x}} f(\boldsymbol{x}^{(0)})$方向上, 使$f(\boldsymbol{x})$最小的$\lambda$为
-$$\lambda = \frac{1}{6}$$
+在<span class="arithmatex">\(\nabla_{\boldsymbol{x}} f(\boldsymbol{x}^{(0)})\)</span>方向上, 使<span class="arithmatex">\(f(\boldsymbol{x})\)</span>最小的<span class="arithmatex">\(\lambda\)</span>为
+$<span class="arithmatex">\(\lambda = \frac{1}{6}\)</span>$
 所以,
-$$\boldsymbol{x}^{(1)} = \boldsymbol{x}^{(0)} - \frac{1}{2}\nabla_{\boldsymbol{x}}f(\boldsymbol{x}^{(0)}) = (0, 0)^{\mathrm{T}}$$
-易知此时$\boldsymbol{x}^{(1)}$处的梯度已经为0，可见已经收敛。显然
-$$\boldsymbol{x}^{(2)} = (0, 0)^{\mathrm{T}}$$
+$<span class="arithmatex">\(\boldsymbol{x}^{(1)} = \boldsymbol{x}^{(0)} - \frac{1}{2}\nabla_{\boldsymbol{x}}f(\boldsymbol{x}^{(0)}) = (0, 0)^{\mathrm{T}}\)</span>$
+易知此时<span class="arithmatex">\(\boldsymbol{x}^{(1)}\)</span>处的梯度已经为0，可见已经收敛。显然
+$<span class="arithmatex">\(\boldsymbol{x}^{(2)} = (0, 0)^{\mathrm{T}}\)</span>$
 <strong>（7分）</strong></p>
 <p>（2）可设
 $$
 \bar{\boldsymbol{H}}^{(k+1)}=\bar{\boldsymbol{H}}^{(k)}+a\boldsymbol{u}\boldsymbol{u}^{\mathrm{T}}+b\boldsymbol{v}\boldsymbol{v}^{\mathrm{T}}
 $$
-其中$\boldsymbol{u},\boldsymbol{v}\in\mathbb{R}^n,~a,b\in\mathbb{R}$待定。</p>
+其中<span class="arithmatex">\(\boldsymbol{u},\boldsymbol{v}\in\mathbb{R}^n,~a,b\in\mathbb{R}\)</span>待定。</p>
 <p>同上所述，仍然利用割线方程，有
 $$
 \begin{aligned}
@@ -2016,10 +2016,10 @@ $$
 \end{aligned}
 $$
 整理得
-$$a(\boldsymbol{u}^{\mathrm{T}} \Delta\boldsymbol{g}^{(k)})\boldsymbol{u} + b(\boldsymbol{v}^{\mathrm{T}} \Delta\boldsymbol{g}^{(k)})\boldsymbol{v} = \Delta\boldsymbol{x}^{(k)} - \bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)}.$$
-因此，$\boldsymbol{u},\boldsymbol{v}$的线性组合等于$\Delta\boldsymbol{x}^{(k)} - \bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)}$。同样地，不妨令$\boldsymbol{u} = \Delta\boldsymbol{x}^{(k)}$，$\boldsymbol{v} = \bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)}$，则代入可得
-$$a = \frac{1}{(\Delta\boldsymbol{x}^{(k)})^{\mathrm{T}} \Delta\boldsymbol{g}^{(k)}},$$
-$$b = -\frac{1}{(\Delta\boldsymbol{g}^{(k)})^{\mathrm{T}} \bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)}}.$$
+$<span class="arithmatex">\(a(\boldsymbol{u}^{\mathrm{T}} \Delta\boldsymbol{g}^{(k)})\boldsymbol{u} + b(\boldsymbol{v}^{\mathrm{T}} \Delta\boldsymbol{g}^{(k)})\boldsymbol{v} = \Delta\boldsymbol{x}^{(k)} - \bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)}.\)</span>$
+因此，<span class="arithmatex">\(\boldsymbol{u},\boldsymbol{v}\)</span>的线性组合等于<span class="arithmatex">\(\Delta\boldsymbol{x}^{(k)} - \bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)}\)</span>。同样地，不妨令<span class="arithmatex">\(\boldsymbol{u} = \Delta\boldsymbol{x}^{(k)}\)</span>，<span class="arithmatex">\(\boldsymbol{v} = \bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)}\)</span>，则代入可得
+$<span class="arithmatex">\(a = \frac{1}{(\Delta\boldsymbol{x}^{(k)})^{\mathrm{T}} \Delta\boldsymbol{g}^{(k)}},\)</span>$
+$<span class="arithmatex">\(b = -\frac{1}{(\Delta\boldsymbol{g}^{(k)})^{\mathrm{T}} \bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)}}.\)</span>$
 从而，得到更新公式：
 $$
 \bar{\boldsymbol{H}}^{(k+1)}=\bar{\boldsymbol{H}}^{(k)} + \frac{\Delta\boldsymbol{x}^{(k)} \Delta\boldsymbol{x}^{(k)\mathrm{T}}}{(\Delta\boldsymbol{x}^{(k)})^{\mathrm{T}} \Delta\boldsymbol{g}^{(k)}} - \frac{\bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)} (\bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)})^{\mathrm{T}}}{(\Delta\boldsymbol{g}^{(k)})^{\mathrm{T}} \bar{\boldsymbol{H}}^{(k)} \Delta\boldsymbol{g}^{(k)}} 
@@ -2084,6 +2084,10 @@ $$</p>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

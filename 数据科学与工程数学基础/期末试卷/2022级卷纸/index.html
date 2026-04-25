@@ -1702,54 +1702,54 @@
 <hr />
 <p><strong>一、（13分）</strong></p>
 <p>完成以下问题：</p>
-<p>(1) 对矩阵 $\boldsymbol{M} = \begin{pmatrix} 5 &amp; 3 &amp; -1 &amp; 3 \ 0 &amp; 1 &amp; 1 &amp; -2 \ -5 &amp; -3 &amp; 4 &amp; -4 \ 0 &amp; 1 &amp; 1 &amp; 0 \end{pmatrix}$ 进行LU分解；</p>
-<p>(2) 设 $A$ 对称且 $a_{11} \neq 0$，并假经过一步Gauss消去之后，$A$ 具有如下形式</p>
-<p>$$\left[\begin{array}{ll} a_{11} &amp; a_1^{\mathrm{T}} \ \boldsymbol{0} &amp; A_2 \end{array}\right]$$</p>
-<p>证明：$A_2$ 仍是对称矩阵。</p>
+<p>(1) 对矩阵 <span class="arithmatex">\(\boldsymbol{M} = \begin{pmatrix} 5 &amp; 3 &amp; -1 &amp; 3 \\ 0 &amp; 1 &amp; 1 &amp; -2 \\ -5 &amp; -3 &amp; 4 &amp; -4 \\ 0 &amp; 1 &amp; 1 &amp; 0 \end{pmatrix}\)</span> 进行LU分解；</p>
+<p>(2) 设 <span class="arithmatex">\(A\)</span> 对称且 <span class="arithmatex">\(a_{11} \neq 0\)</span>，并假经过一步Gauss消去之后，<span class="arithmatex">\(A\)</span> 具有如下形式</p>
+<div class="arithmatex">\[\left[\begin{array}{ll} a_{11} &amp; a_1^{\mathrm{T}} \\ \boldsymbol{0} &amp; A_2 \end{array}\right]\]</div>
+<p>证明：<span class="arithmatex">\(A_2\)</span> 仍是对称矩阵。</p>
 <hr />
 <p><strong>二、（10分）</strong></p>
-<p>$\mathbb{R}^5$ 的欧氏空间。子空间 $U \subseteq \mathbb{R}^{5}$ 和 $\boldsymbol{x} \in \mathbb{R}^{5}$ 如下：</p>
-<p>$$U=\text{span} \left{ \left[\begin{array}{c}{0} \ {-1} \ {2} \ {0} \ {1}\end{array}\right],\left[\begin{array}{c}{1} \ {-1} \ {1} \ {-1} \ {1}\end{array}\right] \right}, \quad \boldsymbol{x}=\left[\begin{array}{c}{0} \ {1} \ {0} \ {0} \ {0}\end{array}\right]$$</p>
-<p>请确定 $\boldsymbol{x}$ 在子空间 $\mathbb{U}$ 上的正交投影 $\pi_{\mathbb{U}}(\boldsymbol{x})$。</p>
+<p><span class="arithmatex">\(\mathbb{R}^5\)</span> 的欧氏空间。子空间 <span class="arithmatex">\(U \subseteq \mathbb{R}^{5}\)</span> 和 <span class="arithmatex">\(\boldsymbol{x} \in \mathbb{R}^{5}\)</span> 如下：</p>
+<div class="arithmatex">\[U=\text{span} \left\{ \left[\begin{array}{c}{0} \\ {-1} \\ {2} \\ {0} \\ {1}\end{array}\right],\left[\begin{array}{c}{1} \\ {-1} \\ {1} \\ {-1} \\ {1}\end{array}\right] \right\}, \quad \boldsymbol{x}=\left[\begin{array}{c}{0} \\ {1} \\ {0} \\ {0} \\ {0}\end{array}\right]\]</div>
+<p>请确定 <span class="arithmatex">\(\boldsymbol{x}\)</span> 在子空间 <span class="arithmatex">\(\mathbb{U}\)</span> 上的正交投影 <span class="arithmatex">\(\pi_{\mathbb{U}}(\boldsymbol{x})\)</span>。</p>
 <hr />
 <p><strong>三、（13分）</strong></p>
 <p>完成下列矩阵函数求梯度：</p>
-<p>(1) 求函数 $f(\boldsymbol{x})=\boldsymbol{a}^{\mathrm{T}} \boldsymbol{x}$ 和 $g(\boldsymbol{x})=\boldsymbol{x}^{\mathrm{T}} \boldsymbol{A} \boldsymbol{x}$ 的 Hessian 矩阵；</p>
+<p>(1) 求函数 <span class="arithmatex">\(f(\boldsymbol{x})=\boldsymbol{a}^{\mathrm{T}} \boldsymbol{x}\)</span> 和 <span class="arithmatex">\(g(\boldsymbol{x})=\boldsymbol{x}^{\mathrm{T}} \boldsymbol{A} \boldsymbol{x}\)</span> 的 Hessian 矩阵；</p>
 <p>(2) 考虑一个两层的全连接神经网络：</p>
-<p>$$\boldsymbol{y}=\boldsymbol{f}(\boldsymbol{x})=\mathrm{ReLU}(\boldsymbol{A}_2(\mathrm{ReLU}(\boldsymbol{A}_1\boldsymbol{x}+\boldsymbol{b}_1))+\boldsymbol{b}_2)$$</p>
+<div class="arithmatex">\[\boldsymbol{y}=\boldsymbol{f}(\boldsymbol{x})=\mathrm{ReLU}(\boldsymbol{A}_2(\mathrm{ReLU}(\boldsymbol{A}_1\boldsymbol{x}+\boldsymbol{b}_1))+\boldsymbol{b}_2)\]</div>
 <p>其中</p>
-<p>$$\boldsymbol{A}_1=\begin{bmatrix} 2 &amp; 3 \ -2 &amp; 1 \ 3 &amp; -1 \end{bmatrix}, \boldsymbol{A}_2=\begin{bmatrix} 3 &amp; -1 &amp; 0 \ 1 &amp; -2 &amp; 2 \end{bmatrix}, \boldsymbol{b}_1=\begin{bmatrix} -1 \ 4 \ -2 \end{bmatrix}, \boldsymbol{b}_2=\begin{bmatrix} 2 \ -3 \end{bmatrix}$$</p>
-<p>假设输入为 $\boldsymbol{x}=(1,-1)$，并且对应的真实输出为 $\hat{\boldsymbol{y}}=(0,1)$，采用平方损失 $L=\frac12|\boldsymbol{y}-\hat{\boldsymbol{y}}|_2^2$。试计算函数 $L$ 关于 $\boldsymbol{b}_1$ 的梯度。</p>
+<div class="arithmatex">\[\boldsymbol{A}_1=\begin{bmatrix} 2 &amp; 3 \\ -2 &amp; 1 \\ 3 &amp; -1 \end{bmatrix}, \boldsymbol{A}_2=\begin{bmatrix} 3 &amp; -1 &amp; 0 \\ 1 &amp; -2 &amp; 2 \end{bmatrix}, \boldsymbol{b}_1=\begin{bmatrix} -1 \\ 4 \\ -2 \end{bmatrix}, \boldsymbol{b}_2=\begin{bmatrix} 2 \\ -3 \end{bmatrix}\]</div>
+<p>假设输入为 <span class="arithmatex">\(\boldsymbol{x}=(1,-1)\)</span>，并且对应的真实输出为 <span class="arithmatex">\(\hat{\boldsymbol{y}}=(0,1)\)</span>，采用平方损失 <span class="arithmatex">\(L=\frac12\|\boldsymbol{y}-\hat{\boldsymbol{y}}\|_2^2\)</span>。试计算函数 <span class="arithmatex">\(L\)</span> 关于 <span class="arithmatex">\(\boldsymbol{b}_1\)</span> 的梯度。</p>
 <hr />
 <p><strong>四、（13分）</strong></p>
 <p>完成下列问题：</p>
-<p>(1) 设已知矩阵 $\boldsymbol{M} \in \mathbb{R}^{m \times n}$ 的SVD分解为 $\boldsymbol{U} \boldsymbol{\Sigma} \boldsymbol{V}^{\mathrm{T}}$，请写出拼接矩阵 $\boldsymbol{A} = [\boldsymbol{M} \quad \boldsymbol{M}]$ 的奇异值分解；</p>
-<p>(2) 令 $\boldsymbol{A}$ 为 $m\times n$ 矩阵，且 $\boldsymbol{P}$ 为 $m\times m$ 正交矩阵。证明：$\boldsymbol{P} \boldsymbol{A}$ 与 $\boldsymbol{A}$ 的奇异值相同。并说明矩阵 $\boldsymbol{P} \boldsymbol{A}$ 与 $\boldsymbol{A}$ 的左、右奇异向量有何关系？</p>
+<p>(1) 设已知矩阵 <span class="arithmatex">\(\boldsymbol{M} \in \mathbb{R}^{m \times n}\)</span> 的SVD分解为 <span class="arithmatex">\(\boldsymbol{U} \boldsymbol{\Sigma} \boldsymbol{V}^{\mathrm{T}}\)</span>，请写出拼接矩阵 <span class="arithmatex">\(\boldsymbol{A} = [\boldsymbol{M} \quad \boldsymbol{M}]\)</span> 的奇异值分解；</p>
+<p>(2) 令 <span class="arithmatex">\(\boldsymbol{A}\)</span> 为 <span class="arithmatex">\(m\times n\)</span> 矩阵，且 <span class="arithmatex">\(\boldsymbol{P}\)</span> 为 <span class="arithmatex">\(m\times m\)</span> 正交矩阵。证明：<span class="arithmatex">\(\boldsymbol{P} \boldsymbol{A}\)</span> 与 <span class="arithmatex">\(\boldsymbol{A}\)</span> 的奇异值相同。并说明矩阵 <span class="arithmatex">\(\boldsymbol{P} \boldsymbol{A}\)</span> 与 <span class="arithmatex">\(\boldsymbol{A}\)</span> 的左、右奇异向量有何关系？</p>
 <hr />
 <p><strong>五、（12分）</strong></p>
 <p>已知矩阵</p>
-<p>$$\boldsymbol{M} = \begin{pmatrix} 5 &amp; 1 &amp; 2 \ -2 &amp; -3 &amp; 4 \ 1 &amp; 3 &amp; -1 \end{pmatrix}$$</p>
-<p>(1) 计算矩阵 $\boldsymbol{M}$ 的 $1$ 范数和 $\infty$ 范数；</p>
-<p>(2) 证明：如果矩阵 $\boldsymbol{A} = [\boldsymbol{a}_1, \boldsymbol{a}_2, \cdots, \boldsymbol{a}_n]$ 是按列分块的，那么 $|\boldsymbol{A}|_F^2 = |\boldsymbol{a}_1|_2^2 + |\boldsymbol{a}_2|_2^2 + \cdots + |\boldsymbol{a}_n|_2^2$。</p>
-<p>(3) 设 $a_1,a_2,\cdots,a_n$ 是 $n$ 个正数，证明：由</p>
-<p>$$\Omega(\boldsymbol{x})=\left(\sum_{i=1}^na_ix_i^2\right)^{\frac{1}{2}}$$</p>
-<p>定义的函数 $\Omega: \mathbb{R}^n\to\mathbb{R}$ 是一个范数。</p>
+<div class="arithmatex">\[\boldsymbol{M} = \begin{pmatrix} 5 &amp; 1 &amp; 2 \\ -2 &amp; -3 &amp; 4 \\ 1 &amp; 3 &amp; -1 \end{pmatrix}\]</div>
+<p>(1) 计算矩阵 <span class="arithmatex">\(\boldsymbol{M}\)</span> 的 <span class="arithmatex">\(1\)</span> 范数和 <span class="arithmatex">\(\infty\)</span> 范数；</p>
+<p>(2) 证明：如果矩阵 <span class="arithmatex">\(\boldsymbol{A} = [\boldsymbol{a}_1, \boldsymbol{a}_2, \cdots, \boldsymbol{a}_n]\)</span> 是按列分块的，那么 <span class="arithmatex">\(\|\boldsymbol{A}\|_F^2 = \|\boldsymbol{a}_1\|_2^2 + \|\boldsymbol{a}_2\|_2^2 + \cdots + \|\boldsymbol{a}_n\|_2^2\)</span>。</p>
+<p>(3) 设 <span class="arithmatex">\(a_1,a_2,\cdots,a_n\)</span> 是 <span class="arithmatex">\(n\)</span> 个正数，证明：由</p>
+<div class="arithmatex">\[\Omega(\boldsymbol{x})=\left(\sum_{i=1}^na_ix_i^2\right)^{\frac{1}{2}}\]</div>
+<p>定义的函数 <span class="arithmatex">\(\Omega: \mathbb{R}^n\to\mathbb{R}\)</span> 是一个范数。</p>
 <hr />
 <p><strong>六、（12分）</strong></p>
 <p>求解以下问题：</p>
-<p>(1) 假设 $X_{1} \rightarrow X_{2} \rightarrow X_{3} \rightarrow \cdots \rightarrow X_{n}$ 是一个马尔科夫链，即</p>
-<p>$$p\left(x_{1}, x_{2}, \ldots, x_{n}\right)=p\left(x_{1}\right) p\left(x_{2} \mid x_{1}\right) \cdots p\left(x_{n} \mid x_{n-1}\right)$$</p>
-<p>试化简 $I\left(X_{1} ; X_{2}, \ldots, X_{n}\right)$。</p>
-<p>(2) $X$ 和 $Y$ 是 ${0,1,2,3}$ 上的独立、等概率分布的随机变量，求 $H(X+Y)$。</p>
+<p>(1) 假设 <span class="arithmatex">\(X_{1} \rightarrow X_{2} \rightarrow X_{3} \rightarrow \cdots \rightarrow X_{n}\)</span> 是一个马尔科夫链，即</p>
+<div class="arithmatex">\[p\left(x_{1}, x_{2}, \ldots, x_{n}\right)=p\left(x_{1}\right) p\left(x_{2} \mid x_{1}\right) \cdots p\left(x_{n} \mid x_{n-1}\right)\]</div>
+<p>试化简 <span class="arithmatex">\(I\left(X_{1} ; X_{2}, \ldots, X_{n}\right)\)</span>。</p>
+<p>(2) <span class="arithmatex">\(X\)</span> 和 <span class="arithmatex">\(Y\)</span> 是 <span class="arithmatex">\(\{0,1,2,3\}\)</span> 上的独立、等概率分布的随机变量，求 <span class="arithmatex">\(H(X+Y)\)</span>。</p>
 <hr />
 <p><strong>七、（13分）</strong></p>
 <p>求解下述问题：</p>
-<p>(1) 请计算负熵函数 $f(\boldsymbol{x})=\sum_{i=1}^{n} x_i \log x_i$ 的共轭函数。</p>
-<p>(2) 用Lagrange乘子法求欠定方程 $\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}$ 的最小二范数解，其中 $\boldsymbol{A}\in\mathbb{R}^{m\times n}, m\leq n, \operatorname{rank}(\boldsymbol{A})=m$。</p>
+<p>(1) 请计算负熵函数 <span class="arithmatex">\(f(\boldsymbol{x})=\sum_{i=1}^{n} x_i \log x_i\)</span> 的共轭函数。</p>
+<p>(2) 用Lagrange乘子法求欠定方程 <span class="arithmatex">\(\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}\)</span> 的最小二范数解，其中 <span class="arithmatex">\(\boldsymbol{A}\in\mathbb{R}^{m\times n}, m\leq n, \operatorname{rank}(\boldsymbol{A})=m\)</span>。</p>
 <hr />
 <p><strong>八、（14分）</strong></p>
 <p>求解如下优化问题：</p>
-<p>(1) 使用梯度下降法和固定步长 $\lambda =0.1$ 计算 $\min f(x)=(x_{1}-1)^{2}+16(x_{2}-2)^{2}$，初始点 $x^{(0)}=(3,2)^{T}$，迭代至第三步后终止，请计算迭代过程中的解、梯度和函数值（第三步不用计算梯度和函数值，计算结果保留小数点后两位）。</p>
+<p>(1) 使用梯度下降法和固定步长 <span class="arithmatex">\(\lambda =0.1\)</span> 计算 <span class="arithmatex">\(\min f(x)=(x_{1}-1)^{2}+16(x_{2}-2)^{2}\)</span>，初始点 <span class="arithmatex">\(x^{(0)}=(3,2)^{T}\)</span>，迭代至第三步后终止，请计算迭代过程中的解、梯度和函数值（第三步不用计算梯度和函数值，计算结果保留小数点后两位）。</p>
 <p>(2) 请谈谈牛顿法与BFGS方法之间的区别与联系。</p>
 
 
@@ -1810,6 +1810,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
