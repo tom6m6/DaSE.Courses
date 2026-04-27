@@ -1,0 +1,4190 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/tom6m6/DaSE.Courses/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A/2020-2021-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A3/">
+      
+      
+        <link rel="prev" href="../2020-2021-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/">
+      
+      
+        <link rel="next" href="../2021-2022-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>2020-2021-2-编程作业3 - DaSE 课程资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2020-2021-2-3" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="DaSE 课程资料" class="md-header__button md-logo" aria-label="DaSE 课程资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DaSE 课程资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2020-2021-2-编程作业3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome to MkDocs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Web%E7%BC%96%E7%A8%8B/" class="md-tabs__link">
+          
+  
+  
+  Web编程
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/" class="md-tabs__link">
+          
+  
+  
+  信息检索与自然语言处理
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../2019-2020-1-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A/" class="md-tabs__link">
+          
+  
+  
+  分布式系统
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E6%95%B0%E6%8D%AE%E4%BC%A6%E7%90%86/" class="md-tabs__link">
+          
+  
+  
+  数据伦理
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AF%BC%E8%AE%BA/%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%8D%B7%E7%BA%B8%E5%92%8C%E6%88%91%E7%9A%84%E8%A7%A3%E7%AD%94/" class="md-tabs__link">
+          
+  
+  
+  数据科学与工程导论
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="md-tabs__link">
+          
+  
+  
+  数据科学与工程数学基础
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="md-tabs__link">
+          
+  
+  
+  数据结构
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="md-tabs__link">
+          
+  
+  
+  程序设计
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/" class="md-tabs__link">
+          
+  
+  
+  算法基础
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E4%B8%8E%E5%A4%9A%E5%AA%92%E4%BD%93%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/" class="md-tabs__link">
+          
+  
+  
+  计算机视觉与多媒体信息处理
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="DaSE 课程资料" class="md-nav__button md-logo" aria-label="DaSE 课程资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DaSE 课程资料
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web编程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Web编程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Web%E7%BC%96%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web编程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Web%E7%BC%96%E7%A8%8B/2023-2024-%E6%9A%91%E5%81%87%E6%9C%9F%E4%B8%AD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024暑假期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Web%E7%BC%96%E7%A8%8B/2024-2025-%E6%9A%91%E5%81%87%E6%9C%9F%E4%B8%AD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025暑假期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信息检索与自然语言处理
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信息检索与自然语言处理
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信息检索与自然语言处理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%202020-2021-1%20%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7A%E5%8D%B7%E7%BA%B8%2B%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-1 期末试卷A和答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%202020-2021-1%20%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7B%E5%8D%B7%E7%BA%B8%2B%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-1 期末试卷B和答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%202024-2025-2%20%E6%9C%9F%E4%B8%AD%E8%AF%95%E5%8D%B7%20%28%E5%9B%9E%E5%BF%86%E7%89%88%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自然语言处理 2024-2025-2 期中试卷 (回忆版)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%202024-2025-2%20%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7%20%28A%E5%8D%B7%2C%E5%9B%9E%E5%BF%86%E7%89%88%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自然语言处理 2024-2025-2 期末试卷 (A卷,回忆版)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    分布式系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    分布式系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编程作业
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    编程作业
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2019-2020-1-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-2020-1-编程作业
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2020-2021-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-2-编程作业1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2020-2021-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-2-编程作业2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-2-编程作业3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2021-2022-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-2022-2-编程作业1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2021-2022-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-2022-2-编程作业2（不全）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2022-2023-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-2023-2-编程作业1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2022-2023-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-2023-2-编程作业2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2023-2024-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-2024-2-编程作业1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2023-2024-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-2024-2-编程作业2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2023-2024-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-2024-2-编程作业3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-2025-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-2025-2-编程作业1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-2025-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-2025-2-编程作业2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据伦理
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据伦理
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E4%BC%A6%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据伦理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E4%BC%A6%E7%90%86/%E5%B9%B3%E6%97%B6%E5%B0%8F%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    平时小作业
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E4%BC%A6%E7%90%86/%E6%9C%9F%E6%9C%AB%E5%A4%A7%E4%BD%9C%E6%96%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    期末大作文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据科学与工程导论
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据科学与工程导论
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AF%BC%E8%AE%BA/%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%8D%B7%E7%BA%B8%E5%92%8C%E6%88%91%E7%9A%84%E8%A7%A3%E7%AD%94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导论期中卷纸和我的解答
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据科学与工程数学基础
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据科学与工程数学基础
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据科学与工程数学基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    期末试卷
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    期末试卷
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2020%E7%BA%A7%E5%8D%B7%E7%BA%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020级卷纸
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2020%E7%BA%A7%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020级答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2021%E7%BA%A7%E5%8D%B7%E7%BA%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021级卷纸
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2021%E7%BA%A7%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021级答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2022%E7%BA%A7%E5%8D%B7%E7%BA%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022级卷纸
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2022%E7%BA%A7%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022级答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2023%E7%BA%A7%E5%8D%B7%E7%BA%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023级卷纸（A）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2023%E7%BA%A7%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023级答案（A）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2023%E7%BA%A7%E7%AD%94%E6%A1%88%EF%BC%88%E8%A1%A5%E7%BC%93%E8%80%83%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023级答案（B）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2024%E7%BA%A7%E5%8D%B7%E7%BA%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024级卷纸（A）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2024%E7%BA%A7%E5%8D%B7%E7%BA%B8%EF%BC%88%E8%A1%A5%E7%BC%93%E8%80%83%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024级卷纸（B）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据结构
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据结构
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    程序设计
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    程序设计
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    程序设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    上机测试
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    上机测试
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2021%E6%B5%8B%E8%AF%951/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021测试1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2021%E6%B5%8B%E8%AF%952/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021测试2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2022%E6%B5%8B%E8%AF%951/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022测试1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2022%E6%B5%8B%E8%AF%952/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022测试2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2023%E6%B5%8B%E8%AF%951/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023测试1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2023%E6%B5%8B%E8%AF%952/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023测试2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2024%E6%B5%8B%E8%AF%951A%E5%8D%B7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024测试1A卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2024%E6%B5%8B%E8%AF%952A%E5%8D%B7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024测试2A卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2024%E6%B5%8B%E8%AF%952B%E5%8D%B7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024测试2B卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据学院2025级程序设计期末考试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    理论笔试
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    理论笔试
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%90%86%E8%AE%BA%E7%AC%94%E8%AF%95/2019/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    华东师范大学期末试卷（A）2019-2020学年第一学期
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%90%86%E8%AE%BA%E7%AC%94%E8%AF%95/2020/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    华东师范大学期末试卷（A）2020-2021学年第一学期
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%90%86%E8%AE%BA%E7%AC%94%E8%AF%95/2022%E7%AE%80%E5%8D%95%E5%9B%9E%E9%A1%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    《程序设计》期末考试2022-2023-1学期简单回顾
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%90%86%E8%AE%BA%E7%AC%94%E8%AF%95/2024%E7%AE%80%E5%8D%95%E5%9B%9E%E9%A1%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    《程序设计》期末考试2024-2025-1学期简单回顾（AB卷）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    算法基础
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    算法基础
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    算法基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_2" id="__nav_10_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    期中期末
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    期中期末
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2017-2018-1A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-2018-1A卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2017-2018-1B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-2018-1B卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2020-2021-1A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-1A卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2020-2021-1mid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-1期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2021-2022-1mid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-2022-1期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2022-2023-2A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-2023-2A卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2022-2023-2B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-2023-2B卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2022-2023-2mid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-2023-2期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2023-2024-2mid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-2024-2期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2024-2025-2mid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-2025-2期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/%E6%9F%90%E5%B9%B4%E6%9C%9F%E6%9C%AB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    某年期末试卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机视觉与多媒体信息处理
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    计算机视觉与多媒体信息处理
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E4%B8%8E%E5%A4%9A%E5%AA%92%E4%BD%93%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机视觉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E4%B8%8E%E5%A4%9A%E5%AA%92%E4%BD%93%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/2023-2024-1%E6%9C%9F%E4%B8%AD%E5%9B%9E%E5%BF%86%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-2024-1 期中理论测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E4%B8%8E%E5%A4%9A%E5%AA%92%E4%BD%93%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/2024-2025-1%E6%9C%9F%E4%B8%AD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-2025-1 期中理论测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2020-2021-2-3">2020-2021-2-编程作业3<a class="headerlink" href="#2020-2021-2-3" title="Permanent link">&para;</a></h1>
+<h1 id="twitter-hot-topics">Twitter Hot Topics<a class="headerlink" href="#twitter-hot-topics" title="Permanent link">&para;</a></h1>
+<h2 id="_1">难易程度:  ** 中<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_2">待完成:<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>请在DSPPCode.flink.twitter_hot_topics中创建TwitterHotTopicsImpl, 继承TwitterHotTopics, 实现抽象方法</li>
+<li>请在DSPPCode.flink.twitter_hot_topics中创建TwitterTextHandlerImpl, 继承TwitterTextHandler, 实现抽象方法</li>
+</ul>
+<h2 id="_3">题目描述:<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>要求：</li>
+</ul>
+<p>来自世界各地的Twitter用户们每时每刻都在发布着新的推文。往往，这些推文所讨论的话题是各不相同的，并且在讨论热度上也是有所差异的。一般来说，弄清哪些话题是热门话题有利于为用户做内容推荐。假设存在一个程序正在源源不断地采集着Twitter的推文数据，现在希望你能对这些数据进行处理，以找出<strong>英文推文中的</strong>热门话题。为了简单起见，推文中的每个<strong>英文单词</strong>被视作一个话题。当话题数大于等于<strong>4</strong>时，该话题称之为热门话题。此外，对于每个话题而言，只有其对应的英文单词具备一定的意义才会纳入热门话题。例如，对于<code>the</code>话题，由于<code>the</code>无意义，则不应纳入热门话题。为了方便判定话题是否具备一定的意义，本题提供了一份包含所有无意义单词的停词表，可通过<code>StopWordsOperation.getStopWords</code>方法获取。</p>
+<ul>
+<li>输入格式</li>
+</ul>
+<p>每条输入数据的格式为JSON。在每条JSON数据中，"text"字段表示用户发布的推文 ，而"lang"字段表示用户发布的推文所使用的语言。假设，某一Twitter用户发布了<strong>五条相同的英文推文</strong>，其内容均为<code>how to use flink? i love it</code>，则推文对应的数据格式如下所示。其中，"text"字段所对应的值为<code>how to use flink? i love it</code>，而"lang"字段所对应的值为<code>en</code>。</p>
+<p><code>json
+  {
+    "created_at": "Mon Jan 1 00:00:00 +0000 1901",
+    "id": 0,
+    "id_str": "000000000000000000",
+    "text": "how to use flink? i love it",
+    "source": null,
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 0,
+      "id_str": "0000000000",
+      "name": "test1",
+      "screen_name": "iphone",
+      "location": "Shanghai",
+      "protected": false,
+      "verified": false,
+      "followers_count": 999999,
+      "friends_count": 99999,
+      "listed_count": 999,
+      "favourites_count": 9999,
+      "statuses_count": 999,
+      "created_at": "Mon Jan 1 00:00:00 +0000 1901",
+      "utc_offset": 7200,
+      "time_zone": "Amsterdam",
+      "geo_enabled": false,
+      "lang": "en",
+      "entities": {
+        "hashtags": [
+          {
+            "text": "example1",
+            "indices": [
+              0,
+              0
+            ]
+          },
+          {
+            "text": "tweet1",
+            "indices": [
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C6E2EE",
+      "profile_background_tile": false,
+      "profile_link_color": "1F98C7",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "252429",
+      "profile_text_color": "666666",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null
+  }</code></p>
+<ul>
+<li>输出格式</li>
+</ul>
+<p>每行以元组形式输出热门话题（全部小写）以及热门话题出现的次数，并且当话题数大于等于4时即开始输出。以上述的五条推文数据为例，love这一热门话题总共出现了5次，因此会产生两次输出。</p>
+<p><code>(love,4)
+  (love,5)
+  (flink,4)
+  (flink,5)</code></p>
+<h2 id="twitterhottopicsimpl">TwitterHotTopicsImpl<a class="headerlink" href="#twitterhottopicsimpl" title="Permanent link">&para;</a></h2>
+<pre><code class="language-java">package DSPPCode.flink.twitter_hot_topics.impl;
+
+import DSPPCode.flink.twitter_hot_topics.question.StopWordsOperation;
+import DSPPCode.flink.twitter_hot_topics.question.TwitterHotTopics;
+import org.apache.flink.api.common.functions.FlatMapFunction;
+import org.apache.flink.api.common.functions.ReduceFunction;
+import org.apache.flink.api.java.tuple.Tuple2;
+import org.apache.flink.streaming.api.datastream.DataStream;
+import org.apache.flink.util.Collector;
+import java.util.List;
+
+public class TwitterHotTopicsImpl extends TwitterHotTopics {
+
+  @Override
+  protected DataStream&lt;Tuple2&lt;String, Integer&gt;&gt; findHotTopics(DataStream&lt;String&gt; twitterText) {
+    twitterText.print();
+    DataStream&lt;Tuple2&lt;String, Integer&gt;&gt; inp = twitterText.flatMap(
+        new FlatMapFunction&lt;String, Tuple2&lt;String, Integer&gt;&gt;() {
+          @Override
+          public void flatMap(String s, Collector&lt;Tuple2&lt;String, Integer&gt;&gt; collector)
+              throws Exception {
+            String[] strs = s.split(&quot; &quot;);
+            int l = strs.length;
+            List&lt;String&gt; stop = StopWordsOperation.getStopWords();
+            for(int i=0;i&lt;l;i++){
+              String s0 = strs[i];
+              s0 = s0.replace(&quot;?&quot;,&quot;&quot;).replace(&quot;.&quot;,&quot;&quot;).replace(&quot;,&quot;,&quot;&quot;).replace(&quot;!&quot;,&quot;&quot;);
+              // System.err.println(s0);
+              // while(s0.charAt(s.length()-1)&gt;'z' || s0.charAt(s0.length()-1)&lt;'A'){
+              //   System.err.print(s0);
+              //   s0 = s0.substring(0,s0.length()-1);
+              // }
+              if(stop.contains(s0))
+                continue;
+              collector.collect(new Tuple2&lt;String, Integer&gt;(s0, 1));
+            }
+          }
+        }
+    );
+    inp.print();
+    DataStream&lt;Tuple2&lt;String, Integer&gt;&gt; ans = inp.keyBy(0).reduce(
+        new ReduceFunction&lt;Tuple2&lt;String, Integer&gt;&gt;() {
+          @Override
+          public Tuple2&lt;String, Integer&gt; reduce(Tuple2&lt;String, Integer&gt; stringIntegerTuple2,
+              Tuple2&lt;String, Integer&gt; t1) throws Exception {
+            System.err.println(&quot;10&quot;);
+            return new Tuple2&lt;String, Integer&gt;(stringIntegerTuple2.f0, stringIntegerTuple2.f1 + t1.f1);
+          }
+        }
+    ).filter((tup)-&gt;tup.f1 &gt;= HOT_TOPIC_THRESHOLD);
+    ans.print();
+    return ans;
+  }
+}
+</code></pre>
+<h2 id="twittertexthandlerimpl">TwitterTextHandlerImpl<a class="headerlink" href="#twittertexthandlerimpl" title="Permanent link">&para;</a></h2>
+<pre><code class="language-java">package DSPPCode.flink.twitter_hot_topics.impl;
+
+import DSPPCode.flink.twitter_hot_topics.question.Twitter;
+import DSPPCode.flink.twitter_hot_topics.question.TwitterTextHandler;
+
+public class TwitterTextHandlerImpl extends TwitterTextHandler {
+
+  @Override
+  public String map(String twitterJson) throws Exception {
+    Twitter twitter = fromJson(twitterJson);
+    if (twitter.getUser().getLang().equals(&quot;en&quot;)) {
+      System.err.println(twitter.getText());
+      return twitter.getText();
+    }
+    else return &quot;the&quot;;
+  }
+}
+</code></pre>
+<hr />
+<h1 id="digital-conversion">Digital Conversion<a class="headerlink" href="#digital-conversion" title="Permanent link">&para;</a></h1>
+<h2 id="_4">待完成:<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li>请在 DSPPCode.flink.digital_conversion.impl 中创建DigitalPartitionerImpl, 继承 DigitalPartitioner, 实现抽象方法</li>
+<li>请在 DSPPCode.flink.digital_conversion.impl 中创建DigitalConversionImpl, 继承 DigitalConversion, 实现抽象方法</li>
+</ul>
+<h2 id="_5">题目描述:<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>有一个程序会持续地产生一些数字，这些数字都在0~9以内。小明希望将程序产生的整数转换为英文单词并进行输出。此外，小明发现这些数字均匀的分布在[0-4]和[5-9]区间内。因此，在对这些数据进行转换时，小明还希望将这些数字均匀地划分到两个任务中。</p>
+</li>
+<li>
+<p>输入格式: 输入的每行为一个数字</p>
+</li>
+</ul>
+<p><code>0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9</code></p>
+<ul>
+<li>输出格式:  每行输出数字对应的英文单词，单词的首字母要求大写。</li>
+</ul>
+<p>任务1的输出</p>
+<p><code>One
+  Three
+  Zero
+  Two
+  Four</code></p>
+<p>任务2的输出</p>
+<p><code>Five
+  Seven
+  Nine
+  Six
+  Eight</code></p>
+<h2 id="digitalconversionimpl">DigitalConversionImpl<a class="headerlink" href="#digitalconversionimpl" title="Permanent link">&para;</a></h2>
+<pre><code class="language-java">package DSPPCode.flink.digital_conversion.impl;
+
+import DSPPCode.flink.digital_conversion.question.DigitalConversion;
+import DSPPCode.flink.digital_conversion.question.DigitalWord;
+import org.apache.flink.api.common.functions.FilterFunction;
+import org.apache.flink.api.common.functions.MapFunction;
+import org.apache.flink.api.java.tuple.Tuple1;
+import org.apache.flink.streaming.api.datastream.DataStream;
+
+public class DigitalConversionImpl extends DigitalConversion{
+
+  public DataStream&lt;String&gt; digitalConversion(DataStream&lt;Tuple1&lt;String&gt;&gt; digitals){
+    DataStream&lt;String&gt; ans = digitals.map(
+        new MapFunction&lt;Tuple1&lt;String&gt;, String&gt;() {
+          @Override
+          public String map(Tuple1&lt;String&gt; tuple1) throws Exception {
+            double d = Double.parseDouble(tuple1.f0);
+            int i = (int)d;
+            if (Math.abs(d - i) &gt; 0.00001){
+              return &quot;&quot;;
+            }
+            switch(i){
+              case 0:
+                return DigitalWord.ZERO.getWord();
+                // break;
+              case 1:
+                return DigitalWord.ONE.getWord();
+              // break;
+              case 2:
+                return DigitalWord.TWO.getWord();
+              // break;
+              case 3:
+                return DigitalWord.THREE.getWord();
+              // break;
+              case 4:
+                return DigitalWord.FOUR.getWord();
+              // break;
+              case 5:
+                return DigitalWord.FIVE.getWord();
+              // break;
+              case 6:
+                return DigitalWord.SIX.getWord();
+              // break;
+              case 7:
+                return DigitalWord.SEVEN.getWord();
+              // break;
+              case 8:
+                return DigitalWord.EIGHT.getWord();
+              // break;
+              case 9:
+                return DigitalWord.NINE.getWord();
+              // break;
+              default:
+                return &quot;&quot;;
+            }
+          }
+        }).filter(
+        new FilterFunction&lt;String&gt;() {
+          @Override
+          public boolean filter(String s) throws Exception {
+            if(s != &quot;&quot;) return true;
+            return false;
+          }
+        }
+    );
+    return ans;
+  }
+
+}
+</code></pre>
+<h2 id="digitalpartitionerimpl">DigitalPartitionerImpl<a class="headerlink" href="#digitalpartitionerimpl" title="Permanent link">&para;</a></h2>
+<pre><code class="language-java">package DSPPCode.flink.digital_conversion.impl;
+
+import DSPPCode.flink.digital_conversion.question.DigitalPartitioner;
+
+public class DigitalPartitionerImpl extends DigitalPartitioner{
+
+  public int partition(String key, int numPartitions){
+    if(key.charAt(0) &lt; '5')
+      return 0;
+    else return 1;
+  }
+
+}
+</code></pre>
+<hr />
+<h1 id="email-assignment">Email Assignment<a class="headerlink" href="#email-assignment" title="Permanent link">&para;</a></h1>
+<h2 id="_6">待完成:<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ul>
+<li>请在DSPPCode.flink.email_assignment.impl中创建EmailAssignmentImpl, 继承EmailAssignment, 实现抽象方法.</li>
+</ul>
+<h2 id="_7">题目描述:<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ECNU的教职工所使用的工作邮箱的格式为<code>用户名@邮箱后缀</code>。一般而言，每个教职工可以为工作邮箱申请多个用户名作为别名。然而，由于同一学院的教职工拥有相同的邮箱后缀。例如：数据科学与工程学院的教职工的邮箱后缀都为<code>dase.ecnu.edu.cn</code>。因此，在申请别名时有如下规定：</p>
+</li>
+<li>
+<p>同一学院内的别名不能发生重复（如不能同时存在两个用户都拥有<code>a_name@dase.ecnu.edu.cn</code>的邮箱地址）。</p>
+</li>
+<li>
+<p>不同学院间的别名可以发生重复（如可以同时存在两个用户分别拥有<code>a_name@dase.ecnu.edu.cn</code>和<code>a_name@cs.ecnu.edu.cn</code>的邮箱地址）。</p>
+</li>
+<li>
+<p>此外，别名长度的取值范围是[5,11]，且别名只能由英文字母、数字或下划线（_）组成。</p>
+</li>
+</ul>
+<p><strong>现有一组顺序的别名申请和注销的请求序列，要求结合以上的别名申请规定得出各请求的最终完成状态（成功或者失败）。</strong></p>
+<ul>
+<li>
+<p>输入:
+  答题时无需编写代码来解析输入的文本格式。需要实现的抽象方法的输入为<code>DataStream&lt;Request&gt;</code>类型。其中每个字段的含义如下:</p>
+<ul>
+<li>type: 申请（APPLY）或注销（REVOKE）。</li>
+<li>id: 发出请求用户的工号，每个工号只对应一个邮箱账户。</li>
+<li>depart: 由于邮件系统设计的原因，部门通过两位代码表示，分别为<code>firstLevelCode</code>（一级部门代码，如<code>1</code>表示信息学部）、<code>secondLevelCode</code>（一级部门内的二级部门代码，如<code>3</code>表示数据学院）。</li>
+<li>alias: 请求的别名。</li>
+</ul>
+</li>
+</ul>
+<p><code>Request{type=APPLY, id=12345, depart=Department{firstLevelCode=1, secondLevelCode=1}, alias="*invalid"}
+    Request{type=APPLY, id=22222, depart=Department{firstLevelCode=1, secondLevelCode=3}, alias="a_name"}
+    Request{type=APPLY, id=25222, depart=Department{firstLevelCode=1, secondLevelCode=3}, alias="a_name"}
+    Request{type=REVOKE, id=22222, depart=Department{firstLevelCode=1, secondLevelCode=3}, alias="a_name"}
+    Request{type=APPLY, id=25222, depart=Department{firstLevelCode=1, secondLevelCode=3}, alias="b_name"}</code></p>
+<ul>
+<li>输出:
+  输出每个请求的完成状态，<code>SUCCESS</code>表示请求成功执行，<code>FAILURE</code>表示请求执行失败。</li>
+</ul>
+<p><code>FAILURE
+    SUCCESS
+    FAILURE
+    SUCCESS
+    SUCCESS</code></p>
+<h2 id="emailassignmentimpl">EmailAssignmentImpl<a class="headerlink" href="#emailassignmentimpl" title="Permanent link">&para;</a></h2>
+<pre><code class="language-java">package DSPPCode.flink.email_assignment.impl;
+
+import DSPPCode.flink.email_assignment.question.EmailAssignment;
+import DSPPCode.flink.email_assignment.question.Request;
+import DSPPCode.flink.email_assignment.question.RequestType;
+import org.apache.flink.api.common.functions.MapFunction;
+import org.apache.flink.streaming.api.datastream.DataStream;
+import java.util.HashMap;
+
+public class EmailAssignmentImpl extends EmailAssignment{
+
+  @Override
+  public DataStream&lt;String&gt; processRequest(DataStream&lt;Request&gt; requests) {
+    DataStream&lt;String&gt; ans = requests.map(
+        new MapFunction&lt;Request, String&gt;() {
+          HashMap&lt;String, Integer&gt; hash = new HashMap&lt;String, Integer&gt;();
+          @Override
+          public String map(Request request) throws Exception {
+            String TRUE = &quot;SUCCESS&quot;;
+            String FALSE = &quot;FAILURE&quot;;
+            String regex = &quot;^[a-z0-9A-Z_]+$&quot;;
+            if (request.getAlias().length() &lt; 5 || request.getAlias().length() &gt; 11) {
+              System.err.print(&quot;no bother &quot;);
+              System.err.println(hash);
+              return FALSE;
+            }
+            if (!request.getAlias().matches(regex)) {
+              System.err.print(&quot;no bother &quot;);
+              System.err.println(hash);
+              return FALSE;
+            }
+            Integer fi = new Integer(request.getDepart().getFirstLevelCode());
+            Integer se = new Integer(request.getDepart().getSecondLevelCode());
+            String k = fi.toString() + se.toString() + request.getAlias();
+            Integer rid = hash.getOrDefault(k, -1);
+            if (rid == -1 &amp;&amp; request.getType() == RequestType.APPLY){
+              hash.put(k, request.getId());
+              System.err.print(&quot;go1 &quot;);
+              System.err.println(hash);
+              return TRUE;
+            }
+            else if (rid == request.getId() &amp;&amp; request.getType() == RequestType.REVOKE){
+              hash.put(k, -1);
+              System.err.print(&quot;go2 &quot;);
+              System.err.println(hash);
+              return TRUE;
+            }
+            else {
+              System.err.print(&quot;go3 &quot;);
+              System.err.println(hash);
+              return FALSE;
+            }
+          }
+        }
+    );
+    DataStream&lt;String&gt; test = ans.map(
+        new MapFunction&lt;String, String&gt;() {
+          @Override
+          public String map(String s) throws Exception {
+            System.err.println(s);
+            return s;
+          }
+        }
+    );
+    System.err.println(&quot;---------&quot;);
+    return ans;
+  }
+}
+</code></pre>
+<hr />
+<h1 id="gcd">最大公约数(GCD)<a class="headerlink" href="#gcd" title="Permanent link">&para;</a></h1>
+<h2 id="_8">待完成:<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<ul>
+<li>请在 DSPPCode.flink.gcd.impl 中创建GCDImpl, 继承 GCD, 实现抽象方法</li>
+</ul>
+<h2 id="_9">题目描述:<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<ul>
+<li>对于两个正整数，求其最大公约数（GCD）。用于计算最大公约数的辗转相除法的原理是：两个整数的最大公约数等于其中较小的那个数和两数相除余数的最大公约数，即<code>gcd(a, b) = gcd(b, a mod b)</code>。此处不妨设置<code>r = a mod b</code>，若<code>r != 0</code>，则重新赋值<code>a ← b，b ← r</code>并继续迭代，直至<code>r = 0</code>，此时的<code>b</code>即为最大公约数。 请输出每次迭代后<code>a</code>和<code>b</code>的值。</li>
+</ul>
+<p>注：请使用flink迭代算子实现。</p>
+<ul>
+<li>输入格式: 输入由一个字符标识符以及两个整数<code>a,b</code>组成的字符串记录，彼此之间使用空格分隔。字符标识符用来区分不同的记录，分别求解每个记录中两个整数<code>a,b</code>的最大公约数。</li>
+</ul>
+<p><code>A 5 2
+  B 18 6</code></p>
+<ul>
+<li>输出格式:  输出为字符标识符以及两个整数组成的元组，代表某一记录每次迭代后<code>a</code>和<code>b</code>的值。如<code>(A,2,1)</code>表示A记录第一次迭代计算后<code>a=2,b=1</code>。</li>
+</ul>
+<p><code>(A,2,1)
+  (B,6,0)
+  (A,1,0)</code></p>
+<h2 id="gcdimpl">GCDImpl<a class="headerlink" href="#gcdimpl" title="Permanent link">&para;</a></h2>
+<pre><code class="language-java">package DSPPCode.flink.gcd.impl;
+
+import DSPPCode.flink.gcd.question.GCD;
+import org.apache.flink.api.common.functions.MapFunction;
+import org.apache.flink.api.java.tuple.Tuple3;
+import org.apache.flink.streaming.api.datastream.DataStreamSource;
+import org.apache.flink.api.common.functions.FilterFunction;
+import org.apache.flink.api.common.functions.FlatMapFunction;
+import org.apache.flink.streaming.api.datastream.DataStream;
+import org.apache.flink.streaming.api.datastream.IterativeStream;
+import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+import org.apache.flink.util.Collector;
+
+public class GCDImpl extends GCD{
+  public DataStream&lt;Tuple3&lt;String, Integer, Integer&gt;&gt; calGCD(IterativeStream&lt;Tuple3&lt;String, Integer, Integer&gt;&gt; iteration){
+        // |创建反馈流|
+        // |选择第三位置不为0的元组，例如(A, 2, 1)|
+        DataStream&lt;Tuple3&lt;String, Integer, Integer&gt;&gt; feedback =
+            iteration.filter(
+                new FilterFunction&lt;Tuple3&lt;String, Integer, Integer&gt;&gt;() {
+                  @Override
+                  public boolean filter(Tuple3&lt;String, Integer, Integer&gt; value) throws Exception {
+                    return value.f2 != 0;
+                  }
+                });
+        // |实现迭代步逻辑，计算下一个GCD|
+        DataStream&lt;Tuple3&lt;String, Integer, Integer&gt;&gt; iteratedStream =
+          feedback.flatMap(
+              new FlatMapFunction&lt;Tuple3&lt;String, Integer, Integer&gt;, Tuple3&lt;String, Integer, Integer&gt;&gt;() {
+                @Override
+                public void flatMap(
+                    Tuple3&lt;String, Integer, Integer&gt; value, Collector&lt;Tuple3&lt;String, Integer, Integer&gt;&gt; out)
+                    throws Exception {
+                  // |例如迭代算子的输入输入为(A, 2, 1)，此处转换将(A, 2, 1)转换为(A, 1, 0)|
+                  Tuple3&lt;String, Integer, Integer&gt; feedbackValue =
+                      new Tuple3(value.f0, value.f2, value.f1 % value.f2);
+                  out.collect(feedbackValue);
+                }
+              });
+        iteration.closeWith(iteratedStream);
+        return iteratedStream;
+  }
+}
+</code></pre>
+<hr />
+<h1 id="grade-point">Grade Point<a class="headerlink" href="#grade-point" title="Permanent link">&para;</a></h1>
+<h2 id="_10">待完成:<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<ul>
+<li>请在DSPPCode.flink.grade_point.impl中创建GradePointImpl, 继承GradePoint, 实现抽象方法.</li>
+</ul>
+<h2 id="_11">题目描述:<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>数据学院开设了若干门公选课，每门课的学分均在1-5范围内，学生可以选择自己感兴趣的公选课进行修读，根据毕业要求，学生选修的公选课的总学分需要达到10分。
+  假设每个学生都满足了毕业要求，并且所有公选课的成绩均已公布，现在需要你根据成绩单和下图的公式来计算所有学生的平均学分绩点，计算结果四舍五入保留两位小数。</p>
+<p><img alt="计算公式.png" src="../assets/%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F.png" /></p>
+<p>注:
+1.学生的某个选修课成绩若为-1,表示该学生并未参加该选修课的考试。此时，该选修课的成绩应按0分计算。</p>
+</li>
+<li>
+<p>输入:每行表示一个学生选修的某课程的成绩信息，该信息包括三个字段(学生id 课程学分 课程绩点)，各字段之间使用空格进行分隔。</p>
+</li>
+</ul>
+<p><code>t001 3 3.6
+    t001 3 3.5
+    t001 4 3.0
+    t002 3 3.0
+    t002 3 4.0
+    t002 4 4.0
+    t003 3 2.7
+    t003 3 3.4
+    t003 4 3.5</code></p>
+<ul>
+<li>输出:计算每个学生的平均学分绩点，和总学分一起输出。</li>
+</ul>
+<p>输出格式为(学生id,总学分,平均学分绩点)</p>
+<p>例：学生t001的总学分=3+3+4=10,平均学分绩点=(3<em>3.6+3</em>3.5+4*3.0)/10=3.33,则学生t001对应的输出为(t001,10,3.33)。</p>
+<p><code>(t001,10,3.33)
+    (t002,10,3.7)
+    (t003,10,3.23)</code></p>
+<h2 id="gradepointimpl">GradePointImpl<a class="headerlink" href="#gradepointimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.flink.grade_point.impl;
+import DSPPCode.flink.grade_point.question.*;
+import org.apache.flink.api.common.functions.FlatMapFunction;
+import org.apache.flink.api.common.functions.MapFunction;
+import org.apache.flink.api.common.functions.ReduceFunction;
+import org.apache.flink.api.java.tuple.Tuple3;
+import org.apache.flink.streaming.api.datastream.DataStream;
+import org.apache.flink.util.Collector;
+import javax.xml.crypto.Data;
+import java.math.BigDecimal;
+
+public class GradePointImpl extends GradePoint{
+
+  @Override
+  public DataStream&lt;Tuple3&lt;String, Integer, Float&gt;&gt; calculate(DataStream&lt;String&gt; text) {
+    // 将成绩信息映射为 [stu id,学分,成绩]
+    DataStream&lt;Tuple3&lt;String,Integer,Float&gt;&gt; points = text.map(
+        new MapFunction&lt;String, Tuple3&lt;String, Integer, Float&gt;&gt;() {
+          @Override
+          public Tuple3&lt;String, Integer, Float&gt; map(String value) throws Exception {
+            String[] infos = value.split(&quot; &quot;);
+            float point = Float.parseFloat(infos[2]);
+            if (point &gt;= 0 &amp;&amp; point&lt;=5){
+              return new Tuple3&lt;&gt;(infos[0],Integer.parseInt(infos[1]),point);
+            }
+            // 若成绩为-1，表示成绩异常，计为0分
+            return new Tuple3&lt;&gt;(infos[0],Integer.parseInt(infos[1]),point+1);
+          }
+        });
+
+    DataStream&lt;Tuple3&lt;String,Integer,Float&gt;&gt; pointGroupByKey = points
+        .keyBy(0)
+        .reduce(new ReduceFunction&lt;Tuple3&lt;String, Integer, Float&gt;&gt;() {
+          @Override
+          public Tuple3&lt;String, Integer, Float&gt; reduce(Tuple3&lt;String, Integer, Float&gt; preRecord,
+              Tuple3&lt;String, Integer, Float&gt; currRecord) throws Exception {
+            float temp_pre_course = preRecord.f1*preRecord.f2;
+            float temp_cur_course = currRecord.f1*currRecord.f2;
+            float raw_grade_point = (temp_pre_course+temp_cur_course)/(preRecord.f1+ currRecord.f1);
+            return Tuple3.of(preRecord.f0,preRecord.f1+currRecord.f1, (float)(Math.round(raw_grade_point*10))/10
+                // 先Math.round四舍五入掉小数点后第二位，然后再/10变成绩点
+            );
+          }
+        });
+    // pointGroupByKey.print();
+
+    DataStream&lt;Tuple3&lt;String,Integer,Float&gt;&gt; result = pointGroupByKey
+        .filter(value -&gt; value.f1 == 10);
+    // result.print();
+    return result;
+  }
+}
+
+</code></pre>
+<h1 id="speed-measurement">区间测速(Speed Measurement)<a class="headerlink" href="#speed-measurement" title="Permanent link">&para;</a></h1>
+<h2 id="_12">待完成:<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<ul>
+<li>请在 DSPPCode.flink.speed_measurement.impl 中创建SpeedKeyedProcessFunctionImpl, 继承 SpeedKeyedProcessFunction, 实现抽象方法</li>
+</ul>
+<h2 id="_13">题目描述:<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>为了保障交通安全，从A入口到B出口的路段（全程路长10km）开始实行区间测速制度，该制度的具体规则如下：</p>
+</li>
+<li>
+<p>A入口处和B出口处各设有1个摄像头，摄像头会记录下每一辆车驶入A入口的时刻和驶出B出口的时刻。要求车辆从A行驶到B的平均速度不能超过60km/h。</p>
+</li>
+<li>此外，A到B的区间内又额外设置了2个测速点，这2个测速点各安装了1个摄像头，摄像头会记录下每辆车经过测速点处时的车牌和速度。要求车辆在途中2个测速点处的车速也不能超过60km/h。</li>
+</ul>
+<p>现给定上述4个摄像头的数据，请统计出超速的车辆。</p>
+<ul>
+<li>输入格式: 每行包含一个车牌号和一个时刻，以空格分隔（例如，下表第1行包含一个车牌号00001和一个时刻10:00:00），或者每行包含一个车牌号和一个速度（例如，下表第2行包含一个车牌号00001和一个速度58km/h）。</li>
+</ul>
+<p><code>00001 10:00:00
+  00001 58
+  00001 59
+  00001 10:12:00
+  00002 10:15:00
+  00002 55
+  00002 66
+  00002 10:27:00</code></p>
+<ul>
+<li>输出格式: 输出超速的车牌号。</li>
+</ul>
+<p><code>00002</code></p>
+<h2 id="speedkeyedprocessfunctionimpl">SpeedKeyedProcessFunctionImpl<a class="headerlink" href="#speedkeyedprocessfunctionimpl" title="Permanent link">&para;</a></h2>
+<pre><code class="language-java">package DSPPCode.flink.speed_measurement.impl;
+
+import DSPPCode.flink.speed_measurement.question.SpeedMeasurement;
+import DSPPCode.flink.speed_measurement.question.SpeedKeyedProcessFunction;
+import org.apache.flink.api.java.tuple.Tuple2;
+import org.apache.flink.configuration.Configuration;
+import org.apache.flink.util.Collector;
+
+public class SpeedKeyedProcessFunctionImpl extends SpeedKeyedProcessFunction{
+
+
+  @Override
+  public void open(Configuration parameters) throws Exception {
+
+  }
+
+
+  private String[] avt = null;
+  private String car = null;
+
+  @Override
+  public void processElement(Tuple2&lt;String, String&gt; t, Context context, Collector&lt;String&gt; collector)
+      throws Exception {
+    if(car == context.getCurrentKey()) return;
+    if(t.f1.contains(&quot;:&quot;)) {
+      if(avt == null) {
+        avt = new String[2];
+        avt[0] = t.f1;
+      } else {
+        avt[1] = t.f1;
+        if(averageSpeed(avt) &gt; 60.0f) {
+          car = context.getCurrentKey();
+          collector.collect(car);
+        }
+      }
+    } else {
+      float speed = Float.valueOf(t.f1);
+      if(speed &gt; 60.0f) {
+        car = context.getCurrentKey();
+        collector.collect(car);
+      }
+    }
+  }
+
+  @Override
+  public float averageSpeed(String[] times) {
+    String[] t1 = times[0].split(&quot;:&quot;);
+    String[] t2 = times[1].split(&quot;:&quot;);
+    int h1 = Integer.valueOf(t1[0]), m1 = Integer.valueOf(t1[1]), s1 = Integer.valueOf(t1[2]);
+    int h2 = Integer.valueOf(t2[0]), m2 = Integer.valueOf(t2[1]), s2 = Integer.valueOf(t2[2]);
+    return 36000.0f / (((h2 - h1) * 60 + m2 - m1) * 60 + s2 - s1);
+  }
+}
+</code></pre>
+<hr />
+<h1 id="water-problem">Water Problem<a class="headerlink" href="#water-problem" title="Permanent link">&para;</a></h1>
+<h2 id="_14">待完成:<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<ul>
+<li>请在DSPPCode.flink.water_problem.impl中创建WaterProblemImpl， 继承WaterProblem， 实现抽象方法。
+  可以参考<a href="https://ci.apache.org/projects/flink/flink-docs-release-1.13/zh/docs/try-flink/datastream/">基于 DataStream API 实现欺诈检测</a></li>
+</ul>
+<h2 id="_15">题目描述:<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<ul>
+<li>有若干个泳池，每个泳池各有一条管道与外界相连。 管道中有水流通过，引起泳池水量的变化。</li>
+</ul>
+<p>假设泳池最初是空的，泳池容积无限大。</p>
+<p>泳池管理员时常调节管道中水流的速度，来控制泳池的水量，管理员也时常查看泳池的具体水量。</p>
+<p>现给出一个包含操作事件和查询事件的流， 请输出每次查询时对应的泳池的水量。</p>
+<ul>
+<li>输入:</li>
+</ul>
+<p>输入数据的格式为(isQuery,poolId,timestamp,speed)。 </p>
+<p>isQuery的取值是true或者false，如果是true请输出水量，如果是false请修改水流速度。</p>
+<p>poolId是一个整数，取值范围是[0,10]，表示查询或者修改的那个泳池的编号。  </p>
+<p>timestamp是一个整数，取值范围是[0,2000]，表示查询或者修改事件发生的时刻，输入数据保证timestamp是非降序的。  </p>
+<p>speed是一个整数，取值在int范围内。如果isQuery是false，表示把对应泳池管道的速度修改到speed；如果isQuery是true，请忽略这个字段。</p>
+<p><code>false,1,0,10
+  false,2,0,20
+  true,1,5,0
+  true,2,5,0
+  false,1,10,100
+  false,2,10,0
+  true,1,20,0
+  true,2,20,0</code></p>
+<ul>
+<li>输出:</li>
+</ul>
+<p>对每次查询事件请输出当时对应泳池的水量，输出格式为(poolId,timestamp,volume)。</p>
+<p><code>1,5,50
+  2,5,100
+  1,20,1100
+  2,20,200</code></p>
+<ul>
+<li>样例解释</li>
+</ul>
+<p>在t=0时，把1号泳池的流速修改到10，把2号泳池的流速修改到20。 </p>
+<p>在t=5时，查询1号和2号泳池的水量。此时，1号泳池的水量是 <code>10*5=50</code> ，2号泳池的水量是
+  <code>20*5=100</code> ，所以输出(1,5,50)和(2,5,100)。</p>
+<p>在t=10时，把1号泳池的流速修改到100，把2号泳池的流速修改到0。 </p>
+<p>在t=20时，查询1号和2号泳池的水量。此时，1号泳池的水量是 <code>10*10+100*10=1100</code> ，2号泳池的水量是
+  <code>20*10+0*10=200</code> ，所以输出(1,20,1100)和(2,20,200)。</p>
+<h2 id="waterproblemimpl">WaterProblemImpl<a class="headerlink" href="#waterproblemimpl" title="Permanent link">&para;</a></h2>
+<pre><code class="language-java">package DSPPCode.flink.water_problem.impl;
+
+import DSPPCode.flink.water_problem.question.WaterProblem;
+import org.apache.flink.api.common.functions.FlatMapFunction;
+import org.apache.flink.api.common.functions.MapFunction;
+import org.apache.flink.api.common.functions.ReduceFunction;
+import org.apache.flink.streaming.api.datastream.DataStream;
+import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
+import org.apache.flink.util.Collector;
+import java.math.BigInteger;
+import org.apache.flink.api.java.tuple.Tuple4;
+
+public class WaterProblemImpl extends WaterProblem {
+
+  @Override
+  public DataStream&lt;String&gt; execute(DataStream&lt;String&gt; dataStream) {
+    DataStream&lt;Tuple4&lt;Boolean, Long, Long, Long&gt;&gt; input = dataStream.map(
+        new MapFunction&lt;String, Tuple4&lt;Boolean, Long, Long, Long&gt;&gt;() {
+          @Override
+          public Tuple4&lt;Boolean, Long, Long, Long&gt; map(String s) throws Exception {
+            // System.err.println(s);
+            String[] ns = s.split(&quot;,&quot;);
+            Boolean b = false;
+            if (ns[0].equals(&quot;true&quot;))
+              b = true;
+            Tuple4&lt;Boolean, Long, Long, Long&gt; ret = new Tuple4&lt;Boolean, Long, Long, Long&gt;
+                (b, Long.parseLong(ns[1]), Long.parseLong(ns[2]), Long.parseLong(ns[3]));
+            return ret;
+          }
+        }
+    );
+    DataStream&lt;Tuple4&lt;Boolean, Long, Long, Long&gt;&gt; cal = input.keyBy(1).flatMap(
+        new FlatMapFunction&lt;Tuple4&lt;Boolean, Long, Long, Long&gt;, Tuple4&lt;Boolean, Long, Long, Long&gt;&gt;() {
+          long[] line = new long[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+          long[] speed = new long[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+          long[] lasttime = new long[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+          @Override
+          public void flatMap(
+              Tuple4&lt;Boolean, Long, Long, Long&gt; tuple4,
+              Collector&lt;Tuple4&lt;Boolean, Long, Long, Long&gt;&gt; collector) throws Exception {
+            int p = tuple4.f1.intValue();
+            if(tuple4.f0){
+              Tuple4&lt;Boolean, Long, Long, Long&gt; col = new Tuple4&lt;Boolean, Long, Long, Long&gt;(true,
+                  tuple4.f1, tuple4.f2,
+                  (line[p] + (tuple4.f2 - lasttime[p]) * speed[p]) &gt;= 0 ? (line[p] + (tuple4.f2 - lasttime[p]) * speed[p]) : 0);
+              collector.collect(col);
+            } else {
+              line[p] += (tuple4.f2 - lasttime[p]) * speed[p];
+              if (line[p] &lt; 0)
+                line[p] = 0;
+              speed[p] = tuple4.f3;
+              lasttime[p] = tuple4.f2;
+            }
+            System.err.print(p);
+            System.err.print(' ');
+            System.err.print(line[p]);
+            System.err.print(' ');
+            System.err.print(speed[p]);
+            System.err.print(' ');
+            System.err.println(lasttime[p]);
+          }
+        }
+    );
+    DataStream&lt;String&gt; ans = cal.map(
+        new MapFunction&lt;Tuple4&lt;Boolean, Long, Long, Long&gt;, String&gt;() {
+          @Override
+          public String map(Tuple4&lt;Boolean, Long, Long, Long&gt; tuple4)
+              throws Exception {
+            return tuple4.f1.toString() + &quot;,&quot; + tuple4.f2.toString() + &quot;,&quot; + tuple4.f3.toString();
+          }
+        }
+    );
+    System.err.println(&quot;--------------&quot;);
+    ans.print();
+    return ans;
+  }
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

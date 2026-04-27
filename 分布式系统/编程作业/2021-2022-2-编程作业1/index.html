@@ -1,0 +1,4045 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/tom6m6/DaSE.Courses/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A/2021-2022-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/">
+      
+      
+        <link rel="prev" href="../2020-2021-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A3/">
+      
+      
+        <link rel="next" href="../2021-2022-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>2021-2022-2-编程作业1 - DaSE 课程资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2021-2022-2-1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="DaSE 课程资料" class="md-header__button md-logo" aria-label="DaSE 课程资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DaSE 课程资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2021-2022-2-编程作业1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome to MkDocs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Web%E7%BC%96%E7%A8%8B/" class="md-tabs__link">
+          
+  
+  
+  Web编程
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/" class="md-tabs__link">
+          
+  
+  
+  信息检索与自然语言处理
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../2019-2020-1-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A/" class="md-tabs__link">
+          
+  
+  
+  分布式系统
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E6%95%B0%E6%8D%AE%E4%BC%A6%E7%90%86/" class="md-tabs__link">
+          
+  
+  
+  数据伦理
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AF%BC%E8%AE%BA/%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%8D%B7%E7%BA%B8%E5%92%8C%E6%88%91%E7%9A%84%E8%A7%A3%E7%AD%94/" class="md-tabs__link">
+          
+  
+  
+  数据科学与工程导论
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="md-tabs__link">
+          
+  
+  
+  数据科学与工程数学基础
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="md-tabs__link">
+          
+  
+  
+  数据结构
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="md-tabs__link">
+          
+  
+  
+  程序设计
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/" class="md-tabs__link">
+          
+  
+  
+  算法基础
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E4%B8%8E%E5%A4%9A%E5%AA%92%E4%BD%93%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/" class="md-tabs__link">
+          
+  
+  
+  计算机视觉与多媒体信息处理
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="DaSE 课程资料" class="md-nav__button md-logo" aria-label="DaSE 课程资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DaSE 课程资料
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web编程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Web编程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Web%E7%BC%96%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web编程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Web%E7%BC%96%E7%A8%8B/2023-2024-%E6%9A%91%E5%81%87%E6%9C%9F%E4%B8%AD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024暑假期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Web%E7%BC%96%E7%A8%8B/2024-2025-%E6%9A%91%E5%81%87%E6%9C%9F%E4%B8%AD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025暑假期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信息检索与自然语言处理
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信息检索与自然语言处理
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信息检索与自然语言处理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%202020-2021-1%20%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7A%E5%8D%B7%E7%BA%B8%2B%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-1 期末试卷A和答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%202020-2021-1%20%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7B%E5%8D%B7%E7%BA%B8%2B%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-1 期末试卷B和答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%202024-2025-2%20%E6%9C%9F%E4%B8%AD%E8%AF%95%E5%8D%B7%20%28%E5%9B%9E%E5%BF%86%E7%89%88%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自然语言处理 2024-2025-2 期中试卷 (回忆版)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%202024-2025-2%20%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7%20%28A%E5%8D%B7%2C%E5%9B%9E%E5%BF%86%E7%89%88%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自然语言处理 2024-2025-2 期末试卷 (A卷,回忆版)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    分布式系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    分布式系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编程作业
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    编程作业
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2019-2020-1-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-2020-1-编程作业
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2020-2021-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-2-编程作业1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2020-2021-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-2-编程作业2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2020-2021-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-2-编程作业3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-2022-2-编程作业1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2021-2022-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-2022-2-编程作业2（不全）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2022-2023-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-2023-2-编程作业1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2022-2023-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-2023-2-编程作业2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2023-2024-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-2024-2-编程作业1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2023-2024-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-2024-2-编程作业2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2023-2024-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-2024-2-编程作业3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-2025-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-2025-2-编程作业1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-2025-2-%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-2025-2-编程作业2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据伦理
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据伦理
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E4%BC%A6%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据伦理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E4%BC%A6%E7%90%86/%E5%B9%B3%E6%97%B6%E5%B0%8F%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    平时小作业
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E4%BC%A6%E7%90%86/%E6%9C%9F%E6%9C%AB%E5%A4%A7%E4%BD%9C%E6%96%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    期末大作文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据科学与工程导论
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据科学与工程导论
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AF%BC%E8%AE%BA/%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%8D%B7%E7%BA%B8%E5%92%8C%E6%88%91%E7%9A%84%E8%A7%A3%E7%AD%94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导论期中卷纸和我的解答
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据科学与工程数学基础
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据科学与工程数学基础
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据科学与工程数学基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    期末试卷
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    期末试卷
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2020%E7%BA%A7%E5%8D%B7%E7%BA%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020级卷纸
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2020%E7%BA%A7%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020级答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2021%E7%BA%A7%E5%8D%B7%E7%BA%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021级卷纸
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2021%E7%BA%A7%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021级答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2022%E7%BA%A7%E5%8D%B7%E7%BA%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022级卷纸
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2022%E7%BA%A7%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022级答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2023%E7%BA%A7%E5%8D%B7%E7%BA%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023级卷纸（A）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2023%E7%BA%A7%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023级答案（A）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2023%E7%BA%A7%E7%AD%94%E6%A1%88%EF%BC%88%E8%A1%A5%E7%BC%93%E8%80%83%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023级答案（B）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2024%E7%BA%A7%E5%8D%B7%E7%BA%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024级卷纸（A）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2024%E7%BA%A7%E5%8D%B7%E7%BA%B8%EF%BC%88%E8%A1%A5%E7%BC%93%E8%80%83%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024级卷纸（B）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据结构
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据结构
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    程序设计
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    程序设计
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    程序设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    上机测试
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    上机测试
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2021%E6%B5%8B%E8%AF%951/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021测试1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2021%E6%B5%8B%E8%AF%952/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021测试2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2022%E6%B5%8B%E8%AF%951/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022测试1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2022%E6%B5%8B%E8%AF%952/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022测试2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2023%E6%B5%8B%E8%AF%951/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023测试1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2023%E6%B5%8B%E8%AF%952/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023测试2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2024%E6%B5%8B%E8%AF%951A%E5%8D%B7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024测试1A卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2024%E6%B5%8B%E8%AF%952A%E5%8D%B7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024测试2A卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2024%E6%B5%8B%E8%AF%952B%E5%8D%B7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024测试2B卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E4%B8%8A%E6%9C%BA%E6%B5%8B%E8%AF%95/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据学院2025级程序设计期末考试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    理论笔试
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    理论笔试
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%90%86%E8%AE%BA%E7%AC%94%E8%AF%95/2019/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    华东师范大学期末试卷（A）2019-2020学年第一学期
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%90%86%E8%AE%BA%E7%AC%94%E8%AF%95/2020/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    华东师范大学期末试卷（A）2020-2021学年第一学期
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%90%86%E8%AE%BA%E7%AC%94%E8%AF%95/2022%E7%AE%80%E5%8D%95%E5%9B%9E%E9%A1%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    《程序设计》期末考试2022-2023-1学期简单回顾
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%90%86%E8%AE%BA%E7%AC%94%E8%AF%95/2024%E7%AE%80%E5%8D%95%E5%9B%9E%E9%A1%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    《程序设计》期末考试2024-2025-1学期简单回顾（AB卷）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    算法基础
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    算法基础
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    算法基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_2" id="__nav_10_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    期中期末
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    期中期末
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2017-2018-1A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-2018-1A卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2017-2018-1B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-2018-1B卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2020-2021-1A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-1A卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2020-2021-1mid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-2021-1期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2021-2022-1mid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-2022-1期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2022-2023-2A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-2023-2A卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2022-2023-2B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-2023-2B卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2022-2023-2mid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-2023-2期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2023-2024-2mid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-2024-2期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/2024-2025-2mid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-2025-2期中卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/%E6%9C%9F%E4%B8%AD%E6%9C%9F%E6%9C%AB/%E6%9F%90%E5%B9%B4%E6%9C%9F%E6%9C%AB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    某年期末试卷
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机视觉与多媒体信息处理
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    计算机视觉与多媒体信息处理
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E4%B8%8E%E5%A4%9A%E5%AA%92%E4%BD%93%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机视觉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E4%B8%8E%E5%A4%9A%E5%AA%92%E4%BD%93%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/2023-2024-1%E6%9C%9F%E4%B8%AD%E5%9B%9E%E5%BF%86%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-2024-1 期中理论测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E4%B8%8E%E5%A4%9A%E5%AA%92%E4%BD%93%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/2024-2025-1%E6%9C%9F%E4%B8%AD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-2025-1 期中理论测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2021-2022-2-1">2021-2022-2-编程作业1<a class="headerlink" href="#2021-2022-2-1" title="Permanent link">&para;</a></h1>
+<p>2019级，MapReduce</p>
+<h1 id="student-info">Student Info<a class="headerlink" href="#student-info" title="Permanent link">&para;</a></h1>
+<h2 id="_1">难易程度：* 易<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_2">待完成:<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>请在 DSPPCode.mapreduce.student_info.impl 中创建 StudentInfoMapperImpl 和 StudentInfoReducerImpl, 分别继承 StudentInfoMapper 和 StudentInfoReudcer, 实现抽象方法</li>
+</ul>
+<h2 id="_3">题目描述:<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>某校统计了在校学生的性别和身高数据，现要求对这些数据进行处理以分别计算出男生身高的最大值与男生平均身高的差，女生身高的最小值与女生平均身高的差。</p>
+</li>
+<li>
+<p>输入格式:</p>
+</li>
+</ul>
+<p>数据保存在文件中，文件的每行由学生的序号、性别以及身高信息(单位为cm)组成。信息之间用逗号分隔。</p>
+<p><code>1,F,170
+  2,M,178
+  3,M,174
+  4,F,165</code></p>
+<ul>
+<li>输出: 请输出性别和对应差值，中间用制表符分隔。
+    <code>F -2.5
+  M 2.0</code></li>
+</ul>
+<h2 id="studentinfomapperimpl">StudentInfoMapperImpl<a class="headerlink" href="#studentinfomapperimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.mapreduce.student_info.impl;
+
+import DSPPCode.mapreduce.student_info.question.StudentInfoMapper;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import java.io.IOException;
+
+public class StudentInfoMapperImpl extends StudentInfoMapper {
+
+  @Override
+  public void map(Object key, Text value, Context context)
+      throws IOException, InterruptedException {
+
+    String[] info = value.toString().split(&quot;,&quot;);
+    String gender = info[1];
+    int height = Integer.parseInt(info[2]);
+    // System.out.println(gender);
+    // System.out.println(height);
+    context.write(new Text(gender), new IntWritable(height));
+  }
+}
+
+</code></pre>
+<h2 id="studentinforeducerimpl">StudentInfoReducerImpl<a class="headerlink" href="#studentinforeducerimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.mapreduce.student_info.impl;
+
+import DSPPCode.mapreduce.student_info.question.StudentInfoReducer;
+import org.apache.hadoop.io.DoubleWritable;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import java.io.IOException;
+
+public class StudentInfoReducerImpl extends StudentInfoReducer {
+
+  @Override
+  public void reduce(Text key, Iterable&lt;IntWritable&gt; values, Context context)
+      throws IOException, InterruptedException {
+    int num = 0;
+    int sum = 0;
+    double avg = 0;
+    int max = 0;
+    int min = 1000;
+    for(IntWritable value : values)
+    {
+      int tmp = value.get();
+      num++;
+      sum += tmp;
+      if(tmp &gt; max)
+      {
+        max = tmp;
+      }
+      if(tmp &lt; min)
+      {
+        min = tmp;
+      }
+    }
+    avg = (double) sum / (double) num;
+
+    String gender = key.toString();
+    if(gender.equals(&quot;M&quot;))
+    {
+      context.write(new Text(gender), new DoubleWritable(max - avg));
+    }else{
+      context.write(new Text(gender), new DoubleWritable(min - avg));
+    }
+
+  }
+}
+
+</code></pre>
+<h1 id="inverted-index">Inverted Index<a class="headerlink" href="#inverted-index" title="Permanent link">&para;</a></h1>
+<h2 id="_4">难易程度:  ** 中<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_5">待完成<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li>新建DSPPCode.mapreduce.inverted_index.impl文件夹</li>
+<li>请在DSPPCode.mapreduce.inverted_index.impl中创建InvertedIndexMapperImpl, 继承InvertedIndexMapper, 实现抽象方法。</li>
+<li>请在DSPPCode.mapreduce.inverted_index.impl中创建InvertedIndexReducerImpl, 继承InvertedIndexReducer, 实现抽象方法。</li>
+</ul>
+<h2 id="_6">题目描述<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>倒排索引是 Elasticsearch 中非常重要的索引结构，是从文档单词到文档 ID 的过程。
+倒排索引源于实际应用中需要根据属性的值来查找记录。这种索引表中的每一项都包括一个属性值和具有该属性值的各记录的地址。
+由于不是由记录来确定属性值，而是由属性值来确定记录的位置，因而称为倒排索引(inverted index)
+现实中，倒排索引主要应用于搜索引擎中，用于构建单词到文档的索引，从而能够快速的通过用户的输入查找相关的网页。</p>
+<p>本题目需要实现构建倒排索引的过程。具体来说，给定一组英文文档，使用空格进行分词（文档中不包含标点符号），将所有单词转换为小写，并排除停用词（stop word）后，
+建立单词的倒排索引(输出key为单词，value为以文件名和单词出现次数组成的字符串，不同文件之间用";"分割
+，详见样例)。</p>
+<h2 id="_7">样例<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">输入<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<pre><code>//输入由多个文件的文本内容构成，下面列举了两个文件的文本内容 
+//www.bbc.comnewsworld-asia-china-60615280
+Ukraine invasion Can China do more to stop Russia's war in Ukraine
+//www.bbc.comnewsworld-europe-60506682
+Ukraine maps Ukraine says Russian ceasefire offer immoral
+// stopwords.txt
+can
+and
+to
+in
+</code></pre>
+<h3 id="_9">输出<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<pre><code>//输出格式为 单词 文件名1:次数1;文件名2:次数2;
+Ukraine www.bbc.comnewsworld-asia-china-60615280:2;www.bbc.comnewsworld-europe-60506682:2  
+invasion    www.bbc.comnewsworld-asia-china-60615280::1;
+China   www.bbc.comnewsworld-asia-china-60615280::1;
+do  www.bbc.comnewsworld-asia-china-60615280::1;
+more    www.bbc.comnewsworld-asia-china-60615280::1;
+stop    www.bbc.comnewsworld-asia-china-60615280::1;
+Russia's    www.bbc.comnewsworld-asia-china-60615280::1;
+war www.bbc.comnewsworld-asia-china-60615280::1;
+maps    www.bbc.comnewsworld-europe-60506682:1;  
+says    www.bbc.comnewsworld-europe-60506682:1;  
+Russian www.bbc.comnewsworld-europe-60506682:1;  
+ceasefire   www.bbc.comnewsworld-europe-60506682:1;
+offer   www.bbc.comnewsworld-europe-60506682:1;
+immoral www.bbc.comnewsworld-europe-60506682:1;
+</code></pre>
+<h2 id="invertedindexmapperimpl">InvertedIndexMapperImpl<a class="headerlink" href="#invertedindexmapperimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.mapreduce.inverted_index.impl;
+
+import DSPPCode.mapreduce.inverted_index.question.InvertedIndexMapper;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.lib.input.FileSplit;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class InvertedIndexMapperImpl extends InvertedIndexMapper {
+
+  @Override
+  public void map(Object key, Text value, Context context)
+      throws IOException, InterruptedException {
+
+    // 读取停用词
+    URI uri = context.getCacheFiles()[0];
+    FileSystem fs = FileSystem.get(uri, new Configuration());
+    BufferedReader reader = new BufferedReader(new InputStreamReader(fs.open(new Path(uri))));
+
+    List&lt;String&gt; stopwords = new ArrayList&lt;&gt;();
+    String content;
+    while ((content = reader.readLine()) != null) {
+      stopwords.add(content);
+    }
+
+    // 读取单词
+    String[] words = value.toString().toLowerCase().split(&quot; &quot;);
+
+    // 读取文件名
+    //FileSplit split = (FileSplit) context.getInputSplit();
+    split = (FileSplit) context.getInputSplit();
+    String path_str = split.getPath().toString();
+    String[] paths = path_str.split(&quot;/&quot;);
+    String path = paths[paths.length - 1];
+    //System.out.println(path_str);
+
+    // 去除停用词
+    for (String word : words) {
+      int flag = 0;
+      for (String str : stopwords) {
+        if (word.equals(str)) {
+          flag = 1;
+          break;
+        }
+      }
+
+      if (flag == 1) {
+        //System.out.println(word);
+        continue;
+      }
+      //System.out.println(path);
+      context.write(new Text(word), new Text(path));
+    }
+  }
+}
+
+</code></pre>
+<h2 id="invertedindexreducerimpl">InvertedIndexReducerImpl<a class="headerlink" href="#invertedindexreducerimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.mapreduce.inverted_index.impl;
+
+import DSPPCode.mapreduce.inverted_index.question.InvertedIndexReducer;
+import org.apache.hadoop.io.Text;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class InvertedIndexReducerImpl extends InvertedIndexReducer {
+
+
+  @Override
+  public void reduce(Text key, Iterable&lt;Text&gt; values, Context context)
+      throws IOException, InterruptedException {
+
+    // 统计
+    Map&lt;String, Integer&gt; map = new HashMap&lt;&gt;();
+    for (Text value : values) {
+      //System.out.println(value.toString());
+      String address = value.toString();
+      if (map.containsKey(address)) {
+        map.put(address, map.get(address) + 1);
+      } else {
+        map.put(address, 1);
+      }
+    }
+
+    Set&lt;String&gt; set = map.keySet();
+    Iterator&lt;String&gt; it = set.iterator();
+    // 输出
+    StringBuilder output_value = new StringBuilder(&quot;&quot;);
+    while (it.hasNext()) {
+      String key_it = it.next();
+      Integer value_it = map.get(key_it);
+      //System.out.println(value_it);
+      String tmp = key_it + DELIMITER_COLON + value_it.toString() + DELIMITER_SEMI;
+      output_value.append(tmp);
+    }
+    //System.out.println(output_value.toString());
+    //System.out.println(key);
+    if(key.toString().length()&gt;0)
+    {
+      context.write(key, new Text(output_value.toString()));
+    }
+  }
+}
+
+</code></pre>
+<h1 id="common-pagerank">Common PageRank<a class="headerlink" href="#common-pagerank" title="Permanent link">&para;</a></h1>
+<h2 id="_10">难易程度:  *** 难<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h2 id="_11">待完成<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<ul>
+<li>请在DSPPCode.mapreduce.common_pagerank.impl中创建PageRankJoinMapperImpl，继承PageRankJoinMapper，实现抽象方法</li>
+<li>请在DSPPCode.mapreduce.common_pagerank.impl中创建PageRankJoinReducerImpl，继承PageRankJoinReducer，实现抽象方法</li>
+<li>请在DSPPCode.mapreduce.common_pagerank.impl中创建PageRankMapperImpl，继承PageRankMapper，实现抽象方法</li>
+<li>请在DSPPCode.mapreduce.common_pagerank.impl中创建PageRankReducerImpl，继承PageRankReducer，实现抽象方法</li>
+</ul>
+<h2 id="_12">题目描述：<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<ul>
+<li>基于两个输入文本（网页链接关系、初始的网页排名）实现网页链接排名算法（阻尼系数以0.85计算）。
+本题对网页排名值的收敛条件做了简化，如果当某一网页当前排名值与上一轮迭代排名值之间差值的绝对值小于1e-6，那么认为该网页的排名值已经收敛。
+迭代停止的条件为达到最大迭代次数或某次迭代中所有网页均收敛。
+网页总数N在测试阶段由后台自动给出。</li>
+<li>输入格式：文本中的第一列都为网页名，列与列之间用空格分隔。其中，</li>
+</ul>
+<p>网页链接关系文本中的其他列为出站链接，如A B D表示网页A链向网页B和D（所有网页权重按1.0计算）
+  <code>A B D
+  B C
+  C A B
+  D B C</code>
+  初始的网页排名文本第二列为该网页的排名值，如 A 1 表示网页A的排名为1
+  <code>A 1
+  B 1
+  C 1
+  D 1</code></p>
+<ul>
+<li>输出格式:
+  要求分两步完成。第一步连接网页链接关系和初始的网页排名两个文件，输出连接结果：
+  <code>A 1 B D
+  B 1 C
+  C 1 A B
+  D 1 B C</code>
+  第二步输出网页的链接关系和最终的排名值：
+  <code>A 0.21436248817266176 B D
+  B 0.3633209225962085 C
+  C 0.40833002013844744 A B
+  D 0.1302651623462253 B C</code></li>
+</ul>
+<blockquote>
+<p>注意：连接阶段无需将排名值解析为数值类型，
+计算网页排名的阶段请将排名值解析为 <code>double</code> 类型变量进行计算。</p>
+</blockquote>
+<h2 id="pagerankjoinmapperimpl">PageRankJoinMapperImpl<a class="headerlink" href="#pagerankjoinmapperimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.mapreduce.common_pagerank.impl;
+
+import DSPPCode.mapreduce.common_pagerank.question.PageRankJoinMapper;
+import DSPPCode.mapreduce.common_pagerank.question.utils.ReduceJoinWritable;
+
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.lib.input.FileSplit;
+import java.io.IOException;
+
+public class PageRankJoinMapperImpl extends PageRankJoinMapper {
+
+  @Override
+  public void map(LongWritable key, Text value, Context context)
+      throws IOException, InterruptedException {
+
+    // 读取文件
+    FileSplit split = (FileSplit) context.getInputSplit();
+    String path_str = split.getPath().toString();
+    //String[] paths = path_str.split(&quot;/&quot;);
+    //String path = paths[paths.length - 1];
+
+    String[] data = value.toString().split(&quot; &quot;);
+
+    ReduceJoinWritable output_value = new ReduceJoinWritable();
+    output_value.setData(value.toString());
+
+    if(path_str.contains(&quot;ranks&quot;))
+    {
+      output_value.setTag(ReduceJoinWritable.PAGERNAK);
+    }
+    if(path_str.contains(&quot;pages&quot;))
+    {
+      output_value.setTag(ReduceJoinWritable.PAGEINFO);
+    }
+    context.write(new Text(data[0]), output_value);
+
+  }
+}
+
+</code></pre>
+<h2 id="pagerankjoinreducerimpl">PageRankJoinReducerImpl<a class="headerlink" href="#pagerankjoinreducerimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.mapreduce.common_pagerank.impl;
+
+import DSPPCode.mapreduce.common_pagerank.question.PageRankJoinReducer;
+import DSPPCode.mapreduce.common_pagerank.question.utils.ReduceJoinWritable;
+import org.apache.hadoop.io.NullWritable;
+import org.apache.hadoop.io.Text;
+import java.io.IOException;
+
+public class PageRankJoinReducerImpl extends PageRankJoinReducer {
+
+  @Override
+  public void reduce(Text key, Iterable&lt;ReduceJoinWritable&gt; values, Context context)
+      throws IOException, InterruptedException {
+    String data_ranks = null;
+    String data_pages = null;
+
+    for (ReduceJoinWritable value : values)
+    {
+      //System.out.println(value.getTag());
+      if(value.getTag().equals(ReduceJoinWritable.PAGERNAK))
+      {
+        // System.out.println(value.getTag());
+        data_ranks = value.getData();
+      }
+      if(value.getTag().equals(ReduceJoinWritable.PAGEINFO))
+      {
+        // System.out.println(value.getTag());
+        data_pages = value.getData();
+        //System.out.println(data_pages);
+      }
+    }
+
+    assert data_pages != null;
+    String[] pages = data_pages.split(&quot; &quot;);
+    String tmp = &quot;&quot;;
+    for (int i=1; i &lt; pages.length; i++)
+    {
+      tmp = tmp  + pages[i];
+      if(i &lt; pages.length - 1)
+      {
+        tmp = tmp + &quot; &quot;;
+      }
+    }
+
+
+    String output_key;
+    if(tmp.equals(&quot;&quot;))
+    {
+      output_key = data_ranks;
+    }else {
+      output_key = data_ranks + &quot; &quot; + tmp;
+    }
+
+    // System.out.println(output_key);
+
+    context.write(new Text(output_key), NullWritable.get());
+  }
+}
+
+</code></pre>
+<h2 id="pagerankmapperimpl">PageRankMapperImpl<a class="headerlink" href="#pagerankmapperimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.mapreduce.common_pagerank.impl;
+
+import DSPPCode.mapreduce.common_pagerank.question.PageRankMapper;
+
+public class PageRankMapperImpl extends PageRankMapper {
+
+}
+
+</code></pre>
+<h2 id="pagerankreducerimpl">PageRankReducerImpl<a class="headerlink" href="#pagerankreducerimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.mapreduce.common_pagerank.impl;
+
+import DSPPCode.mapreduce.common_pagerank.question.PageRankReducer;
+import DSPPCode.mapreduce.common_pagerank.question.PageRankRunner;
+import DSPPCode.mapreduce.common_pagerank.question.utils.ReducePageRankWritable;
+import org.apache.hadoop.io.NullWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Counter;
+import java.io.IOException;
+
+public class PageRankReducerImpl extends PageRankReducer {
+  private static final double D = 0.85;
+
+  @Override
+  public void reduce(Text key, Iterable&lt;ReducePageRankWritable&gt; values, Context context)
+      throws IOException, InterruptedException {
+
+    int totalPage = context.getConfiguration().getInt(PageRankRunner.TOTAL_PAGE, 0);
+    int iteration = context.getConfiguration().getInt(PageRankRunner.ITERATION, 0);
+
+    double data_ranks = 0;
+    String data_pages = null;
+
+    for (ReducePageRankWritable value : values)
+    {
+      if(value.getTag().equals(ReducePageRankWritable.PR_L))
+      {
+        data_ranks += Double.parseDouble(value.getData());
+      }
+      if(value.getTag().equals(ReducePageRankWritable.PAGE_INFO))
+      {
+        data_pages = value.getData();
+      }
+    }
+    data_ranks = (1 - D) /totalPage + D * data_ranks;
+    assert data_pages != null;
+    String[] data = data_pages.split(&quot; &quot;);
+    String output_key = key.toString() + &quot; &quot; + data_ranks;
+    for(int i = 2; i &lt; data.length; i++)
+    {
+      output_key += &quot; &quot;;
+      output_key += data[i];
+    }
+
+
+    // 判断是否收敛
+    double p1 = Double.parseDouble(data_pages.split(&quot; &quot;)[1]);
+    double p2 = Double.parseDouble(output_key.split(&quot; &quot;)[1]);
+    //System.out.println(p1);
+    if(Math.abs(p2 - p1) &lt; PageRankRunner.DELTA)
+    {
+      Counter counter = context.getCounter(PageRankRunner.GROUP_NAME,PageRankRunner.COUNTER_NAME);
+      counter.increment(1);//增加计数
+    }
+    //System.out.println();
+    context.write(new Text(output_key), NullWritable.get());
+  }
+}
+
+</code></pre>
+<h1 id="sql">崩溃的SQL<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
+<h2 id="_13">难易程度：** 中<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h2 id="_14">待完成<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<ul>
+<li>请在DSPPCode.mapreduce.crashed_sql.impl中创建SQLMapperImpl，继承SQLMapper，实现抽象方法</li>
+<li>请在DSPPCode.mapreduce.crashed_sql.impl中创建SQLReducerImpl，继承SQLReducer，实现抽象方法</li>
+</ul>
+<h2 id="_15">题目描述：<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<ul>
+<li>DASE店铺在开业一周年之际，决定通过以下活动来回馈新老用户，即在过去一年内订单金额前5的订单可以享受八折优惠。Tom是一名SQL开发人员，他为了从历史订单表中找出总金额前五的订单，很轻松地就写出了相应的SQL语句
+  <strong>SELECT id,UserName,SUM(Price) total FROM orders ORDER BY total DESC LIMIT 5;</strong>
+  但海量的订单导致该SQL查询在单机数据库中执行一段时间后就崩溃而无法得到结果，Tom只好求助作为大数据开发工程师的你，希望你能帮他实现该SQL语句的功能。
+  请你通过MapReduce程序来实现上述SQL语句的功能。</li>
+<li>
+<p>输入格式：每行表示一条订单记录，第一列到最后一列分别表示订单Id，用户名，购买产品，单价(int)，购买数量(int)，订单日期，每列之间用制表符分隔。</p>
+<p><code>Id UserName Product Price Number Date
+u00001 rookie 文化衫  45   20    2021-6-11
+u00003 lucy 贺卡  15   35    2021-9-08
+u00027 wang 钢笔  27   10    2021-3-22
+u00102 anni 鼠标  108   1    2021-5-27
+u00004 lucy 水杯  98   1    2021-11-09
+u00005 rookie 教材  40   2    2021-9-01
+u00019 lucy 文化衫  45   4    2021-10-03
+u00110 song 教材  55   1    2021-9-01
+u00111 shy  教材  35   1    2021-9-02
+u00311 shy  本子  20   2    2021-9-02</code></p>
+</li>
+<li>
+<p>输出格式: 请输出订单Id，UserName，total，每列之间用制表符分隔
+     <code>u00001  rookie  900
+    u00003  lucy  525
+    u00027  wang  270
+    u00019  lucy  180
+    u00102  anni  108</code></p>
+</li>
+</ul>
+<h2 id="sqlmapperimpl">SQLMapperImpl<a class="headerlink" href="#sqlmapperimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.mapreduce.crashed_sql.impl;
+
+import DSPPCode.mapreduce.crashed_sql.question.SQLMapper;
+
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+
+public class SQLMapperImpl extends SQLMapper {
+
+  public List&lt;Integer&gt; pay = new ArrayList&lt;&gt;();
+  public List&lt;String&gt; lst = new ArrayList&lt;&gt;();
+
+  @Override
+  public void map(Object key, Text value, Context context) {
+
+    String[] data = value.toString().split(&quot;\t&quot;);
+    String order = data[0];
+    String UserName = data[1];
+    Integer price = Integer.valueOf(data[3]);
+    Integer Number = Integer.valueOf(data[4]);
+    int total = price * Number;
+    // 构造字符串
+    String output = order + &quot;\t&quot; + UserName + &quot;\t&quot; + total;
+    lst.add(output);
+    pay.add(total);
+
+  }
+
+  @Override
+  protected void cleanup(Context context)
+      throws IOException, InterruptedException {
+    // 排序
+    Collections.sort(pay);
+    int x = -1;
+    if (pay.size() &gt; 5) {
+      x = pay.get(pay.size() - 5);
+    }
+    //System.out.println(pay.get(pay.size() - 5));
+
+    for (String str : lst) {
+      String[] data = str.split(&quot;\t&quot;);
+      int total = Integer.parseInt(data[2]);
+      if (total &gt;= x) {
+        context.write(new Text(str), new LongWritable(total));
+      }
+    }
+  }
+
+}
+
+</code></pre>
+<h2 id="sqlreducerimpl">SQLReducerImpl<a class="headerlink" href="#sqlreducerimpl" title="Permanent link">&para;</a></h2>
+<pre><code>package DSPPCode.mapreduce.crashed_sql.impl;
+
+import DSPPCode.mapreduce.crashed_sql.question.SQLReducer;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class SQLReducerImpl extends SQLReducer {
+
+  public List&lt;Integer&gt; pay = new ArrayList&lt;&gt;();
+  public List&lt;String&gt; lst = new ArrayList&lt;&gt;();
+
+  @Override
+  public void reduce(Text key, Iterable&lt;LongWritable&gt; values, Context context) {
+    String str = key.toString();
+    String[] data = str.split(&quot;\t&quot;);
+    int total = Integer.parseInt(data[2]);
+    lst.add(str);
+    pay.add(total);
+  }
+
+
+  @Override
+  protected void cleanup(Context context)
+      throws IOException, InterruptedException {
+    // 排序
+    Collections.sort(pay);
+    int x = -1;
+    if (pay.size() &gt; 5) {
+      x = pay.get(pay.size() - 5);
+    }
+    //System.out.println(pay.get(pay.size() - 5));
+
+    // 排序
+    lst.sort(new Comparator&lt;String&gt;() {
+      public int compare(String entry1, String entry2) {
+        int x = Integer.parseInt(entry1.split(&quot;\t&quot;)[2]);
+        int y = Integer.parseInt(entry2.split(&quot;\t&quot;)[2]);
+        return y - x;
+      }
+    });
+
+    for (String str : lst) {
+      String[] data = str.split(&quot;\t&quot;);
+      int total = Integer.parseInt(data[2]);
+      // System.out.println(total);
+      if (total &gt;= x) {
+        // System.out.println(str);
+        context
+            .write(new Text(data[0] + &quot;\t&quot; + data[1]), new LongWritable(Integer.parseInt(data[2])));
+      }
+    }
+  }
+}
+
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
