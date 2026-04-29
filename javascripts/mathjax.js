@@ -1,25 +1,31 @@
 window.MathJax = {
-  loader: {
-    load: ['[tex]/boldsymbol']
-  },
   tex: {
-    packages: {
-      '[+]': ['boldsymbol']
-    },
-    inlineMath: [["\\(", "\\)"], ["$", "$"]],
-    displayMath: [["\\[", "\\]"], ["$$", "$$"]],
+    inlineMath: [["$", "$"], ["\\(", "\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
     processEscapes: true,
     processEnvironments: true
   },
   options: {
-    ignoreHtmlClass: ".*|",
-    processHtmlClass: "arithmatex|jp-RenderedHTMLCommon|jp-MarkdownOutput|jp-RenderedMarkdown|jp-Cell|jp-Notebook|nbinput|nboutput|notebook"
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: ".*"
+  },
+  startup: {
+    typeset: true
   }
 };
 
-document$.subscribe(() => {
-  MathJax.startup.output.clearCache();
-  MathJax.typesetClear();
-  MathJax.texReset();
-  MathJax.typesetPromise();
-});
+function typesetMath() {
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    window.MathJax.typesetPromise().catch(function (err) {
+      console.log("MathJax typeset failed: " + err.message);
+    });
+  }
+}
+
+window.addEventListener("load", typesetMath);
+
+if (typeof document$ !== "undefined") {
+  document$.subscribe(function () {
+    typesetMath();
+  });
+}
