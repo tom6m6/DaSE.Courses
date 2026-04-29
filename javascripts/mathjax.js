@@ -13,7 +13,7 @@ window.MathJax = {
   },
   options: {
     ignoreHtmlClass: ".*|",
-    processHtmlClass: "arithmatex|nbinput|nboutput|notebook"
+    processHtmlClass: "arithmatex|jp-RenderedHTMLCommon|jp-MarkdownOutput|jp-RenderedMarkdown|jp-Cell|jp-Notebook|nbinput|nboutput|notebook"
   }
 };
 
