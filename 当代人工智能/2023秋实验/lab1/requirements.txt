@@ -1,0 +1,10 @@
+scikit-learn==1.5.3
+numpy==1.23.5
+json5==0.96
+regex==2022.7.9
+gensim==4.3.0
+matplotlib==3.7.0
+keras==2.13.1
+nltk==3.7
+torch==2.0.1
+tensorflow==2.13.0

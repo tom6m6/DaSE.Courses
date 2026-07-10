@@ -1,0 +1,12 @@
+numpy==1.23.5
+torch==2.1.2
+datasets==2.16.0
+transformers==4.36.2
+rouge==1.0.1
+nltk==3.7
+pandas==1.5.3
+matplotlib==3.7.0
+sentencepiece==0.1.99
+scikit-learn==1.2.1
+evaluate==0.4.1
+tqdm==4.65.0
